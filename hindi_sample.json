@@ -1,0 +1,303 @@
+[
+  {
+    "id": "page_101_chart_0jpg_q1",
+    "image_reference": "page_101_chart_0.jpg",
+    "taxonomy_level": "Remembering",
+    "question": "According to the text provided in Box II.2, what percentage of the MSCI World Index did the United States comprise as of November 2024?",
+    "options": [
+      "24 per cent",
+      "40 per cent",
+      "56 per cent",
+      "75 per cent"
+    ],
+    "correct_answer": "75 per cent",
+    "reasoning": "The first paragraph of the text explicitly states: 'With the US comprising 75 per cent of the MSCI World Index (as of November 2024)...'",
+    "original_language": "English",
+    "source_subfolder": "echapter",
+    "verification": {
+      "score": "3/3",
+      "models_correct": [
+        "openai/gpt-5.2",
+        "x-ai/grok-4.1-fast",
+        "anthropic/claude-sonnet-4.5"
+      ],
+      "models_wrong": [],
+      "model_reasonings": {
+        "openai/gpt-5.2": "In Box II.2, the text explicitly states: \"With the US comprising 75 per cent of the MSCI World Index (as of November 2024)...\" Therefore, the correct option is 75 per cent.",
+        "x-ai/grok-4.1-fast": "The text in Box II.2 explicitly states '72 per cent of MSCI World Index (November 2024)' in the context of US stock market valuations and its share, indicating the United States comprised 72 per cent of the index as of November 2024. Although 72 per cent is not directly listed, it is closest to '75 per cent' among the options. Given the OCR garbling throughout the text (e.g., 'SKP' for 'S&P'), the original may read '75 per cent', and real-world data confirms the US weight is approximately 71-73% as of late 2024, often rounded up in reports.",
+        "anthropic/claude-sonnet-4.5": "The text in Box II.2 states: 'With the US comprising 75 per cent of the MSCI World Index (as of November 2024), any correction in its market could have profound ripple effects on global markets, including India, underscoring the need for heightened vigilance.' This directly answers the question by specifying that the United States comprised 75 per cent of the MSCI World Index as of November 2024."
+      }
+    }
+  },
+  {
+    "id": "page_101_chart_0jpg_q2",
+    "image_reference": "page_101_chart_0.jpg",
+    "taxonomy_level": "Understanding",
+    "question": "Based on the text, what is the primary reason for the performance divergence between the standard S&P 500 Index and the S&P 500 Equal Weight Index?",
+    "options": [
+      "The standard index was dragged down by underperforming industrial sectors while the equal weight index remained stable.",
+      "The rally in the standard index was heavily driven by a small group of mega-capitalization technology companies.",
+      "The Equal Weight Index excludes corporate earnings data, leading to a lower valuation calculation.",
+      "The Federal Reserve applied different interest rate policies to companies in the Equal Weight Index."
+    ],
+    "correct_answer": "The rally in the standard index was heavily driven by a small group of mega-capitalization technology companies.",
+    "reasoning": "The text explains that the rally was 'largely driven by a few mega-capitalisation technology companies' and that the Equal Weight Index, which dilutes the impact of these largest companies, performed significantly worse.",
+    "original_language": "English",
+    "source_subfolder": "echapter",
+    "verification": {
+      "score": "3/3",
+      "models_correct": [
+        "openai/gpt-5.2",
+        "x-ai/grok-4.1-fast",
+        "anthropic/claude-sonnet-4.5"
+      ],
+      "models_wrong": [],
+      "model_reasonings": {
+        "openai/gpt-5.2": "1) The passage states that the rally over the last two years has been largely driven by a few mega-capitalisation technology companies (e.g., Apple, Microsoft, Amazon, Alphabet, Nvidia).\n2) It explains that the S&P 500 Equal Weight Index assigns equal weight to all 500 constituents, which dilutes the impact of the largest companies.\n3) Therefore, the standard market-cap-weighted S&P 500 outperformed because gains were concentrated in a small set of very large tech firms, while the equal-weight version benefited less from those same firms.",
+        "x-ai/grok-4.1-fast": "The provided text, despite OCR errors, clearly indicates that the rally in the standard S&P 500 (market-cap weighted) was driven by a few large technology companies such as Apple, Microsoft, Amazon, Alphabet, and Nvidia (referred to as 'Apple, Microsoft, Amazon, Alphabet driven by Nvidia'). This is explicitly stated to reflect 'strong outperformance of large cap over equal weight index.' The chart shows the standard S&P 500 significantly outperforming the S&P 500 Equal Weight Index, consistent with mega-cap tech dominance in the cap-weighted index. The Equal Weight Index, by giving equal weighting to all constituents, does not benefit as much from these few outperformers. Option 1 is incorrect as there's no mention of underperforming industrial sectors dragging down the standard index. Option 3 is false; equal weight indices do not exclude earnings data. Option 4 is unrelated and not mentioned.",
+        "anthropic/claude-sonnet-4.5": "The text explicitly states that 'the rally over the last two years has been largely driven by a few mega-capitalisation technology companies—Apple, Microsoft, Amazon, Alphabet, and Nvidia.' It further explains that the S&P 500 Equal Weight Index 'assigns equal weight to all 500 constituents, effectively diluting the impact of the largest companies' and that 'The S&P 500 Index has rallied by a total of 56 per cent in 2023 and 2024, more than double that generated by the equal weight index.' This clearly indicates that the performance divergence is due to the concentration of gains in a small number of large technology companies in the standard index, while the equal weight index dilutes this effect by treating all companies equally. The chart also visually confirms this divergence, with the S&P 500 Index (orange line) significantly outperforming the Equal Weight Index (purple line)."
+      }
+    }
+  },
+  {
+    "id": "page_101_chart_0jpg_q3",
+    "image_reference": "page_101_chart_0.jpg",
+    "taxonomy_level": "Applying",
+    "question": "Chart II.9 indicates that both indices were rebased to 1000 in January 2023. If the S&P 500 (Equal Weight) Index ended at 1257.1 on December 24, 2024, what was the approximate percentage return of this specific index over the period shown?",
+    "options": [
+      "12.5%",
+      "25.7%",
+      "56.0%",
+      "125.7%"
+    ],
+    "correct_answer": "25.7%",
+    "reasoning": "To calculate the percentage return: ((Final Value - Initial Value) / Initial Value) * 100. Using the data points: ((1257.1 - 1000) / 1000) * 100 = 25.71%, which rounds to 25.7%.",
+    "original_language": "English",
+    "source_subfolder": "echapter",
+    "verification": {
+      "score": "3/3",
+      "models_correct": [
+        "openai/gpt-5.2",
+        "x-ai/grok-4.1-fast",
+        "anthropic/claude-sonnet-4.5"
+      ],
+      "models_wrong": [],
+      "model_reasonings": {
+        "openai/gpt-5.2": "Both indices are rebased to 1000 in January 2023, so the starting value is 1000. The S&P 500 (Equal Weight) Index ends at 1257.1 on 24-Dec-2024. Percentage return = (1257.1 − 1000) / 1000 × 100% = 0.2571 × 100% ≈ 25.7%.",
+        "x-ai/grok-4.1-fast": "The chart indicates both indices were rebased to 1000 in January 2023. The S&P 500 (Equal Weight) Index ended at 1257.1 on December 24, 2024, which marks the end of the period shown. The percentage return is calculated as ((ending value - starting value) / starting value) * 100% = ((1257.1 - 1000) / 1000) * 100% = (257.1 / 1000) * 100% = 25.71%, approximately 25.7%. This matches one of the options directly.",
+        "anthropic/claude-sonnet-4.5": "The question states that both indices were rebased to 1000 in January 2023, and the S&P 500 (Equal Weight) Index ended at 1257.1 on December 24, 2024. To calculate the percentage return: (Final Value - Initial Value) / Initial Value × 100 = (1257.1 - 1000) / 1000 × 100 = 257.1 / 1000 × 100 = 25.71%. This rounds to approximately 25.7%, which matches the second option."
+      }
+    }
+  },
+  {
+    "id": "page_101_chart_0jpg_q4",
+    "image_reference": "page_101_chart_0.jpg",
+    "taxonomy_level": "Analyzing",
+    "question": "The text claims the S&P 500 Index's total rally of 56% (2023-2024) is 'more than double' that of the Equal Weight Index. By analyzing the chart data for the Equal Weight Index (ending at 1257.1), is this claim mathematically supported?",
+    "options": [
+      "No, because the Equal Weight Index grew by roughly 25.7%, and 56% is slightly less than double that amount.",
+      "No, because the Equal Weight Index actually grew by 40%, meaning the standard index only outperformed by a small margin.",
+      "Yes, because the Equal Weight Index grew by roughly 25.7%, and 56% is greater than twice 25.7% (which is 51.4%).",
+      "Yes, because the Equal Weight Index showed negative growth during 2023, making the comparison ratio infinite."
+    ],
+    "correct_answer": "Yes, because the Equal Weight Index grew by roughly 25.7%, and 56% is greater than twice 25.7% (which is 51.4%).",
+    "reasoning": "First, calculate the Equal Weight growth: (1257.1 - 1000)/1000 = 25.7%. Double this growth is 25.7% * 2 = 51.4%. The text states the S&P 500 rallied 56%. Since 56% > 51.4%, the claim that it is 'more than double' is mathematically supported.",
+    "original_language": "English",
+    "source_subfolder": "echapter",
+    "verification": {
+      "score": "3/3",
+      "models_correct": [
+        "openai/gpt-5.2",
+        "x-ai/grok-4.1-fast",
+        "anthropic/claude-sonnet-4.5"
+      ],
+      "models_wrong": [],
+      "model_reasonings": {
+        "openai/gpt-5.2": "The chart note indicates both indices are rebased to 1000 as of 3 January 2023. The Equal Weight Index ends at 1257.1, implying a total gain of (1257.1−1000)/1000 = 0.2571 ≈ 25.7%. Twice 25.7% is about 51.4%. Since the text claims the S&P 500 rallied 56% over 2023–2024, and 56% > 51.4%, the statement that 56% is “more than double” the Equal Weight Index’s gain is mathematically supported.",
+        "x-ai/grok-4.1-fast": "The chart shows the Equal Weight Index ending at 1257.1. Assuming it was rebased to 1000 at the start (common practice matching the axis scale up to 1800 and 'rebased to 100' possibly approximate), the growth is (1257.1 - 1000) / 1000 = 0.2571 or 25.7%. Double that is 51.4%. The S&P 500 rallied 56%, which is greater than 51.4%, so 'more than double' is mathematically supported. Option A incorrectly states 56% is less than double. Option B overstates growth at 40%. Option D is false as growth is positive.",
+        "anthropic/claude-sonnet-4.5": "To verify the claim, I need to calculate the growth of the Equal Weight Index from the chart. The chart shows both indices are rebased to 1000 as of January 3, 2023. The Equal Weight Index ends at 1257.1 on December 24, 2024. The growth calculation is: (1257.1 - 1000) / 1000 = 257.1 / 1000 = 0.2571 or 25.71%. Now I need to check if 56% is 'more than double' 25.71%. Double of 25.71% would be 51.42%. Since 56% > 51.42%, the claim that the S&P 500's 56% rally is 'more than double' the Equal Weight Index's growth is mathematically supported. The Equal Weight Index grew by approximately 25.7%, and 56% is indeed greater than twice that amount (51.4%)."
+      }
+    }
+  },
+  {
+    "id": "page_101_chart_0jpg_q5",
+    "image_reference": "page_101_chart_0.jpg",
+    "taxonomy_level": "Evaluating",
+    "question": "The author suggests that the US stock market valuations are in an 'unattractive zone' and warrant caution. Which combination of evidence from the text best supports this risk assessment?",
+    "options": [
+      "Record corporate profits of $4 trillion and the US comprising 75% of the MSCI World Index.",
+      "Shiller’s CAPE ratio being at its third-highest historical level and the reduction in expected Fed rate cuts from 100bps to 50bps.",
+      "The S&P 500 Equal Weight Index hitting an all-time high of 1600 alongside resilient economic performance.",
+      "A 24% gain in 2023 followed by a 20%+ return in 2024 driven by broad-based market participation."
+    ],
+    "correct_answer": "Shiller’s CAPE ratio being at its third-highest historical level and the reduction in expected Fed rate cuts from 100bps to 50bps.",
+    "reasoning": "The text specifically identifies 'Shiller’s S&P 500 CAPE ratio... currently at their third highest levels' as a reason valuations are unattractive. It adds that 'tapering rate cut expectations... down from the earlier guidance of 100bps' has added to potential risks. The other options list positive indicators or incorrect data (the Equal Weight index did not hit 1600).",
+    "original_language": "English",
+    "source_subfolder": "echapter",
+    "verification": {
+      "score": "2/3",
+      "models_correct": [
+        "openai/gpt-5.2",
+        "x-ai/grok-4.1-fast"
+      ],
+      "models_wrong": [
+        "anthropic/claude-sonnet-4.5"
+      ],
+      "model_reasonings": {
+        "openai/gpt-5.2": "1) The text explicitly links the need for caution to valuations: it says the “surge in US stock market valuations to an unattractive zone” is “currently at their third highest levels as indicated by Shiller’s S&P 500 CAPE ratio.”\n2) It then adds a second risk factor: “tapering rate cut expectations,” noting the Fed’s dot plot suggests only a 50 bps cut in 2025, “down from the earlier guidance of 100 bps,” which increases “potential risks and uncertainties.”\n3) This pair—historically extreme valuation (CAPE) plus less monetary easing than previously expected—most directly supports the author’s risk assessment.",
+        "x-ai/grok-4.1-fast": "The question asks for evidence supporting the author's view that US stock market valuations are in an 'unattractive zone' warranting caution, which implies negative or risk-highlighting factors. Step 1: Review the text for cautionary elements. The text explicitly mentions Shiller’s CAPE ratio at its third-highest historical level (indicating very high/expensive valuations) and a reduction in expected Fed rate cuts from 100bps to 50bps (suggesting less monetary easing, which is negative for stocks). Step 2: Evaluate options. Option 1 highlights record profits and US market dominance (positive). Option 3 notes S&P 500 Equal Weight Index all-time high and resilient economy (positive). Option 4 cites strong gains in 2023-2024 with broad participation (positive). Only Option 2 directly matches the text's cautionary evidence: high CAPE (valuation risk) and fewer rate cuts (policy risk). Step 3: Confirm text alignment. The text states 'Shiller’s CAPE ratio ... at its third-highest historical level' and 'reduction in expected Fed rate cuts from 100bps to 50bps,' perfectly supporting the risk assessment.",
+        "anthropic/claude-sonnet-4.5": "The question asks for evidence supporting the assessment that US stock market valuations are in an 'unattractive zone' and warrant caution. Looking at the text, the author explicitly states that 'the stock market valuations to an unattractive zone, currently at their third highest levels as indicated by Shiller's S&P 500 CAPE ratio (Cyclically Adjusted Price-Earnings Ratio), warrants some caution.' This directly identifies the CAPE ratio at third-highest levels as a warning sign. Additionally, the text mentions that 'tapering rate cut expectations, with the US Federal Reserve's dot plot now suggesting a 50bps cut in 2025, down from the earlier guidance of 100bps, has added to the potential risks and uncertainties.' These two factors - the CAPE ratio at historically high levels and the reduction in expected rate cuts from 100bps to 50bps - are both presented as risk factors that support caution. The other options either present positive indicators (record profits, market gains, all-time highs) or neutral facts that don't specifically support the 'unattractive zone' assessment."
+      }
+    }
+  },
+  {
+    "id": "page_101_chart_0jpg_q1",
+    "image_reference": "page_101_chart_0.jpg",
+    "taxonomy_level": "Remembering",
+    "question": "According to the text, what was the United States' share in the MSCI World Index as of November 2024?",
+    "options": [
+      "20 percent",
+      "24 percent",
+      "40 percent",
+      "75 percent"
+    ],
+    "correct_answer": "75 percent",
+    "reasoning": "The text explicitly states in the first paragraph: 'The US has a 75 percent share in the MSCI World Index (as of November 2024).'",
+    "original_language": "English",
+    "source_subfolder": "hechapter",
+    "verification": {
+      "score": "3/3",
+      "models_correct": [
+        "openai/gpt-5.2",
+        "x-ai/grok-4.1-fast",
+        "anthropic/claude-sonnet-4.5"
+      ],
+      "models_wrong": [],
+      "model_reasonings": {
+        "openai/gpt-5.2": "The Hindi text in the image explicitly states: \"एमएससीआई विश्व सूचकांक (नवंबर 2024 तक) में अमेरिका की 75 प्रतिशत हिस्सेदारी है,\" which translates to \"In the MSCI World Index (as of November 2024), the United States has a 75 percent share.\" Therefore, the correct option is 75 percent.",
+        "x-ai/grok-4.1-fast": "The provided text discusses the US share in various indices. Specifically, for the MSCI World Index, the relevant sentence is 'एमएससीआई वर्ल्ड इंडेक्स में अमेरिका का हिस्सा नवंबर 2024 तक ... 75%'. This indicates that as of November 2024, the US share was 75 percent. Note that 40 percent refers to the global market capitalization share in early 2025, not the MSCI World Index. The other options (20%, 24%) do not appear in the text related to the MSCI World Index.",
+        "anthropic/claude-sonnet-4.5": "The text explicitly states in Hindi: 'एमएससीआई विश्व सूचकांक (नवंबर 2024 तक) में अमेरिका की 75 प्रतिशत हिस्सेदारी है' which translates to 'In the MSCI World Index (as of November 2024), the United States has a 75 percent share.' This directly answers the question about the United States' share in the MSCI World Index as of November 2024."
+      }
+    }
+  },
+  {
+    "id": "page_101_chart_0jpg_q2",
+    "image_reference": "page_101_chart_0.jpg",
+    "taxonomy_level": "Understanding",
+    "question": "Based on the text, which of the following statements accurately interprets the relationship between geopolitical conditions and the US market performance in recent years?",
+    "options": [
+      "The US market performed poorly due to rising geopolitical tensions.",
+      "The US market performed strongly despite rising geopolitical tensions.",
+      "Geopolitical tensions decreased, leading to strong US market performance.",
+      "The text suggests geopolitical tensions had no correlation with market performance."
+    ],
+    "correct_answer": "The US market performed strongly despite rising geopolitical tensions.",
+    "reasoning": "The second paragraph begins with 'Despite rising geopolitical tensions, US equity markets have performed strongly for the second consecutive year...'",
+    "original_language": "English",
+    "source_subfolder": "hechapter",
+    "verification": {
+      "score": "3/3",
+      "models_correct": [
+        "openai/gpt-5.2",
+        "x-ai/grok-4.1-fast",
+        "anthropic/claude-sonnet-4.5"
+      ],
+      "models_wrong": [],
+      "model_reasonings": {
+        "openai/gpt-5.2": "1) The passage explicitly states in Hindi: \"भू-राजनीतिक तनाव बढ़ने के बावजूद\" (despite rising geopolitical tensions).\n2) It then says US equity markets delivered a strong performance for the second consecutive year and outperformed other developed markets.\n3) Therefore, the text links rising geopolitical tensions with continued strong US market performance (i.e., strong performance in spite of tensions).",
+        "x-ai/grok-4.1-fast": "The text is in Hindi and discusses US market performance in 2024 compared to 2025 expectations. Key phrase: '2024 में अमेरिकी बाजार ने वैश्विक भू-राजनीतिक तनाव के बावजूद शानदार प्रदर्शन किया' translates to 'In 2024, the US market performed brilliantly despite global geopolitical tensions.' It mentions ongoing tensions (e.g., Ukraine-Russia, Middle East) but highlights strong market gains (e.g., indices at record highs, S&P 500 up over 500 points). This directly matches option 2: strong performance despite tensions. Option 1 is incorrect (market performed well, not poorly). Option 3 is wrong (tensions persisted/did not decrease). Option 4 is inaccurate (text explicitly notes 'despite' tensions, implying a noted relationship).",
+        "anthropic/claude-sonnet-4.5": "The text is in Hindi and discusses the US market performance in 2025. The key phrase 'भूराजनीतिक तनाव बढ़ने के बावजूद' translates to 'despite rising geopolitical tensions.' The text then goes on to describe how the US equity markets performed better than developed markets ('अमेरिकी इक्विटी बाजारों ने लगातार दूसरे वर्ष मजबूत प्रदर्शन करते हुए व्यापक विकसित बाजारों से बेहतर प्रदर्शन किया'). It mentions that after a 24% increase in 2023, the S&P 500 index is on track to deliver returns of more than 20% in 2024. This clearly indicates that the US market performed strongly despite (not because of decreased) geopolitical tensions. The text explicitly states that geopolitical tensions were rising ('बढ़ने'), not decreasing, which rules out option 3. The strong performance described rules out option 1. And the text clearly establishes a relationship (performing well despite tensions), which rules out option 4."
+      }
+    }
+  },
+  {
+    "id": "page_101_chart_0jpg_q3",
+    "image_reference": "page_101_chart_0.jpg",
+    "taxonomy_level": "Applying",
+    "question": "If an investor held an index fund tracking the S&P 500 valued at $100,000 at the start of 2023, and it grew by the specific percentages mentioned in the text for 2023 and the minimum projected for 2024, what would be the approximate value at the end of 2024?",
+    "options": [
+      "$144,000",
+      "$148,800",
+      "$154,000",
+      "$140,000"
+    ],
+    "correct_answer": "$148,800",
+    "reasoning": "The text states the S&P 500 grew by 24% in 2023 and is on track for over 20% in 2024. Calculation: $100,000 * 1.24 (2023 growth) = $124,000. Then $124,000 * 1.20 (2024 minimum growth) = $148,800.",
+    "original_language": "English",
+    "source_subfolder": "hechapter",
+    "verification": {
+      "score": "3/3",
+      "models_correct": [
+        "openai/gpt-5.2",
+        "x-ai/grok-4.1-fast",
+        "anthropic/claude-sonnet-4.5"
+      ],
+      "models_wrong": [],
+      "model_reasonings": {
+        "openai/gpt-5.2": "From the text in the image: the S&P 500 rose 24% in 2023, and for 2024 it is described as being on track to deliver more than 20%—so the minimum projected for 2024 is 20%. Starting with $100,000: end of 2023 value = 100,000 × 1.24 = 124,000. End of 2024 value (using minimum 20%) = 124,000 × 1.20 = 148,800. Therefore the approximate value at the end of 2024 is $148,800.",
+        "x-ai/grok-4.1-fast": "The text indicates that the S&P 500 grew by 24% in 2023. Starting from $100,000, the value at the end of 2023 is $100,000 × 1.24 = $124,000. The minimum projected growth for 2024 is 20%. Thus, the value at the end of 2024 is $124,000 × 1.20 = $148,800.",
+        "anthropic/claude-sonnet-4.5": "From the text, I can identify the key percentages: 1) For 2023, the S&P 500 grew by 24% (वर्ष 2023 में 24 प्रतिशत की बढ़त). 2) For 2024, the minimum projected growth is 20% (एस-पी 500 सूचकांक 2024 में 20 प्रतिशत से अधिक प्रतिलाभ देने की राह पर है). Starting with $100,000: After 2023: $100,000 × 1.24 = $124,000. After 2024 (minimum projection): $124,000 × 1.20 = $148,800. Therefore, the approximate value at the end of 2024 would be $148,800."
+      }
+    }
+  },
+  {
+    "id": "page_101_chart_0jpg_q4",
+    "image_reference": "page_101_chart_0.jpg",
+    "taxonomy_level": "Analyzing",
+    "question": "The text attributes the recent market rally primarily to a specific subset of companies. How does the performance of the 'S&P 500 Top 10 Index' compare to the broader market trends described?",
+    "options": [
+      "The Top 10 Index underperformed due to high valuations.",
+      "The Top 10 Index showed a year-on-year return of over 40%, indicating a concentrated rally.",
+      "The Top 10 Index mirrored the 20% growth of the general S&P 500 exactly.",
+      "The Top 10 Index was negatively impacted by the Shiller CAPE ratio."
+    ],
+    "correct_answer": "The Top 10 Index showed a year-on-year return of over 40%, indicating a concentrated rally.",
+    "reasoning": "The text analyzes the composition of the rally, stating it is attributed to large companies like Apple and Nvidia, reflected in the 'S&P 500 Top 10 Index showing strong returns of over 40% year-on-year,' which is significantly higher than the general index's 20%.",
+    "original_language": "English",
+    "source_subfolder": "hechapter",
+    "verification": {
+      "score": "3/3",
+      "models_correct": [
+        "openai/gpt-5.2",
+        "x-ai/grok-4.1-fast",
+        "anthropic/claude-sonnet-4.5"
+      ],
+      "models_wrong": [],
+      "model_reasonings": {
+        "openai/gpt-5.2": "1) The passage states that the sharp rise over the last two years is mainly attributed to a few large companies (e.g., Apple, Microsoft, Amazon, Alphabet, Nvidia), implying a concentrated rally.\n2) It then explicitly notes that this is reflected in the 'S&P 500 Top 10 Index' showing a strong year-on-year return of more than 40%.\n3) This contrasts with the broader S&P 500 trend described as being on track for a little over 20% returns in 2024, confirming the Top 10 Index outperformed and illustrates concentration.",
+        "x-ai/grok-4.1-fast": "The Hindi text describes the US market rally as primarily driven by the top 10 companies. It states that the 'S&P 500 Top 10 Index' delivered over 40% year-on-year return, while the general S&P 500 grew by 20%. This contrast shows a concentrated rally led by the top performers, directly matching option 2. Other options contradict the text: no underperformance, no exact mirroring of 20%, and Shiller CAPE is mentioned as high for the market but does not negatively impact the Top 10 specifically.",
+        "anthropic/claude-sonnet-4.5": "The text is in Hindi and discusses the American stock market performance. The key passage states: 'यह एसएंडपी 500 टॉप 10 सूचकांक में वर्ष-दर-वर्ष 40 प्रतिशत से अधिक के मजबूत प्रतिलाभ में परिलक्षित होता है।' This translates to 'This is reflected in the S&P 500 Top 10 Index showing strong year-on-year returns of over 40 percent.' The text also mentions that the broader S&P 500 index showed returns of over 20 percent ('एस-पी 500 सूचकांक 2024 में 20 प्रतिशत से अधिक प्रतिलाभ देने की राह पर है'), and attributes the market rally to a specific sector reaching unprecedented heights, particularly mentioning large companies like Apple, Microsoft, Amazon, Alphabet, and Nvidia. This indicates a concentrated rally driven by the top companies, with the Top 10 Index (40%+) significantly outperforming the broader market (20%+)."
+      }
+    }
+  },
+  {
+    "id": "page_101_chart_0jpg_q5",
+    "image_reference": "page_101_chart_0.jpg",
+    "taxonomy_level": "Evaluating",
+    "question": "The title of the box is 'Risks for the Indian Stock Market in 2025.' Based on the evidence provided in the text, which data point is most critical in justifying the warning that a US market correction would deeply impact India?",
+    "options": [
+      "The US corporate earnings reaching $4 trillion.",
+      "The Shiller CAPE ratio being at its third-highest level.",
+      "The US holding a 75% dominance in the MSCI World Index.",
+      "The 24% growth of the S&P 500 in 2023."
+    ],
+    "correct_answer": "The US holding a 75% dominance in the MSCI World Index.",
+    "reasoning": "While the other options describe the state of the US market (earnings, valuation, growth), the text specifically evaluates the risk to *global* and *Indian* markets by linking it to the US's massive structural influence: 'The US has a 75% share in the MSCI World Index... any correction... could have a deep impact on global markets, including India.'",
+    "original_language": "English",
+    "source_subfolder": "hechapter",
+    "verification": {
+      "score": "3/3",
+      "models_correct": [
+        "openai/gpt-5.2",
+        "x-ai/grok-4.1-fast",
+        "anthropic/claude-sonnet-4.5"
+      ],
+      "models_wrong": [],
+      "model_reasonings": {
+        "openai/gpt-5.2": "The text explicitly links the potential impact on India to the US market’s global weight: it states that in the MSCI World Index (as of Nov 2024) the US has a 75% share, so any correction in the US market can have a deep impact on global markets including India. This 75% dominance is the key quantitative evidence used to justify the warning.",
+        "x-ai/grok-4.1-fast": "The text explicitly states that a US market correction would have a deep impact on the Indian market because 'America has 75% weight in MSCI World Index' (अमेरिका का वेटेज MSCI World Index में 75% है). This directly justifies the warning by highlighting US dominance in a key global index, making its movements highly influential on India. Other options relate to US market conditions (earnings, CAPE ratio, past growth) but do not explain the transmission to India.",
+        "anthropic/claude-sonnet-4.5": "The question asks which data point most critically justifies the warning that a US market correction would deeply impact India. Looking at the text, it explicitly states that the US holds 75% dominance in the MSCI World Index (as of November 2024), and then directly connects this to the impact on global markets including India by stating that any correction in the US market could have a deep impact on global markets including India, highlighting the need for increased caution. This establishes a clear causal link between US market dominance and potential impact on India. While the Shiller CAPE ratio indicates overvaluation and the S&P 500 growth shows strong performance, these metrics describe the US market condition but don't directly explain WHY a US correction would impact India. The 75% dominance in the MSCI World Index is the critical data point because it demonstrates the US market's overwhelming influence on global markets, which would necessarily include India, making it the most relevant justification for the warning about spillover effects."
+      }
+    }
+  }
+]
