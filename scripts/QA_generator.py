@@ -383,10 +383,13 @@ from PIL import Image
 import io
 
 # ================= CONFIGURATION =================
-OPENROUTER_API_KEY = "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"
-BASE_IMAGE_DIR = "/Users/muzammilmohammad/Documents/CSAB/csab/Python/WikiMixQA/scripts/hindi/final_results_hindi"
-MODEL_ID = "google/gemini-3-pro-preview"
-FOLDERS_TO_PROCESS = 10  # Limit to 10 folders as requested
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
+if not OPENROUTER_API_KEY:
+    raise ValueError("OPENROUTER_API_KEY environment variable is not set")
+
+BASE_IMAGE_DIR = os.environ.get("BASE_IMAGE_DIR", "images")
+MODEL_ID = os.environ.get("QA_MODEL_ID", "google/gemini-3-pro-preview")
+FOLDERS_TO_PROCESS = int(os.environ.get("FOLDERS_TO_PROCESS", "10"))
 
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",

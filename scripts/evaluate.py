@@ -9,9 +9,11 @@ from PIL import Image
 import io
 
 # ================= CONFIGURATION =================
-OPENROUTER_API_KEY = "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"  # YOUR KEY
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
+if not OPENROUTER_API_KEY:
+    raise ValueError("OPENROUTER_API_KEY environment variable is not set")
 
-BASE_IMAGE_DIR = "images"
+BASE_IMAGE_DIR = os.environ.get("BASE_IMAGE_DIR", "images")
 
 # 🧪 OPEN WEIGHT MODELS (Must use Vision/VL versions)
 MODELS_TO_TEST = [

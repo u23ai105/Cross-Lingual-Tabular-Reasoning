@@ -443,10 +443,13 @@ from PIL import Image
 import io
 
 # ================= CONFIGURATION =================
-OPENROUTER_API_KEY = "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"
-BASE_IMAGE_DIR = "/Users/muzammilmohammad/Documents/CSAB/csab/Python/WikiMixQA/scripts/all_extracted_tables"
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
+if not OPENROUTER_API_KEY:
+    raise ValueError("OPENROUTER_API_KEY environment variable is not set")
 
-GENERATION_MODEL = "google/gemini-3-pro-preview"
+BASE_IMAGE_DIR = os.environ.get("BASE_IMAGE_DIR", "images")
+
+GENERATION_MODEL = os.environ.get("GENERATION_MODEL", "google/gemini-3-pro-preview")
 
 # High-tier vision models for verification
 VERIFICATION_MODELS = [
