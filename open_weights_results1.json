@@ -1,0 +1,2432 @@
+[
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which group has the highest percentage for 'ആരോഗ്യം' (Health) in Kerala?",
+    "correct_answer": "Kerala (Urban)",
+    "model_answer": "Kerala (Urban)",
+    "is_correct": true,
+    "reasoning": "The bar chart shows different categories for various regions, including urban and rural areas of India and Kerala. For the category 'ആരോഗ്യം' (Health), the tallest bar corresponds to Kerala (Urban), indicating it has the highest percentage among the given options."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which group has the highest percentage for 'ആരോഗ്യം' (Health) in Kerala?",
+    "correct_answer": "Kerala (Urban)",
+    "model_answer": "Kerala (Urban)",
+    "is_correct": true,
+    "reasoning": "To determine which group has the highest percentage for 'ആരോഗ്യം' (Health) in Kerala, we need to examine the bar heights corresponding to 'ആരോഗ്യം' (Health) for each group. The group with the tallest bar in this category will have the highest percentage. Upon inspection, the 'Kerala (Urban)' group has the highest bar for 'ആരോഗ്യം' (Health)."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "For 'ജലവലി' (Water Supply), which group has the lowest percentage?",
+    "correct_answer": "India (Rural)",
+    "model_answer": "Kerala (Rural)",
+    "is_correct": false,
+    "reasoning": "The bar chart shows different categories for water supply across various groups in India and Kerala, both urban and rural. By examining the heights of the bars corresponding to 'ജലവലി' (Water Supply), it is clear that the Kerala (Rural) group has the shortest bar, indicating the lowest percentage."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "For 'ജലവലി' (Water Supply), which group has the lowest percentage?",
+    "correct_answer": "India (Rural)",
+    "model_answer": "India (Rural)",
+    "is_correct": true,
+    "reasoning": "To determine the group with the lowest percentage for 'ജലവലി' (Water Supply), we need to examine the corresponding bars in the chart. The bars represent different groups: India (Urban), India (Rural), Kerala (Urban), and Kerala (Rural). By comparing the heights of these bars, we can identify the lowest one."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which aspect has the most consistent percentage across all groups?",
+    "correct_answer": "മൈലേജ് (Mileage)",
+    "model_answer": "മരം (Fuelwood)",
+    "is_correct": false,
+    "reasoning": "To determine which aspect has the most consistent percentage across all groups, we need to look for the category with the least variation in its bar heights across the different groups. The 'മരം (Fuelwood)' category shows bars that are relatively close in height across all groups, indicating less variation compared to the other categories which show more fluctuation in their values."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which aspect has the most consistent percentage across all groups?",
+    "correct_answer": "മൈലേജ് (Mileage)",
+    "model_answer": "ജലവലി (Water Supply)",
+    "is_correct": false,
+    "reasoning": "To determine which aspect has the most consistent percentage across all groups, we need to look for the aspect where the bars are closest in height across all groups. By visually inspecting the chart, it appears that the aspect 'ജലവലി (Water Supply)' has the most consistent heights across all groups."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which group has the highest percentage for 'ജലവലി' (Water Supply)?",
+    "correct_answer": "Kerala (Urban)",
+    "model_answer": "Kerala (Urban)",
+    "is_correct": true,
+    "reasoning": "The bar chart shows different categories related to water supply across various regions in India, including urban and rural areas of India and Kerala. The tallest bar for 'ജലവലി' (Water Supply) is observed in the 'Kerala (Urban)' category, indicating it has the highest percentage among the given options."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which group has the highest percentage for 'ജലവലി' (Water Supply)?",
+    "correct_answer": "Kerala (Urban)",
+    "model_answer": "Kerala (Urban)",
+    "is_correct": true,
+    "reasoning": "The chart shows the percentage of water supply for different groups. For 'ജലവലി' (Water Supply), the highest bar corresponds to Kerala (Urban), which is represented by the light blue color."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "For 'മരം' (Fuelwood), which group shows a noticeably higher percentage compared to others?",
+    "correct_answer": "India (Rural)",
+    "model_answer": "India (Rural)",
+    "is_correct": true,
+    "reasoning": "The bar chart shows different categories of fuel usage across various groups in India and Kerala, both urban and rural. For 'മരം' (Fuelwood), the tallest bar is consistently seen in the 'India (Rural)' category, indicating a higher percentage use of fuelwood compared to other groups. This suggests that rural areas in India have a greater reliance on fuelwood as a source of energy."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "For 'മരം' (Fuelwood), which group shows a noticeably higher percentage compared to others?",
+    "correct_answer": "India (Rural)",
+    "model_answer": "India (Rural)",
+    "is_correct": true,
+    "reasoning": "The chart shows the percentage of 'മരം' (Fuelwood) usage for different groups. By comparing the heights of the bars, it is evident that the group 'India (Rural)' has a noticeably higher percentage compared to the other groups."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the population of Kerala in 2011?",
+    "correct_answer": "33406 (in thousands)",
+    "model_answer": "33406 (in thousands)",
+    "is_correct": true,
+    "reasoning": "The table shows population data for different states over various years. For the year 2011, the population of Kerala is listed as 33406 (in thousands). This can be directly read from the first row of the table under the Kerala column."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the population of Kerala in 2011?",
+    "correct_answer": "33406 (in thousands)",
+    "model_answer": 33406,
+    "is_correct": false,
+    "reasoning": "The table provides population data for Kerala from various years. To determine the population in 2011, we need to locate the row corresponding to the year 2011 and identify the population value listed in the last column."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "In which year was India's population recorded as 1423435 (in thousands)?",
+    "correct_answer": "2026",
+    "model_answer": "2026",
+    "is_correct": true,
+    "reasoning": "The table shows population data for India over several years. The row corresponding to the year 2026 lists India's population as 1423435 (in thousands), which matches the value given in the question."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "In which year was India's population recorded as 1423435 (in thousands)?",
+    "correct_answer": "2026",
+    "model_answer": 4,
+    "is_correct": false,
+    "reasoning": "To determine the year when India's population was recorded as 1423435 (in thousands), we need to examine the data provided in the table. The population values are listed in thousands, and we need to find the row where the population matches 1423435. According to the table, the population of 1423435 (in thousands) corresponds to the year 2026."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the projected male population in Kerala for 2031?",
+    "correct_answer": "19057 (in thousands)",
+    "model_answer": "18812 (in thousands)",
+    "is_correct": false,
+    "reasoning": "The table provides population projections for Kerala, including male and female populations, for various years. For the year 2031, the male population is listed as 720626 (in thousands). This value corresponds to the option '18812 (in thousands)' when considering the correct scale and rounding."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the projected male population in Kerala for 2031?",
+    "correct_answer": "19057 (in thousands)",
+    "model_answer": 17638,
+    "is_correct": false,
+    "reasoning": "To determine the projected male population in Kerala for 2031, we need to look at the relevant data from the provided table. The table includes columns for the year, category (male, female, total), and population (in thousands). For the year 2031, the projected male population is listed under the 'male' category."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the female population in India in 2016?",
+    "correct_answer": "626889 (in thousands)",
+    "model_answer": "626889 (in thousands)",
+    "is_correct": true,
+    "reasoning": "The table provides population data for India, including total population, male population, and female population, for various years. For the year 2016, the female population is listed as 626889 (in thousands). This value directly corresponds to one of the given options."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the female population in India in 2016?",
+    "correct_answer": "626889 (in thousands)",
+    "model_answer": 626889,
+    "is_correct": false,
+    "reasoning": "To determine the female population in India in 2016, we need to look at the data provided in the table. The table includes columns for the year, category (presumably male, female, and total), population (in thousands), and female population (in thousands).\n\nWe need to identify the row corresponding to the year 2016 and find the value in the column labeled 'female population (in thousands)' for that row.\n\nFrom the table:\n\nYear: 2016\nFemale Population (in thousands): 626889"
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "How much did Kerala's population grow between 2011 and 2021?",
+    "correct_answer": "1083 (in thousands)",
+    "model_answer": "2083 (in thousands)",
+    "is_correct": false,
+    "reasoning": "To determine the population growth in Kerala between 2011 and 2021, we need to subtract the population in 2011 from the population in 2021. According to the table, Kerala's population in 2011 was 33,406 thousand and in 2021 it was 35,489 thousand. The difference is 35,489 - 33,406 = 2,083 thousand."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "How much did Kerala's population grow between 2011 and 2021?",
+    "correct_answer": "1083 (in thousands)",
+    "model_answer": 2083,
+    "is_correct": false,
+    "reasoning": "To determine the population growth of Kerala between 2011 and 2021, we need to subtract the population in 2011 from the population in 2021. According to the table, the population in 2011 was 33,406 (in thousands) and in 2021 it was 35,489 (in thousands). The calculation is as follows: 35,489 - 33,406 = 2,083 (in thousands)."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which region has the highest population according to the chart?",
+    "correct_answer": "Malappuram",
+    "model_answer": "Thiruvananthapuram",
+    "is_correct": false,
+    "reasoning": "The bar chart shows population data for various regions. The tallest bar represents the region with the highest population. In this chart, the tallest bar corresponds to the region labeled 'Thiruvananthapuram', with a population of 8553."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which region has the highest population according to the chart?",
+    "correct_answer": "Malappuram",
+    "model_answer": "Malappuram",
+    "is_correct": true,
+    "reasoning": "To determine which region has the highest population, we need to compare the population numbers for each region provided in the chart. The regions and their respective populations are as follows:\n- Thiruvananthapuram: 7278\n- Malappuram: 8553\n- Kozhikode: 6773\n- Palakkad: 2768\nBy comparing these numbers, it is clear that Malappuram has the highest population with 8553."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the population of Thiruvananthapuram as per the chart?",
+    "correct_answer": "7278",
+    "model_answer": "8553",
+    "is_correct": false,
+    "reasoning": "The bar chart shows various districts in Kerala along with their respective populations. The tallest bar corresponds to Thiruvananthapuram, which has a value of 8553. This matches one of the provided options."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the population of Thiruvananthapuram as per the chart?",
+    "correct_answer": "7278",
+    "model_answer": 8553,
+    "is_correct": false,
+    "reasoning": "To determine the population of Thiruvananthapuram, we need to identify the corresponding bar in the chart and read its height. The bar labeled 'തിരുവനന്തപുരം' reaches up to 8553 on the y-axis."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which region has the lowest population according to the chart?",
+    "correct_answer": "Idukki",
+    "model_answer": "Kasaragod",
+    "is_correct": false,
+    "reasoning": "The bar chart shows population numbers for various regions. By examining the heights of the bars, we can determine which region has the lowest population. The region labeled as 'Kasaragod' has the shortest bar, indicating it has the lowest population among the given options."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which region has the lowest population according to the chart?",
+    "correct_answer": "Idukki",
+    "model_answer": "Idukki",
+    "is_correct": true,
+    "reasoning": "To determine which region has the lowest population, we need to examine the heights of the bars in the chart. The shorter the bar, the lower the population. By comparing the heights, we can identify the region with the shortest bar."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the population difference between Kozhikode and Wayanad?",
+    "correct_answer": "3842",
+    "model_answer": "3842",
+    "is_correct": true,
+    "reasoning": "To find the population difference between Kozhikode and Wayanad, we need to identify their respective populations from the bar chart. Kozhikode's population is 6773, and Wayanad's population is 2931. Subtracting these values gives us the difference: 6773 - 2931 = 3842."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the population difference between Kozhikode and Wayanad?",
+    "correct_answer": "3842",
+    "model_answer": 3842,
+    "is_correct": true,
+    "reasoning": "The population of Kozhikode is 7278 and the population of Wayanad is 3436. The population difference is calculated as 7278 - 3436 = 3842."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which region has a population of 6443 as per the chart?",
+    "correct_answer": "Palakkad",
+    "model_answer": "Ernakulam",
+    "is_correct": false,
+    "reasoning": "The bar chart shows different regions along with their corresponding populations. By examining the heights of the bars and the numbers written above them, we can identify that the population of 6443 corresponds to the region labeled as 'Ernakulam'."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which region has a population of 6443 as per the chart?",
+    "correct_answer": "Palakkad",
+    "model_answer": "Kozhikode",
+    "is_correct": false,
+    "reasoning": "To determine which region has a population of 6443, we need to examine the chart and identify the bar that corresponds to this population. The chart shows the following populations for each region:\n- Palakkad: 7278\n- Kollam: 4461\n- Ernakulam: 3613\n- Thrissur: 2579\n- Pathanamthitta: 1071\n- Alappuzha: 2665\n- Kottayam: 5650\n- Idukki: 5013\n- Kozhikode: 6443\n- Malappuram: 8553\n- Wayanad: 6773\n- Kannur: 2931\n- Kasaragod: 4208\n- Thiruvananthapuram: 2768\nFrom the data, it is clear that Kozhikode has a population of 6443."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category has the highest total number of customers as of February 2024?",
+    "correct_answer": "Potable Water Connections",
+    "model_answer": "Potable Water Connections",
+    "is_correct": true,
+    "reasoning": "To determine which category has the highest total number of customers as of February 2024, we need to look at the column labeled \"February 2024\" for each category. By comparing the values in this column across all categories, we can identify the highest number. The Potable Water Connections category shows the highest value in this column."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category has the highest total number of customers as of February 2024?",
+    "correct_answer": "Potable Water Connections",
+    "model_answer": "Government Institutions Connections",
+    "is_correct": false,
+    "reasoning": "To determine which category has the highest total number of customers as of February 2024, we need to examine the data provided in the table. The relevant columns are February 2024 for each category. The categories and their respective customer counts are as follows:\n\n- Potable Water Connections: 1259.99\n- Agriculture Connections: 529.07\n- Social Water Connections: 15095\n- Government Institutions Connections: 107934\n\nBy comparing these values, it is clear that the category with the highest total number of customers is 'Government Institutions Connections' with 107934 customers."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the total revenue from 'Agriculture Connections' in February 2024 (in crore)?",
+    "correct_answer": "529.07",
+    "model_answer": "529.07",
+    "is_correct": true,
+    "reasoning": "The table shows revenue data for various sectors across different months. For 'Agriculture Connections' in February 2024, the value is directly listed under the corresponding column. The value is 529.07 crore."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the total revenue from 'Agriculture Connections' in February 2024 (in crore)?",
+    "correct_answer": "529.07",
+    "model_answer": 529.07,
+    "is_correct": true,
+    "reasoning": "To determine the total revenue from 'Agriculture Connections' in February 2024, we need to locate the relevant data point in the table. The table lists revenues for different categories and months. For February 2024, the relevant row is the second row, and the corresponding value is 529.07."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category has the lowest percentage of growth in total revenue from February 2023 to February 2024?",
+    "correct_answer": "Government Institutions Connections",
+    "model_answer": "Government Institutions Connections",
+    "is_correct": true,
+    "reasoning": "To determine which category has the lowest percentage of growth, we need to calculate the percentage change for each category from February 2023 to February 2024. This is done by using the formula: ((Value in February 2024 - Value in February 2023) / Value in February 2023) * 100. After calculating these values, we compare them to find the smallest percentage."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category has the lowest percentage of growth in total revenue from February 2023 to February 2024?",
+    "correct_answer": "Government Institutions Connections",
+    "model_answer": "```json\n{\n  \"reasoning\": \"To determine which category has the lowest percentage of growth in total revenue from February 2023 to February 2024, we need to calculate the percentage growth for each category. The formula for percentage growth is: ((Value in February 2024 - Value in February 2023) / Value in February 2023) * 100. Here are the calculations:\n\n- Potable Water Connections: ((71.04 - 53508) / 53508) * 100 = -99.82%\n- Agriculture Connections: ((19.15 - 55716) / 55716) * 100 = -96.61%\n- Social Water Connections: ((14.62 - 157121) / 157121) * 100 = -99.89%\n- Government Institutions Connections: ((45.38 - 377252) / 377252) * 100 = -98.80%\n\nFrom these calculations, it is clear that the category with the lowest percentage of growth in total revenue from February 2023 to February 2024 is Social Water Connections with a percentage growth of -99.89%.\n\n\",\n  \"final_answer\": \"Social Water Connections\"\n}\n```",
+    "is_correct": true,
+    "reasoning": "Failed to parse JSON"
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "How many connections are there in the 'Social Water Connections' category as of February 2024?",
+    "correct_answer": "39,950",
+    "model_answer": "39,950",
+    "is_correct": true,
+    "reasoning": "The table shows data for various categories of water connections. For the 'Social Water Connections' category, which is listed as the third row, the value for February 2024 is 39,950. This can be identified by looking at the column labeled 'ഫെബ്രുവരി 2024' under the 'Social Water Connections' row."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "How many connections are there in the 'Social Water Connections' category as of February 2024?",
+    "correct_answer": "39,950",
+    "model_answer": 39950,
+    "is_correct": false,
+    "reasoning": "To determine the number of connections in the 'Social Water Connections' category as of February 2024, we need to look at the relevant data in the table. The table provides data for different categories and months. For February 2024, the data for 'Social Water Connections' is found in the row labeled '3' and the column corresponding to February 2024. The value in this cell is 39,950."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the percentage growth in connections for 'Commercial Connections' between February 2023 and February 2024?",
+    "correct_answer": "34.91%",
+    "model_answer": "None of the provided options match the calculated percentage growth.",
+    "is_correct": false,
+    "reasoning": "To calculate the percentage growth in connections for 'Commercial Connections' between February 2023 and February 2024, we need to identify the relevant values from the table. The value for February 2023 is 63253 and for February 2024 is 15095. The formula for percentage growth is ((new value - original value) / original value) * 100. Applying this formula: ((15095 - 63253) / 63253) * 100 = -76.18%. However, since none of the options match this result, it seems there might be a misunderstanding or error in the question or options provided."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the percentage growth in connections for 'Commercial Connections' between February 2023 and February 2024?",
+    "correct_answer": "34.91%",
+    "model_answer": -79.83,
+    "is_correct": false,
+    "reasoning": "To determine the percentage growth in connections for 'Commercial Connections' between February 2023 and February 2024, we need to use the formula for percentage growth: ((New Value - Old Value) / Old Value) * 100. The values from the table are: February 2023: 17167 and February 2024: 3491. Using the formula: ((3491 - 17167) / 17167) * 100 = -79.83%. Since the percentage growth is negative, it indicates a decrease rather than an increase."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category has the highest percentage in the chart?",
+    "correct_answer": "Health",
+    "model_answer": "Education",
+    "is_correct": false,
+    "reasoning": "The chart is a horizontal bar chart showing percentages for various categories. The longest bar represents the highest percentage. By visually inspecting the chart, the category with the longest bar is 'Education', indicating it has the highest percentage."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category has the highest percentage in the chart?",
+    "correct_answer": "Health",
+    "model_answer": "Agriculture",
+    "is_correct": false,
+    "reasoning": "The chart displays various categories with their respective percentages. To determine which category has the highest percentage, we need to identify the longest bar in the chart. The longest bar represents the category with the highest percentage. Upon examining the chart, it is clear that the category 'Agriculture' has the longest bar."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the approximate percentage for the 'Agriculture' category?",
+    "correct_answer": "30%",
+    "model_answer": "20%",
+    "is_correct": false,
+    "reasoning": "The bar chart shows various categories with their corresponding percentages. The 'Agriculture' category is represented by a bar that extends to approximately 20 on the x-axis, which indicates the percentage. Given the options provided, the closest match to this value is 20%. The other options (10%, 30%, and 40%) are either too low or too high compared to the visual length of the bar."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the approximate percentage for the 'Agriculture' category?",
+    "correct_answer": "30%",
+    "model_answer": 40,
+    "is_correct": false,
+    "reasoning": "The chart shows various categories with their respective percentages. The 'Agriculture' category is one of the longer bars, indicating a higher percentage. By visually estimating the length of the bar relative to the scale, it appears to be around 40%."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category has the lowest percentage in the chart?",
+    "correct_answer": "Culture",
+    "model_answer": "Culture",
+    "is_correct": true,
+    "reasoning": "The chart is a horizontal bar chart showing percentages for various categories. The category with the shortest bar represents the lowest percentage. In this chart, the category at the very top has the shortest bar, indicating it has the lowest percentage."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category has the lowest percentage in the chart?",
+    "correct_answer": "Culture",
+    "model_answer": "Culture",
+    "is_correct": true,
+    "reasoning": "The chart displays various categories with their respective percentages. To determine the category with the lowest percentage, we need to identify the shortest bar on the chart. Upon inspection, the category 'Culture' has the shortest bar, indicating it has the lowest percentage."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which two categories have similar percentages close to 20%?",
+    "correct_answer": "Urban Development and Transport",
+    "model_answer": "Transport and Education",
+    "is_correct": false,
+    "reasoning": "The bar chart shows various categories with their corresponding percentages. By visually inspecting the lengths of the bars, we can estimate which categories have percentages close to 20%. The 'Transport' and 'Education' categories appear to have bars that are approximately the same length and close to the 20% mark on the x-axis."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which two categories have similar percentages close to 20%?",
+    "correct_answer": "Urban Development and Transport",
+    "model_answer": "Agriculture and Law and Order",
+    "is_correct": false,
+    "reasoning": "Upon analyzing the chart, it is evident that the categories 'Agriculture' and 'Law and Order' have similar percentages close to 20%. Both categories have bars of nearly equal length, indicating similar values."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What percentage does the 'Law and Order' category approximately represent?",
+    "correct_answer": "25%",
+    "model_answer": "35%",
+    "is_correct": false,
+    "reasoning": "The bar chart shows various categories with their corresponding percentages. The 'Law and Order' category is represented by a bar that extends to approximately 35% on the x-axis. This suggests that the 'Law and Order' category represents around 35% of the total."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What percentage does the 'Law and Order' category approximately represent?",
+    "correct_answer": "25%",
+    "model_answer": 45,
+    "is_correct": false,
+    "reasoning": "The chart shows various categories with their respective percentages. The 'Law and Order' category appears to be one of the longer bars, indicating a higher percentage. By visually estimating the length of the bar relative to the total, it seems to be around 45%."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which disease has the highest number of cases under 'Sruthi'?",
+    "correct_answer": "Prameham (Diabetes)",
+    "model_answer": "Prameham (Diabetes)",
+    "is_correct": true,
+    "reasoning": "To determine which disease has the highest number of cases under 'Sruthi', I examined the column labeled 'Sruthi' in the table. The values for each disease were compared, and it was found that 'Prameham (Diabetes)' had the highest value at 9212."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which disease has the highest number of cases under 'Sruthi'?",
+    "correct_answer": "Prameham (Diabetes)",
+    "model_answer": "Arthritis",
+    "is_correct": false,
+    "reasoning": "To determine which disease has the highest number of cases under 'Sruthi', we need to examine the 'Sruthi' column in the table. The values for each disease are as follows:\n- Cancer: 294\n- Prameham (Diabetes): 12778\n- Arthritis: 43948\n- Heart Diseases: 12528\nThe highest value is 43948, which corresponds to Arthritis."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the overall share percentage of 'Cancer' cases?",
+    "correct_answer": "14.37%",
+    "model_answer": "16.6%",
+    "is_correct": false,
+    "reasoning": "The table shows various categories of diseases and their corresponding numbers and percentages. The row labeled 'Cancer' (which translates to 'ക്രാന്തികൾ' in Malayalam) has a value of 16.6% in the 'Total' column, which represents the overall share percentage of cancer cases."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the overall share percentage of 'Cancer' cases?",
+    "correct_answer": "14.37%",
+    "model_answer": 14.37,
+    "is_correct": false,
+    "reasoning": "To determine the overall share percentage of 'Cancer' cases, we need to look at the data provided in the table. The table lists various diseases and their corresponding share percentages. The row labeled '3. കാൻസർ' shows a share percentage of 14.37%. Therefore, the overall share percentage of 'Cancer' cases is 14.37%."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which disease has the lowest number of cases under 'Arogyasree'?",
+    "correct_answer": "Heart Diseases",
+    "model_answer": "Skin Diseases",
+    "is_correct": false,
+    "reasoning": "To determine which disease has the lowest number of cases under 'Arogyasree', I examined the column labeled 'Arogyasree' in the table. The numbers for each disease are as follows: Skin Diseases - 393, Cancer - 21990, Mental Disorders - 3901, and Heart Diseases - 72644. Comparing these values, Skin Diseases has the smallest number at 393."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which disease has the lowest number of cases under 'Arogyasree'?",
+    "correct_answer": "Heart Diseases",
+    "model_answer": "Cancer",
+    "is_correct": false,
+    "reasoning": "The 'Arogyasree' column shows the following numbers for each disease: Skin Diseases (294), Cancer (22), Mental Disorders (12778), Heart Diseases (1768). The lowest number is 22, which corresponds to Cancer."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the total number of cases for 'Arthritis' across all schemes?",
+    "correct_answer": "6,352",
+    "model_answer": "5,075",
+    "is_correct": false,
+    "reasoning": "To find the total number of cases for 'Arthritis' across all schemes, we need to sum the values in the 'Arthritis' row across the columns representing different schemes. The values are 294, 99, 393, and 0.25. Summing these gives 786.25. However, this value does not match any of the provided options. The closest option is 5,075, which might be a rounded or approximate value."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the total number of cases for 'Arthritis' across all schemes?",
+    "correct_answer": "6,352",
+    "model_answer": 6352,
+    "is_correct": false,
+    "reasoning": "To determine the total number of cases for 'Arthritis' across all schemes, we need to sum the values for 'Arthritis' under each scheme. The values are as follows:\n- Scheme 1: 14,76\n- Scheme 2: 1975\n- Scheme 3: 3451\n\nSumming these values gives us:\n14,76 + 1,975 + 3,451 = 6,352."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which disease has the smallest overall percentage share?",
+    "correct_answer": "Filariasis",
+    "model_answer": "Skin Diseases",
+    "is_correct": false,
+    "reasoning": "To determine which disease has the smallest overall percentage share, we need to look at the percentages given in the last column of the table. The percentages for each disease are as follows: Mental Disorders (0.25%), Skin Diseases (0.03%), Heart Diseases (14.37%), and Filariasis (2.55%). Among these, Skin Diseases have the smallest percentage at 0.03%."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which disease has the smallest overall percentage share?",
+    "correct_answer": "Filariasis",
+    "model_answer": "Heart Diseases",
+    "is_correct": false,
+    "reasoning": "To determine which disease has the smallest overall percentage share, we need to examine the percentages provided in the last column of the table. The percentages are as follows:\n- Mental Disorders: 58.53%\n- Skin Diseases: 41.46%\n- Heart Diseases: 3.0019%\n- Filariasis: Not listed separately.\nFrom these values, it is clear that Heart Diseases has the smallest overall percentage share."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which district has the highest number of 'നിക്ഷേപം'?",
+    "correct_answer": "എറണാകുളം",
+    "model_answer": "എറണാകുളം",
+    "is_correct": true,
+    "reasoning": "The bar chart shows the number of 'നിക്ഷേപം' (deposits) for different districts. The tallest red bar, which represents 'നിക്ഷേപം', is for the district എറണാകുളം, indicating it has the highest number of deposits among the given districts."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which district has the highest number of 'നിക്ഷേപം'?",
+    "correct_answer": "എറണാകുളം",
+    "model_answer": "തിരുവനന്തപുരം",
+    "is_correct": false,
+    "reasoning": "The chart compares the number of 'നിക്ഷേപം' (investments) across various districts. By examining the blue bars representing 'നിക്ഷേപം', it is evident that the district 'തിരുവനന്തപുരം' has the highest number of investments, with a value of 117804."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the approximate difference in 'വായ്പ' between തിരുവനന്തപുരം and തൃശൂർ?",
+    "correct_answer": "70,000",
+    "model_answer": "30,000",
+    "is_correct": false,
+    "reasoning": "The bar chart shows the 'വായ്പ' values for തിരുവനന്തപുരം and തൃശൂർ. For തിരുവനന്തപുരം, the 'വായ്പ' is approximately 168822, and for തൃശൂർ, it is approximately 169030. The difference between these two values is 169030 - 168822 = 208. The closest option to this difference is 30,000."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the approximate difference in 'വായ്പ' between തിരുവനന്തപുരം and തൃശൂർ?",
+    "correct_answer": "70,000",
+    "model_answer": "30,000",
+    "is_correct": false,
+    "reasoning": "The chart shows the values for 'വായ്പ' in തിരുവനന്തപുരം and തൃശൂർ. For തിരുവനന്തപുരം, the value is approximately 117,804. For തൃശൂർ, the value is approximately 89,277. The difference between these two values is 117,804 - 89,277 = 28,527. The closest option to this difference is 30,000."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which district has the smallest 'നിക്ഷേപം' value?",
+    "correct_answer": "കാസർഗോഡ്",
+    "model_answer": "ഇടുക്കി",
+    "is_correct": false,
+    "reasoning": "The bar chart shows the 'നിക്ഷേപം' values for different districts. The district with the smallest 'നിക്ഷേപം' value is the one with the shortest red bar. Among the given options, ഇടുക്കി has the shortest red bar, indicating it has the smallest 'നിക്ഷേപം' value."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which district has the smallest 'നിക്ഷേപം' value?",
+    "correct_answer": "കാസർഗോഡ്",
+    "model_answer": "കണ്ണൂർ",
+    "is_correct": false,
+    "reasoning": "By examining the chart, it is clear that the district with the smallest 'നിക്ഷേപം' value is കണ്ണൂർ."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "For which district is the 'വായ്പ' value greater than the 'നിക്ഷേപം' value?",
+    "correct_answer": "ഇടുക്കി",
+    "model_answer": "തൃശൂർ",
+    "is_correct": false,
+    "reasoning": "The question asks for the district where the 'വായ്പ' (withdrawal) value is greater than the 'നിക്ഷേപം' (deposit) value. By examining the bar chart, we can see that in the district of തൃശൂർ, the blue bar representing 'നിക്ഷേപം' is shorter than the red bar representing 'വായ്പ', indicating that withdrawals exceed deposits in this district."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "For which district is the 'വായ്പ' value greater than the 'നിക്ഷേപം' value?",
+    "correct_answer": "ഇടുക്കി",
+    "model_answer": "പത്തനംതിട്ട",
+    "is_correct": false,
+    "reasoning": "The chart compares the values of 'വായ്പ' (loan) and 'നിക്ഷേപം' (investment) for various districts. To determine which district has a 'വായ്പ' value greater than the 'നിക്ഷേപം' value, we need to compare the heights of the blue and red bars for each district. The districts where the blue bar is higher than the red bar are: പത്തനംതിട്ട, ഇടുക്കി, തൃശൂർ, എറണാകുളം."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which district shows the closest values between 'നിക്ഷേപം' and 'വായ്പ'?",
+    "correct_answer": "വയനാട്",
+    "model_answer": "മലപ്പുറം",
+    "is_correct": false,
+    "reasoning": "To determine which district shows the closest values between 'നിക്ഷേപം' (Investment) and 'വായ്പ' (Sales), we need to compare the heights of the blue and red bars for each district. The district where the difference between the heights of these two bars is the smallest will have the closest values. By visually inspecting the chart, മലപ്പുറം (Malappuram) appears to have the smallest difference between the blue and red bars, indicating that the values for 'നിക്ഷേപം' and 'വായ്പ' are closest in this district."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which district shows the closest values between 'നിക്ഷേപം' and 'വായ്പ'?",
+    "correct_answer": "വയനാട്",
+    "model_answer": "കണ്ണൂർ",
+    "is_correct": false,
+    "reasoning": "To determine which district shows the closest values between 'നിക്ഷേപം' (deposit) and 'വായ്പ' (loan), we need to compare the differences between the two values for each district. The district with the smallest difference will be the one with the closest values."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the total planned expenditure for 2023-24?",
+    "correct_answer": "30370.00",
+    "model_answer": "30370.00",
+    "is_correct": true,
+    "reasoning": "The total planned expenditure for 2023-24 is found in the last row of the table under the column for 2023-24. The value is 30370.00."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the total planned expenditure for 2023-24?",
+    "correct_answer": "30370.00",
+    "model_answer": 30370.0,
+    "is_correct": false,
+    "reasoning": "The table presents financial data for different categories over two fiscal years, 2023-24 and 2024-25. The total planned expenditure for 2023-24 is listed at the bottom of the table under the column '2023-24'. The value provided there is 30370.00."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category in 2024-25 shows the largest percentage increase compared to 2023-24?",
+    "correct_answer": "Water Supply and Sanitation",
+    "model_answer": "Urban Development",
+    "is_correct": false,
+    "reasoning": "To determine the category with the largest percentage increase, we need to calculate the percentage change for each category from 2023-24 to 2024-25. The percentage change is calculated as ((2024-25 value - 2023-24 value) / 2023-24 value) * 100. By examining the table, we can see that the 'Urban Development' category shows a significant increase in value from 2023-24 to 2024-25. The percentage increase for 'Urban Development' is the highest among the given options."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category in 2024-25 shows the largest percentage increase compared to 2023-24?",
+    "correct_answer": "Water Supply and Sanitation",
+    "model_answer": "```json\n{\n  \"reasoning\": \"To determine which category in 2024-25 shows the largest percentage increase compared to 2023-24, we need to calculate the percentage increase for each category. The formula for percentage increase is: ((Value in 2024-25 - Value in 2023-24) / Value in 2023-24) * 100. Let's calculate the percentage increase for each category:\n\n  - Rural Development: ((290.40 - 1739.67) / 1739.67) * 100 = -84.35%\n  - Water Supply and Sanitation: ((4515.29 - 2149.03) / 2149.03) * 100 = 109.56%\n  - Agriculture and Allied Services: ((6664.32 - 140.50) / 140.50) * 100 = 4454.68%\n  - Urban Development: ((7190.12 - 227.98) / 227.98) * 100 = 2944.68%\n\n  The category with the largest percentage increase is Agriculture and Allied Services with a 4454.68% increase.\",\n  \"final_answer\": \"Agriculture and Allied Services\"\n}\n```",
+    "is_correct": true,
+    "reasoning": "Failed to parse JSON"
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the planned expenditure for 'Social Services' in 2024-25?",
+    "correct_answer": "12921.00",
+    "model_answer": "3076.53",
+    "is_correct": false,
+    "reasoning": "The table shows planned expenditures for various sectors across two fiscal years, 2023-24 and 2024-25. For 'Social Services', which corresponds to row IX, the planned expenditure for 2024-25 is listed under column 7. The value in this cell is 3076.53."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the planned expenditure for 'Social Services' in 2024-25?",
+    "correct_answer": "12921.00",
+    "model_answer": 12921.0,
+    "is_correct": false,
+    "reasoning": "To determine the planned expenditure for 'Social Services' in 2024-25, we need to locate the relevant row in the table. The row labeled 'X' corresponds to 'Social Services'. By examining the data under the 2024-25 column for this row, we find the value 12921.00."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which sector shows a decrease in expenditure from 2023-24 to 2024-25?",
+    "correct_answer": "Energy",
+    "model_answer": "Industry",
+    "is_correct": false,
+    "reasoning": "To determine which sector shows a decrease in expenditure from 2023-24 to 2024-25, I compared the values in the '2023-24' and '2024-25' columns for each sector. The 'Industry' sector shows a value of 874.09 in 2023-24 and 828.21 in 2024-25, indicating a decrease. The other sectors either show an increase or remain unchanged."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which sector shows a decrease in expenditure from 2023-24 to 2024-25?",
+    "correct_answer": "Energy",
+    "model_answer": "General Economic Services",
+    "is_correct": false,
+    "reasoning": "To determine which sector shows a decrease in expenditure from 2023-24 to 2024-25, we need to compare the expenditure values for each sector between these two periods. The sectors listed are: Energy, Transport, General Economic Services, and Industry. By examining the data, we can identify which sector has a negative change or a lower value in 2024-25 compared to 2023-24."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the planned expenditure for 'Transport' in 2023-24?",
+    "correct_answer": "8259.19",
+    "model_answer": "8258.00",
+    "is_correct": false,
+    "reasoning": "The table shows planned expenditures for various sectors in 2023-24 and 2024-25. The row labeled 'XII' corresponds to 'Transport' based on the context and typical categorization in such financial documents. The value in column 4, which represents the planned expenditure for 2023-24, is 8258.00."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the planned expenditure for 'Transport' in 2023-24?",
+    "correct_answer": "8259.19",
+    "model_answer": 8259.19,
+    "is_correct": true,
+    "reasoning": "The planned expenditure for 'Transport' in 2023-24 can be found by looking at the relevant row in the table. The row labeled 'Transport' (X) shows the planned expenditure for that category."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the percentage expenditure for 'IX. സായാഹ്ന സേവനങ്ങൾ' in 2023-24?",
+    "correct_answer": "88.71%",
+    "model_answer": "88.71%",
+    "is_correct": true,
+    "reasoning": "The table shows the budget allocation for various categories in Malayalam. For 'IX. സായാഹ്ന സേവനങ്ങൾ', the percentage expenditure for 2023-24 is directly listed in the last column as 88.71%. This value matches one of the provided options."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the percentage expenditure for 'IX. സായാഹ്ന സേവനങ്ങൾ' in 2023-24?",
+    "correct_answer": "88.71%",
+    "model_answer": "```json\n{\n  \"reasoning\": \"To determine the percentage expenditure for 'IX. സായാഹ്ന സേവനങ്ങൾ' in 2023-24, we need to look at the relevant data from the table. The table provides the following information:\\n- 'IX. സായാഹ്ന സേവനങ്ങൾ': 9974.81\\n- 'IX. സായാഹ്ന സേവനങ്ങൾ (സംസ്കൃതിദാനം)': 8848.82\\n- 'IX. സായാഹ്ന സേവനങ്ങൾ",
+    "is_correct": false,
+    "reasoning": "Failed to parse JSON"
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category has the highest percentage expenditure in 2023-24?",
+    "correct_answer": "XI. പോഷകാഹാരങ്ങൾ",
+    "model_answer": "XI. പോഷകാഹാരങ്ങൾ",
+    "is_correct": true,
+    "reasoning": "To determine which category has the highest percentage expenditure in 2023-24, I examined the percentage column for the year 2023-24. The category with the highest percentage is XI. പോഷകാഹാരങ്ങൾ, with a percentage of 280.58%, which is significantly higher than the other options provided."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category has the highest percentage expenditure in 2023-24?",
+    "correct_answer": "XI. പോഷകാഹാരങ്ങൾ",
+    "model_answer": "XI. പോഷകാഹാരങ്ങൾ",
+    "is_correct": true,
+    "reasoning": "To determine which category has the highest percentage expenditure in 2023-24, we need to compare the percentage values provided in the table. The categories and their respective percentages are as follows:\n\n- I. വിദ്യാഭ്യാസം: 62.55%\n- II. ആരോഗ്യസേവനങ്ങൾ: 56.28%\n- III. കാർഷികവികസനം: 12.36%\n- IV. സാമൂഹികക്ഷേമം: 56.27%\n- V. ഗതാഗതം: 8.65%\n- VI. വ്യവസായവും, വ്യാപാരവും: 50.62%\n- VII. ഗണഗാന്ധി വാര്ത്താവിനിമയവും: 50.62%\n- VIII. കൃഷിചരിത്രം: 122.79%\n- VIII. കൃഷിചരിത്രം: 44.10%\n- IX. സായാഹ്ന സേവനങ്ങൾ: 88.71%\n- X. സാംസ്കാരിക വികസനം: 42.89%\n- XI. പോഷകാഹാരങ്ങൾ: 280.58%\n- XII. പൊതു ആകെ (കണക്കുകൾ): 77.32%\n- XIII. പൊതു ആകെ (കണക്കുകൾ): 84.70%\n- പൊതു ആകെ: 81.66%\n\nFrom the above data, it is clear that the category 'XI. പോഷകാഹാരങ്ങൾ' has the highest percentage expenditure at 280.58%."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the total expenditure for categories I to X in 2022-23?",
+    "correct_answer": "21207.17",
+    "model_answer": "21207.17",
+    "is_correct": true,
+    "reasoning": "To find the total expenditure for categories I to X in 2022-23, we need to sum up the values listed under the column for 2022-23 corresponding to these categories. The values are as follows:\n- Category I: 1739.67\n- Category II: 2149.03\n- Category III: 140.50\n- Category IV: 514.85\n- Category V: 1158.09\n- Category VI: 1806.66\n- Category VII: 2442.89\n- Category VIII: 248.15\n- Category IX: 9974.81\n- Category X: 874.09\nAdding these values gives us the total expenditure for categories I to X in 2022-23."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the total expenditure for categories I to X in 2022-23?",
+    "correct_answer": "21207.17",
+    "model_answer": 16396.64,
+    "is_correct": false,
+    "reasoning": "To determine the total expenditure for categories I to X in 2022-23, we need to sum the expenditures for each category within this range. The expenditures are as follows:\n\n- Category I: 1088.09\n- Category II: 1209.44\n- Category III: 17.37\n- Category IV: 289.68\n- Category V: 100.21\n- Category VI: 914.54\n- Category VII: 2999.64\n- Category VIII: 109.43\n- Category IX: 8848.82\n- Category X: 374.88\n\nSumming these values:\n1088.09 + 1209.44 + 17.37 + 289.68 + 100.21 + 914.54 + 2999.64 + 109.43 + 8848.82 + 374.88 = 16396.64\n\nTherefore, the total expenditure for categories I to X in 2022-23 is 16396.64."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category shows the least percentage expenditure in 2023-24?",
+    "correct_answer": "V. ഉടമസ്ഥ്യം",
+    "model_answer": "V. ഉടമസ്ഥ്യം",
+    "is_correct": true,
+    "reasoning": "To determine which category shows the least percentage expenditure in 2023-24, I examined the percentage column for the year 2023-24. The percentages for the given options are: III. സമർപ്പണം at 12.36%, V. ഉടമസ്ഥ്യം at 8.65%, VIII. ശാസ്ത്രീയ സാങ്കേതിക മിതവും at 44.10%, and IV. ജില്ലാ വികസന ബഹാളങ്ങൾ at 56.27%. Among these, V. ഉടമസ്ഥ്യം has the lowest percentage at 8.65%."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category shows the least percentage expenditure in 2023-24?",
+    "correct_answer": "V. ഉടമസ്ഥ്യം",
+    "model_answer": "```json\n{\n  \"reasoning\": \"To determine which category shows the least percentage expenditure in 2023-24, we need to compare the percentage values provided in the table. The categories and their respective percentages are as follows:\n\n  - I. വിദ്യാഭ്യാസം: 62.55%\n  - II. ആരോഗ്യം: 56.28%\n  - III. സമർപ്പണം: 12.36%\n  - IV. ജില്ലാ വികസന ബഹാളങ്ങൾ: 56.27%\n  - V. ഉടമസ്ഥ്യം: 8.65%\n  - VI. സമൂഹിക വിദ്യാഭ്യാസം: 50.62%\n  - VII. സാംസ്കാരികം: 122.79%\n  - VIII. ശാസ്ത്രീയ സാങ്കേതിക മിതവും: 44.10%\n\n  By comparing these percentages, it is clear that the category 'V. ഉടമസ്ഥ്യം' has the least percentage expenditure at 8.65%.\n\n  Therefore, the category with the least percentage expenditure in 2023-24 is 'V. ഉടമസ്ഥ്യം'.\"\n\n  \"final_answer\": \"V. ഉടമസ്ഥ്യം\"\n}\n```",
+    "is_correct": true,
+    "reasoning": "Failed to parse JSON"
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the expenditure for 'VI. വ്യവസായവും, വ്യാപാരവും' in 2023-24?",
+    "correct_answer": "914.54",
+    "model_answer": "914.54",
+    "is_correct": true,
+    "reasoning": "The table shows expenditures for various categories in Malayalam. For the category 'VI. വ്യവസായവും, വ്യാപാരവും', which translates to 'Industry and Commerce', the expenditure for the year 2023-24 is listed in column 4. The value in this cell is 914.54."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the expenditure for 'VI. വ്യവസായവും, വ്യാപാരവും' in 2023-24?",
+    "correct_answer": "914.54",
+    "model_answer": 914.54,
+    "is_correct": true,
+    "reasoning": "To determine the expenditure for 'VI. വ്യവസായവും, വ്യാപാരവും' in 2023-24, we need to locate the row corresponding to 'VI. വ്യവസായവും, വ്യാപാരവും' in the table. The expenditure for this category is listed under the column '2023-24' as 914.54."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "In which year did the green line (third category) reach its highest value?",
+    "correct_answer": "2021-22",
+    "model_answer": "2021-22",
+    "is_correct": true,
+    "reasoning": "The green line, representing the third category, shows its peak value at 15.92 in the year 2021-22. This is higher than any other value it reaches in the subsequent years."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "In which year did the green line (third category) reach its highest value?",
+    "correct_answer": "2021-22",
+    "model_answer": "2021-22",
+    "is_correct": true,
+    "reasoning": "The green line represents the third category. By examining the chart, we can see that the highest value for this line occurs in the year 2021-22, where it reaches a value of 15.92."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the approximate value of the red line (second category) in 2022-23?",
+    "correct_answer": "3.16",
+    "model_answer": "0.94",
+    "is_correct": false,
+    "reasoning": "The red line represents the second category in the graph. In the year 2022-23, the value of the red line is clearly marked as 0.94 on the graph."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the approximate value of the red line (second category) in 2022-23?",
+    "correct_answer": "3.16",
+    "model_answer": 3.16,
+    "is_correct": true,
+    "reasoning": "The red line represents the second category. By examining the chart, the approximate value of the red line in 2022-23 is 3.16."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the direction of change for the blue line (first category) from 2020-21 to 2021-22?",
+    "correct_answer": "Increase",
+    "model_answer": "Increase",
+    "is_correct": true,
+    "reasoning": "The blue line represents the first category in the graph. From the year 2020-21 to 2021-22, the value on the blue line increases from -1.15 to 4.52. This indicates a positive change or increase in the value over this period."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the direction of change for the blue line (first category) from 2020-21 to 2021-22?",
+    "correct_answer": "Increase",
+    "model_answer": "Increase",
+    "is_correct": true,
+    "reasoning": "The value for the blue line in 2020-21 is -1.15, and in 2021-22 it is 4.52. Comparing these values shows an increase."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which line has a negative value in 2020-21?",
+    "correct_answer": "Green",
+    "model_answer": "Blue",
+    "is_correct": false,
+    "reasoning": "The graph shows three lines representing different categories over several years. In the year 2020-21, the Blue line starts at -1.15, which is below the zero line on the y-axis, indicating a negative value. The Red and Green lines start above the zero line, indicating positive values."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which line has a negative value in 2020-21?",
+    "correct_answer": "Green",
+    "model_answer": "Green",
+    "is_correct": true,
+    "reasoning": "The chart shows three lines in different colors: blue, red, and green. The values for the year 2020-21 are as follows: Blue line: -1.15, Red line: 1.54, Green line: -15.18. The green line has a negative value in 2020-21."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the approximate value of the green line (third category) in 2023-24?",
+    "correct_answer": "8.94",
+    "model_answer": "8.94",
+    "is_correct": true,
+    "reasoning": "The green line represents the third category in the graph. In the year 2023-24, the value of the green line is clearly marked as 8.94 on the graph."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the approximate value of the green line (third category) in 2023-24?",
+    "correct_answer": "8.94",
+    "model_answer": 8.94,
+    "is_correct": true,
+    "reasoning": "The green line represents the third category. By examining the chart, the approximate value of the green line in 2023-24 is 8.94."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which sector experienced the highest percentage increase in expenditure from FY23 to FY24?",
+    "correct_answer": "Railways",
+    "model_answer": "Railways",
+    "is_correct": true,
+    "reasoning": "To determine which sector experienced the highest percentage increase in expenditure from FY23 to FY24, I examined the 'वृद्धि' (Increase) column. The Railways sector shows a 52.3% increase, which is the highest percentage increase among the given options."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which sector experienced the highest percentage increase in expenditure from FY23 to FY24?",
+    "correct_answer": "Railways",
+    "model_answer": "Railways",
+    "is_correct": true,
+    "reasoning": "To determine which sector experienced the highest percentage increase in expenditure from FY23 to FY24, we need to compare the percentage increase for each sector. The sectors and their respective percentage increases are as follows:\n- Road Transport and Highways: 28.1%\n- Railways: 52.3%\n- Space: 7.9%\n- States' Allocation: 32.5%\nThe sector with the highest percentage increase is Railways with 52.3%."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the expenditure on Police in FY24?",
+    "correct_answer": "9.7 thousand crore",
+    "model_answer": "9.7 thousand crore",
+    "is_correct": true,
+    "reasoning": "The table shows the projected expenditure for various sectors in the fiscal year 2024. For the 'Police' sector, the projected expenditure for FY24 is listed as 9.7 thousand crore, which is an 18.7% increase from the previous year's expenditure of 8.2 thousand crore."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the expenditure on Police in FY24?",
+    "correct_answer": "9.7 thousand crore",
+    "model_answer": 9.7,
+    "is_correct": false,
+    "reasoning": "To determine the expenditure on Police in FY24, we need to look at the relevant data from the table. The table provides the following information:\n\n- Police (पुलिस): 9.7 thousand crore\n\nGiven the options:\n\n- 8.2 thousand crore\n- 9.7 thousand crore\n- 10.3 thousand crore\n- 4.4 thousand crore\n\nThe correct answer is the one that matches the expenditure on Police in FY24, which is 9.7 thousand crore."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which sector had a negative growth in expenditure from FY23 to FY24?",
+    "correct_answer": "Housing and Urban Affairs",
+    "model_answer": "Housing and Urban Affairs",
+    "is_correct": true,
+    "reasoning": "To determine which sector had a negative growth in expenditure from FY23 to FY24, we need to look at the 'वृद्धि' (growth) column. A negative value in this column indicates a decrease in expenditure. The 'आवासन एवं शहरी मामले' (Housing and Urban Affairs) sector shows a growth of -1.6%, which is the only negative value in the column."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which sector had a negative growth in expenditure from FY23 to FY24?",
+    "correct_answer": "Housing and Urban Affairs",
+    "model_answer": "Defense Services (Capital Outlay)",
+    "is_correct": false,
+    "reasoning": "To determine which sector had a negative growth in expenditure from FY23 to FY24, we need to examine the percentage change column. A negative percentage indicates a decrease in expenditure. According to the table, the 'Defense Services (Capital Outlay)' sector has a percentage change of -1.6%, which signifies a negative growth."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the expenditure on Atomic Energy in FY23?",
+    "correct_answer": "13.8 thousand crore",
+    "model_answer": "13.8 thousand crore",
+    "is_correct": true,
+    "reasoning": "The table provides financial data for various sectors under the central government's budget. For the sector labeled 'परमाणु ऊर्जा' (Atomic Energy), the expenditure for the fiscal year 23 is listed as 13.8 thousand crore rupees."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the expenditure on Atomic Energy in FY23?",
+    "correct_answer": "13.8 thousand crore",
+    "model_answer": "```json\n{\n  \"reasoning\": \"To determine the expenditure on Atomic Energy in FY23, we need to look at the relevant row in the table. The expenditure on Atomic Energy in FY23 is listed as 8.0 thousand crore.\",\n  \"final_answer\": 8.0 thousand crore\n}\n```",
+    "is_correct": false,
+    "reasoning": "Failed to parse JSON"
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which sector had the lowest expenditure in FY24?",
+    "correct_answer": "Space",
+    "model_answer": "Telecommunication",
+    "is_correct": false,
+    "reasoning": "To determine which sector had the lowest expenditure in FY24, I examined the column labeled \"वित्त वर्ष 24 (पीए)\" which represents the projected expenditure for the fiscal year 2024. Among the given sectors, the 'Antariksh' (Telecommunication) sector has the lowest value at 4.4 thousand crore rupees."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which sector had the lowest expenditure in FY24?",
+    "correct_answer": "Space",
+    "model_answer": "Space",
+    "is_correct": true,
+    "reasoning": "To determine which sector had the lowest expenditure in FY24, we need to examine the 'FY 24' column in the table. The values are as follows:\n- Police: 242.6\n- Telecommunication: 10.3\n- Space: 8.0\n- Civil Defense: 9.7\n- Other: 4.4\nThe sector with the lowest expenditure is 'Space' with 8.0."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the Return on Assets (ROA) percentage in March 2024?",
+    "correct_answer": "1.3%",
+    "model_answer": "1.3%",
+    "is_correct": true,
+    "reasoning": "The chart on the left shows the Return on Assets (ROA) percentages for various years ending in March. For March 2024, the bar reaches up to 1.3%, which is clearly marked above the bar."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the Return on Assets (ROA) percentage in March 2024?",
+    "correct_answer": "1.3%",
+    "model_answer": 1.3,
+    "is_correct": false,
+    "reasoning": "The chart on the left shows the Return on Assets (ROA) percentages over several years. To find the ROA for March 2024, we look at the bar corresponding to Mar-24. The value at the top of this bar is 1.3%."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "In which year did the Return on Equity (ROE) drop to its lowest value?",
+    "correct_answer": "March 2018",
+    "model_answer": "March 2018",
+    "is_correct": true,
+    "reasoning": "The chart on the right shows the Return on Equity (ROE) over several years. Observing the values, ROE is negative in March 2018 (-2.7%) and March 2019 (-1.8%). Among these, -2.7% in March 2018 is the lowest value. Therefore, the ROE dropped to its lowest value in March 2018."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "In which year did the Return on Equity (ROE) drop to its lowest value?",
+    "correct_answer": "March 2018",
+    "model_answer": "March 2018",
+    "is_correct": true,
+    "reasoning": "To determine the year with the lowest Return on Equity (ROE), we need to examine the values provided in the chart. The ROE values for each year are as follows:\n- Mar-15: 10.8\n- Mar-16: 3.6\n- Mar-17: 4\n- Mar-18: -2.7\n- Mar-19: -1.8\n- Mar-20: 0.8\n- Mar-21: 7.6\n- Mar-22: 10.1\n- Mar-23: 12.3\n- Mar-24: 13.8\nThe lowest value is -2.7, which occurred in March 2018."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "How much was the Return on Equity (ROE) in March 2023?",
+    "correct_answer": "12.3%",
+    "model_answer": "12.3%",
+    "is_correct": true,
+    "reasoning": "The chart on the right side shows the Return on Equity (ROE) for various years ending in March. For March 2023, the ROE is indicated as 12.3%, which can be seen from the bar corresponding to Mar-23."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "How much was the Return on Equity (ROE) in March 2023?",
+    "correct_answer": "12.3%",
+    "model_answer": 12.3,
+    "is_correct": false,
+    "reasoning": "To determine the Return on Equity (ROE) in March 2023, we need to look at the right-hand side of the chart. The chart shows the ROE values for different years. For March 2023, the value is clearly indicated as 12.3%."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the trend in the Return on Assets (ROA) from March 2018 to March 2024?",
+    "correct_answer": "Increasing",
+    "model_answer": "Increasing",
+    "is_correct": true,
+    "reasoning": "The chart shows the Return on Assets (ROA) from March 2018 to March 2024. Initially, the ROA was negative in March 2018 and March 2019. However, from March 2020 onwards, the ROA has been consistently positive and shows an upward trend, increasing from 0.1% in March 2020 to 1.3% in March 2024. This indicates a clear improvement and increase in ROA over the specified period."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the trend in the Return on Assets (ROA) from March 2018 to March 2024?",
+    "correct_answer": "Increasing",
+    "model_answer": "Increasing",
+    "is_correct": true,
+    "reasoning": "The Return on Assets (ROA) from March 2018 to March 2024 shows a clear increasing trend. In March 2018, the ROA was -0.2%. By March 2019, it had improved to 0.1%, and it continued to rise each year, reaching 1.3% by March 2024. This consistent upward trend indicates an overall increase in ROA over the period."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the Return on Equity (ROE) in March 2022?",
+    "correct_answer": "7.6%",
+    "model_answer": "7.6%",
+    "is_correct": true,
+    "reasoning": "The chart on the right side shows the Return on Equity (ROE) over several years, including March 2022. According to the bar corresponding to Mar-22, the ROE is marked as 7.6%. This value matches one of the provided options."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the Return on Equity (ROE) in March 2022?",
+    "correct_answer": "7.6%",
+    "model_answer": "```json\n{\n  \"reasoning\": \"To determine the Return on Equity (ROE) in March 2022, we need to look at the right-hand side of the chart. The chart shows the ROE values for different years. For March 2022, the value is clearly marked as 10.1%.\",\n  \"final_answer\": 10.0%\n}\n```",
+    "is_correct": false,
+    "reasoning": "Failed to parse JSON"
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is India's projected inflation rate for 2023 as shown in Chart III.1?",
+    "correct_answer": "5.4%",
+    "model_answer": "5.4%",
+    "is_correct": true,
+    "reasoning": "The chart shows projected inflation rates for different regions, including India. For the year 2023, the purple line representing India ends at a value of 5.4%, which corresponds to the projected inflation rate for India."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is India's projected inflation rate for 2023 as shown in Chart III.1?",
+    "correct_answer": "5.4%",
+    "model_answer": 4.6,
+    "is_correct": false,
+    "reasoning": "By examining Chart III.1, we can see the projected inflation rates for various regions, including India, for the year 2023. The chart shows India's projected inflation rate at 4.6%."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "According to Chart III.1, which group has the highest inflation rate in 2023?",
+    "correct_answer": "EMDEs",
+    "model_answer": "EMDEs",
+    "is_correct": true,
+    "reasoning": "The line graph in Chart III.1 shows the inflation rates for different groups over time. In 2023, the line representing EMDEs (Emerging Market and Developing Economies) is at the highest point among all the groups, indicating that EMDEs have the highest inflation rate."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "According to Chart III.1, which group has the highest inflation rate in 2023?",
+    "correct_answer": "EMDEs",
+    "model_answer": "EMDEs",
+    "is_correct": true,
+    "reasoning": "By examining Chart III.1, we can see that the inflation rates for different groups are represented by different colored lines. The group with the highest inflation rate in 2023 is indicated by the highest value on the y-axis for that year. According to the chart, the green line, which represents EMDEs, has the highest inflation rate in 2023, reaching 8.3 percent."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the relationship between inflation and GDP per capita as shown in Chart III.2?",
+    "correct_answer": "Negative correlation",
+    "model_answer": "Negative correlation",
+    "is_correct": true,
+    "reasoning": "Chart III.2 shows a scatter plot with a trend line indicating the relationship between average inflation and average GDP per capita. The trend line has a negative slope, as indicated by the equation y = 42515 - 7037.5x, where x represents average inflation. This suggests that as inflation increases, GDP per capita tends to decrease, indicating a negative correlation between the two variables."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the relationship between inflation and GDP per capita as shown in Chart III.2?",
+    "correct_answer": "Negative correlation",
+    "model_answer": "Negative correlation",
+    "is_correct": true,
+    "reasoning": "Chart III.2 shows a scatter plot with 'Avg. Inflation, 2015-20 (%)' on the x-axis and 'Avg. GDP per Capita at current prices, 2015-20 (000 USD)' on the y-axis. The trend line in the chart is downward sloping, indicating a negative relationship between inflation and GDP per capita. This suggests that as inflation increases, the average GDP per capita tends to decrease."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the approximate average inflation rate corresponding to India in Chart III.2?",
+    "correct_answer": "5%",
+    "model_answer": "5%",
+    "is_correct": true,
+    "reasoning": "Chart III.2 shows a scatter plot with a trend line indicating the relationship between average GDP per capita at current prices (2015-20) and average inflation rates (2015-20). The point representing India is located near the x-axis value of 5%, which corresponds to the average inflation rate. This suggests that the approximate average inflation rate for India during this period is around 5%."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the approximate average inflation rate corresponding to India in Chart III.2?",
+    "correct_answer": "5%",
+    "model_answer": 5,
+    "is_correct": false,
+    "reasoning": "In Chart III.2, the point representing India is plotted on the scatter plot. By observing the x-axis, which represents the average inflation rate from 2015-2020, we can see that the point for India is closest to the 5% mark."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which group had the lowest inflation rate in 2020 according to Chart III.1?",
+    "correct_answer": "AEs",
+    "model_answer": "AEs",
+    "is_correct": true,
+    "reasoning": "The chart shows inflation rates for different groups over time. In 2020, the inflation rate for each group is as follows: World at 3.2%, EMDEs at 5.2%, AEs at 0.7%, and India at 6.2%. Among these, AEs have the lowest inflation rate at 0.7%."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which group had the lowest inflation rate in 2020 according to Chart III.1?",
+    "correct_answer": "AEs",
+    "model_answer": "AEs",
+    "is_correct": true,
+    "reasoning": "To determine which group had the lowest inflation rate in 2020 according to Chart III.1, we need to examine the data points for each group in the year 2020. The chart shows the following inflation rates for 2020: World: 3.2%, EMDEs: 5.2%, AEs: 0.7%, India: 6.2%. By comparing these values, it is clear that the group with the lowest inflation rate in 2020 is AEs with an inflation rate of 0.7%."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the total weight of 'कपड़े और जूते' (Clothes and Shoes) in core goods?",
+    "correct_answer": "6.0",
+    "model_answer": "6.0",
+    "is_correct": true,
+    "reasoning": "The question asks for the total weight of 'कपड़े और जूते' (Clothes and Shoes) in core goods. In the table, under the column 'कोर वस्तुएँ' (Core Goods), the row corresponding to 'कपड़े और जूते' shows a value of 6.0 in the 'कुल वजन' (Total Weight) column."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the total weight of 'कपड़े और जूते' (Clothes and Shoes) in core goods?",
+    "correct_answer": "6.0",
+    "model_answer": 8.9,
+    "is_correct": false,
+    "reasoning": "To determine the total weight of 'कपड़े और जूते' (Clothes and Shoes) in core goods, we need to sum the weights from the relevant rows in the table. The weights are as follows: 0.5, 2.4, and 6.0. Adding these together, we get 0.5 + 2.4 + 6.0 = 8.9."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category has the highest total weight in core services?",
+    "correct_answer": "आवास (Housing)",
+    "model_answer": "आवास (Housing)",
+    "is_correct": true,
+    "reasoning": "To determine which category has the highest total weight in core services, we need to look at the 'कुल वजन' (Total Weight) column under the 'कोर सेवाएँ' (Core Services) section. By examining the values, we can see that 'आवास' (Housing) has the highest value of 10.1."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category has the highest total weight in core services?",
+    "correct_answer": "आवास (Housing)",
+    "model_answer": "परिवहन और संचार (Transport and Communication)",
+    "is_correct": false,
+    "reasoning": "To determine which category has the highest total weight in core services, we need to sum the weights for each category under the 'प्रमुख सेवाएँ' column. The weights are as follows:\n- स्वास्थ्य (Health): 16\n- परिवहन और संचार (Transport and Communication): 44\n- शिक्षा (Education): 13\n- आवास (Housing): 8\nSumming these values, we get:\n- स्वास्थ्य (Health): 16\n- परिवहन और संचार (Transport and Communication): 44\n- शिक्षा (Education): 13\n- आवास (Housing): 8\nThe highest total weight is 44, which corresponds to 'परिवहन और संचार (Transport and Communication)'"
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "How many items are included in 'घरेलू सामान और सेवाएं' (Household Goods and Services) under core goods?",
+    "correct_answer": "44",
+    "model_answer": "44",
+    "is_correct": true,
+    "reasoning": "The table provides a breakdown of various categories under core goods and services. For 'घरेलू सामान और सेवाएं' (Household Goods and Services) under core goods, the table shows a total of 44 items. This can be seen in the 'कोर वस्तुएँ' (Core Goods) column where the number of items is listed as 44."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "How many items are included in 'घरेलू सामान और सेवाएं' (Household Goods and Services) under core goods?",
+    "correct_answer": "44",
+    "model_answer": 44,
+    "is_correct": true,
+    "reasoning": "To determine the number of items included in 'घरेलू सामान और सेवाएं' (Household Goods and Services) under core goods, we need to look at the relevant section in the table. The table lists the items under 'घरेलू सामान और सेवाएं' in the 'कोर गूड्स' column. The value in this column for 'घरेलू सामान और सेवाएं' is 44."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the total weight of 'परिवहन और संचार' (Transport and Communication) in core services?",
+    "correct_answer": "4.6",
+    "model_answer": "4.6",
+    "is_correct": true,
+    "reasoning": "The question asks for the total weight of 'परिवहन और संचार' (Transport and Communication) in core services. In the table, under the column 'कोर सेवाएँ' (Core Services), the row corresponding to 'परिवहन और संचार' shows a value of 4.6 in the 'कुल वजन' (Total Weight) column."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the total weight of 'परिवहन और संचार' (Transport and Communication) in core services?",
+    "correct_answer": "4.6",
+    "model_answer": 10.8,
+    "is_correct": false,
+    "reasoning": "To determine the total weight of 'परिवहन और संचार' (Transport and Communication) in core services, we need to sum the values provided in the table under the 'परिवहन और संचार' row for the 'अधिकृत' (official) column. The values are 4.6, 1.6, 0.6, and 4.0. Adding these together gives us 4.6 + 1.6 + 0.6 + 4.0 = 10.8."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category has the least total weight in core services?",
+    "correct_answer": "व्यक्तिगत देखभाल (Personal Care)",
+    "model_answer": "कपड़े और जूते (Clothes and Shoes)",
+    "is_correct": false,
+    "reasoning": "To determine which category has the least total weight in core services, we need to sum the weights for each category under the 'कोर सेवाएँ' column. The categories and their respective weights are as follows:\n- कपड़े और जूते (Clothes and Shoes): 0.5\n- घरेलू सामान और सेवाएं (Household Goods and Services): 0.9\n- स्वास्थ्य (Health): 1.8\n- परिवहन और संचार (Transport and Communication): 4.6\n- शिक्षा (Education): 3.5\n- व्यक्तिगत देखभाल और उससे संबंधित वस्तुएं (Personal Care and Related Items): 0.6\n- आवास (Housing): 10.1\nAmong these, कपड़े और जूते (Clothes and Shoes) has the lowest weight at 0.5."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category has the least total weight in core services?",
+    "correct_answer": "व्यक्तिगत देखभाल (Personal Care)",
+    "model_answer": "कपड़े और जूते (Clothes and Shoes)",
+    "is_correct": false,
+    "reasoning": "To determine which category has the least total weight in core services, we need to sum the values in the 'core services' column for each category and compare them. The values in the 'core services' column are as follows:\n- स्वास्थ्य (Health): 16\n- शिक्षा (Education): 44\n- व्यक्तिगत देखभाल (Personal Care): 36\n- कपड़े और जूते (Clothes and Shoes): 8\nSumming these values, we get:\n- स्वास्थ्य (Health): 16\n- शिक्षा (Education): 44\n- व्यक्तिगत देखभाल (Personal Care): 36\n- कपड़े और जूते (Clothes and Shoes): 8\nThe category 'कपड़े और जूते (Clothes and Shoes)' has the least total weight in core services."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which sector shows the highest FSSI indicator value in Q4: FY24?",
+    "correct_answer": "Govt Debt",
+    "model_answer": "Corp Debt",
+    "is_correct": false,
+    "reasoning": "The chart shows the FSSI indicator values for different sectors across various quarters. In Q4: FY24, the FSSI indicator value is highest for the 'Corp Debt' sector, as indicated by the tallest bar in the purple color corresponding to Q4: FY24."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which sector shows the highest FSSI indicator value in Q4: FY24?",
+    "correct_answer": "Govt Debt",
+    "model_answer": "Corp Debt",
+    "is_correct": false,
+    "reasoning": "To determine which sector shows the highest FSSI indicator value in Q4: FY24, we need to examine the chart and identify the tallest bar for Q4: FY24, which is represented by the purple color. Upon inspection, the sector 'Corp Debt' has the highest FSSI indicator value in Q4: FY24."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "In which quarter does the Equity sector have its lowest FSSI indicator value?",
+    "correct_answer": "Q4: FY24",
+    "model_answer": "Q4: FY24",
+    "is_correct": true,
+    "reasoning": "The bar chart shows the FSSI indicator values for different sectors across various quarters. For the Equity sector, the bars represent the FSSI values in each quarter. By comparing the heights of these bars, it is clear that the bar corresponding to Q4: FY24 is the shortest among all the quarters for the Equity sector, indicating the lowest FSSI indicator value."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "In which quarter does the Equity sector have its lowest FSSI indicator value?",
+    "correct_answer": "Q4: FY24",
+    "model_answer": "Q1: FY24",
+    "is_correct": false,
+    "reasoning": "The Equity sector has the lowest FSSI indicator value in Q1: FY24. This can be observed by comparing the heights of the bars for Equity across different quarters. The bar for Q1: FY24 is the shortest among all the quarters."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which sector experiences the most consistent FSSI indicator values across all quarters?",
+    "correct_answer": "Real",
+    "model_answer": "Real",
+    "is_correct": true,
+    "reasoning": "To determine which sector experiences the most consistent FSSI indicator values, we need to observe the variation in the height of the bars for each sector across all quarters. The sector with bars that show the least fluctuation in height would indicate the most consistent values. Upon examining the chart, the 'Real' sector shows relatively similar bar heights across Q4 FY23, Q1 FY24, Q2 FY24, Q3 FY24, and Q4 FY24 compared to other sectors like Banking, NBFC, and AMC-MF, which exhibit more significant fluctuations."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which sector experiences the most consistent FSSI indicator values across all quarters?",
+    "correct_answer": "Real",
+    "model_answer": "Real",
+    "is_correct": true,
+    "reasoning": "To determine which sector experiences the most consistent FSSI indicator values across all quarters, we need to examine the variability in the bar heights for each sector. Consistency can be observed by looking for sectors where the bars are relatively close in height across all quarters."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "In Q1: FY24, which sector has the lowest FSSI indicator value?",
+    "correct_answer": "Equity",
+    "model_answer": "Money",
+    "is_correct": false,
+    "reasoning": "The chart shows the FSSI indicator values for different sectors across various quarters. For Q1: FY24, the Money sector has the lowest bar among all sectors, indicating it has the lowest FSSI indicator value."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "In Q1: FY24, which sector has the lowest FSSI indicator value?",
+    "correct_answer": "Equity",
+    "model_answer": "Money",
+    "is_correct": false,
+    "reasoning": "To determine the sector with the lowest FSSI indicator value in Q1: FY24, we need to examine the orange bars in the chart. By comparing the heights of these bars, we can identify the sector with the shortest bar, which indicates the lowest FSSI indicator value."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What can be inferred about the FSSI indicator trend in the AMC-MF sector across quarters?",
+    "correct_answer": "It fluctuates",
+    "model_answer": "It fluctuates",
+    "is_correct": true,
+    "reasoning": "The AMC-MF sector's FSSI indicator values show variation across different quarters. In Q4 FY23, it is relatively low, then it rises in Q1 FY24, dips slightly in Q2 FY24, increases again in Q3 FY24, and finally decreases in Q4 FY24. This pattern does not indicate a consistent increase or decrease but rather a fluctuation over time."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What can be inferred about the FSSI indicator trend in the AMC-MF sector across quarters?",
+    "correct_answer": "It fluctuates",
+    "model_answer": "It fluctuates",
+    "is_correct": true,
+    "reasoning": "The FSSI indicator for the AMC-MF sector shows varying values across different quarters. In Q1: FY23, the indicator is around 0.45. It decreases in Q2: FY24 to approximately 0.35. In Q3: FY24, it rises to around 0.45 again. Finally, in Q4: FY24, it drops to about 0.35. This pattern indicates fluctuations rather than a consistent increase or decrease."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "In December 2023, which country had the highest value in the table?",
+    "correct_answer": "संयुक्त राज्य अमेरिका",
+    "model_answer": "संयुक्त राज्य अमेरिका",
+    "is_correct": true,
+    "reasoning": "To determine which country had the highest value in December 2023, I examined the last row of the table corresponding to 'दिसम्बर-23'. By comparing the values for each country in that row, it is clear that the संयुक्त राज्य अमेरिका (United States) has the highest value at 179."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "In December 2023, which country had the highest value in the table?",
+    "correct_answer": "संयुक्त राज्य अमेरिका",
+    "model_answer": "संयुक्त राज्य अमेरिका",
+    "is_correct": true,
+    "reasoning": "To determine which country had the highest value in December 2023, we need to look at the values in the last column of the table, which corresponds to December 2023. The values for each country are as follows:\n- भारत: 179\n- संयुक्त राज्य अमेरिका: 208\n- जापान: 158\n- दक्षिण कोरिया: 106\nThe highest value is 208, which corresponds to संयुक्त राज्य अमेरिका."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which country's value decreased consistently from December 2021 to December 2023?",
+    "correct_answer": "ब्राजील",
+    "model_answer": "चीन",
+    "is_correct": false,
+    "reasoning": "To determine which country's value decreased consistently from December 2021 to December 2023, we need to examine the trend for each country over these years. Let's analyze the data:\n\n- भारत (India): Values increased from 113 in Dec-21 to 124 in Dec-23.\n- चीन (China): Values decreased from 80 in Dec-21 to 61 in Dec-23.\n- ब्राजील (Brazil): Values decreased from 50 in Dec-21 to 44 in Dec-23.\n- यूनाइटेड किंगडम (United Kingdom): Values decreased from 108 in Dec-21 to 71 in Dec-23.\n\nAmong these, China, Brazil, and the United Kingdom all show a decrease. However, the question asks for a consistent decrease, and all three meet this criterion."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which country's value decreased consistently from December 2021 to December 2023?",
+    "correct_answer": "ब्राजील",
+    "model_answer": "चीन",
+    "is_correct": false,
+    "reasoning": "To determine which country's value decreased consistently from December 2021 to December 2023, we need to examine the values for each country across these months. The values for each country are as follows:\n\nFor भारत:\n- December 2021: 113\n- December 2022: 105\n- December 2023: 124\n\nFor चीन:\n- December 2021: 80\n- December 2022: 65\n- December 2023: 61\n\nFor ब्राजील:\n- December 2021: 50\n- December 2022: 42\n- December 2023: 44\n\nFor यूनाइटेड किंगडम:\n- December 2021: 136\n- December 2022: 126\n- December 2023: 147\n\nBy comparing these values, we can see that the values for चीन decreased consistently from December 2021 to December 2023."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "In December 2020, which country had the lowest value in the table?",
+    "correct_answer": "चीन",
+    "model_answer": "ब्राजील",
+    "is_correct": false,
+    "reasoning": "To determine which country had the lowest value in December 2020, I examined the row labeled \"दिसम्बर-20\" (December-20). Comparing the values for each country in that row, Brazil (ब्राजील) has the lowest value at 68."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "In December 2020, which country had the lowest value in the table?",
+    "correct_answer": "चीन",
+    "model_answer": "यूनाइटेड किंगडम",
+    "is_correct": false,
+    "reasoning": "To determine which country had the lowest value in December 2020, we need to look at the values for that month in the table. The values for December 2020 are as follows:\n- चीन: 95\n- भारत: 79\n- ब्राजील: 80\n- यूनाइटेड किंगडम: 50\nComparing these values, we see that यूनाइटेड किंगडम has the lowest value of 50."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "For which country did the value increase the most from December 2019 to December 2023?",
+    "correct_answer": "जापान",
+    "model_answer": "भारत",
+    "is_correct": false,
+    "reasoning": "To determine which country had the largest increase in value from December 2019 to December 2023, we need to calculate the difference between the values for each country in these two years. Here are the calculations:\n\n- भारत: 124 - 77 = 47\n- चीन: 61 - 60 = 1\n- ब्राजील: 44 - 65 = -21\n- जापान: 147 - 121 = 26\n- दक्षिण कोरिया: 114 - 89 = 25\n- यूनाइटेड किंगडम: 71 - 106 = -35\n- संयुक्त राज्य अमेरिका: 179 - 159 = 20\n\nThe country with the highest positive difference is भारत."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "For which country did the value increase the most from December 2019 to December 2023?",
+    "correct_answer": "जापान",
+    "model_answer": "भारत",
+    "is_correct": false,
+    "reasoning": "To determine which country experienced the largest increase in value from December 2019 to December 2023, we need to calculate the difference for each country between these two dates. The values for each country are as follows:\n\n- भारत: 159 (December 2019) to 179 (December 2023) -> Increase of 20\n- जापान: 106 (December 2019) to 71 (December 2023) -> Decrease of 35\n- दक्षिण कोरिया: 89 (December 2019) to 114 (December 2023) -> Increase of 25\n- संयुक्त राज्य अमेरिका: 121 (December 2019) to 147 (December 2023) -> Increase of 26\n\nBased on these calculations, भारत experienced the largest increase in value."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "How many countries had a value greater than 100 in December 2021?",
+    "correct_answer": "Four",
+    "model_answer": "Five",
+    "is_correct": false,
+    "reasoning": "To determine how many countries had a value greater than 100 in December 2021, I examined the row corresponding to 'दिसम्बर-21' (December-21). I counted the number of entries in that row that were greater than 100. The countries with values greater than 100 were भारत (113), जापान (136), दक्षिण कोरिया (127), यूनाइटेड किंगडम (108), and संयुक्त राज्य अमेरिका (208). This totals to five countries."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "How many countries had a value greater than 100 in December 2021?",
+    "correct_answer": "Four",
+    "model_answer": "Four",
+    "is_correct": true,
+    "reasoning": "To determine the number of countries with a value greater than 100 in December 2021, we need to examine the values in the 'December 2021' column. The values are as follows: 136, 127, 126, 147, 114. All these values are greater than 100."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the total export value for 'कूल सेवाएं' in वित्त वर्ष-24 (अ)?",
+    "correct_answer": "341.1",
+    "model_answer": "341.1",
+    "is_correct": true,
+    "reasoning": "The question asks for the total export value for 'कूल सेवाएं' in the financial year 24 (A). By examining the table, we can locate the row corresponding to 'कूल सेवाएं' and then look at the column for 'वित्त वर्ष-24 (अ)' under 'Exports'. The value found there is 341.1."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the total export value for 'कूल सेवाएं' in वित्त वर्ष-24 (अ)?",
+    "correct_answer": "341.1",
+    "model_answer": 341.1,
+    "is_correct": true,
+    "reasoning": "To determine the total export value for 'कूल सेवाएं' in वित्त वर्ष-24 (अ), we need to look at the relevant data in the table. The export value for 'कूल सेवाएं' in वित्त वर्ष-24 (अ) is directly provided in the table under the 'Exports' column for वित्त वर्ष-24 (अ)."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which sector has the highest export value in वित्त वर्ष-24 (अ)?",
+    "correct_answer": "कूल सेवाएं",
+    "model_answer": "दूरसंचार, कंप्यूटर और सूचना सेवाएं",
+    "is_correct": false,
+    "reasoning": "To determine which sector has the highest export value in वित्त वर्ष-24 (अ), I examined the 'Exports' column under the 'वित्त वर्ष-24 (अ)' section. The highest value in this column is 163.6, which corresponds to the sector 'दूरसंचार, कंप्यूटर और सूचना सेवाएं'."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which sector has the highest export value in वित्त वर्ष-24 (अ)?",
+    "correct_answer": "कूल सेवाएं",
+    "model_answer": "अन्य व्यवसायिक सेवाएं",
+    "is_correct": false,
+    "reasoning": "To determine which sector has the highest export value in वित्त वर्ष-24 (अ), we need to examine the 'Exports' column for वित्त वर्ष-24 (अ). The values are as follows:\n- अन्य व्यवसायिक सेवाएं: 341.1\n- दूरसंचार, कंप्यूटर और सूचना सेवाएं: 0.2\n- परिवहन: 29.2\n- कूल सेवाएं: 163.6\nThe highest export value is 341.1, which corresponds to अन्य व्यवसायिक सेवाएं."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the import value for 'दूरसंचार, कंप्यूटर और सूचना सेवाएं' in वित्त वर्ष-24 (अ)?",
+    "correct_answer": "20.9",
+    "model_answer": "20.9",
+    "is_correct": true,
+    "reasoning": "The table provides import and export values for various service sectors for the financial years 23 and 24. For the sector 'दूरसंचार, कंप्यूटर और सूचना सेवाएं' (Telecommunication, Computer, and Information Services), the import value for the financial year 24 (अ) is listed as 20.9 billion US dollars."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the import value for 'दूरसंचार, कंप्यूटर और सूचना सेवाएं' in वित्त वर्ष-24 (अ)?",
+    "correct_answer": "20.9",
+    "model_answer": 20.9,
+    "is_correct": true,
+    "reasoning": "To determine the import value for 'दूरसंचार, कंप्यूटर और सूचना सेवाएं' in वित्त वर्ष-24 (अ), we need to locate the relevant row in the table. The row for 'दूरसंचार, कंप्यूटर और सूचना सेवाएं' is the 10th row from the top. The import value in वित्त वर्ष-24 (अ) is found in the 4th column of this row. According to the table, the import value is 20.9."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "In which year was the import value for 'बीमा और पेंशन सेवाएं' higher?",
+    "correct_answer": "वित्त वर्ष-24 (अ)",
+    "model_answer": "वित्त वर्ष-24 (अ)",
+    "is_correct": true,
+    "reasoning": "The table shows import values for 'बीमा और पेंशन सेवाएं' (Insurance and Pension Services) in two financial years: वित्त वर्ष-23 and वित्त वर्ष-24 (अ). For वित्त वर्ष-23, the import value is 2.3 billion US dollars, while for वित्त वर्ष-24 (अ), it is 2.9 billion US dollars. Since 2.9 is greater than 2.3, the import value for 'बीमा और पेंशन सेवाएं' was higher in वित्त वर्ष-24 (अ)."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "In which year was the import value for 'बीमा और पेंशन सेवाएं' higher?",
+    "correct_answer": "वित्त वर्ष-24 (अ)",
+    "model_answer": "वित्त वर्ष-24 (अ)",
+    "is_correct": true,
+    "reasoning": "To determine the year with the higher import value for 'बीमा और पेंशन सेवाएं', we need to compare the import values for वित्त वर्ष-23 and वित्त वर्ष-24 (अ). The import value for वित्त वर्ष-23 is 19.8, and for वित्त वर्ष-24 (अ) it is 20.9. Since 20.9 is greater than 19.8, वित्त वर्ष-24 (अ) has the higher import value."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the export value for 'निर्माण' in वित्त वर्ष-24 (अ)?",
+    "correct_answer": "4.6",
+    "model_answer": "4.6",
+    "is_correct": true,
+    "reasoning": "The table provides export and import values for various service sectors for the financial years 23 and 24. For the sector 'निर्माण' (Construction), the export value for the financial year 24 (अ) is listed as 4.6 billion US dollars."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the export value for 'निर्माण' in वित्त वर्ष-24 (अ)?",
+    "correct_answer": "4.6",
+    "model_answer": 4.6,
+    "is_correct": true,
+    "reasoning": "To determine the export value for 'निर्माण' in वित्त वर्ष-24 (अ), we need to locate the row labeled 'निर्माण' and find the value in the 'Exports' column under वित्त वर्ष-24 (अ). The relevant data from the table is as follows:\n- 'निर्माण' (Exports): 4.6"
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the total foreign debt (in billion USD) at the end of March 2023 (provisional)?",
+    "correct_answer": "663.8",
+    "model_answer": "624.1",
+    "is_correct": false,
+    "reasoning": "The table provides data on India's external debt for various years, including provisional figures for March 2023. The column labeled 'विदेशी ऋण (बिलियन अमेरिकी डालर)' shows the foreign debt in billion USD. For the year 2023 पीआर (provisional), the value is 624.1 billion USD."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the total foreign debt (in billion USD) at the end of March 2023 (provisional)?",
+    "correct_answer": "663.8",
+    "model_answer": 624.1,
+    "is_correct": false,
+    "reasoning": "To determine the total foreign debt at the end of March 2023 (provisional), we need to look at the relevant data point in the table. The table provides data for various years, including 2023. The value for the total foreign debt at the end of March 2023 (provisional) is 624.1 billion USD."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "In which year was the 'foreign debt as a percentage of GDP' the highest?",
+    "correct_answer": "2021",
+    "model_answer": "2021",
+    "is_correct": true,
+    "reasoning": "To determine the year when 'foreign debt as a percentage of GDP' was the highest, we need to look at the column labeled 'सकल घरेलू उत्पाद में विदेशी ऋण अनुपात' (Foreign Debt as a Percentage of GDP). By examining the values for each year, we can see that the highest value is 21.1%, which occurred in 2021."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "In which year was the 'foreign debt as a percentage of GDP' the highest?",
+    "correct_answer": "2021",
+    "model_answer": "2021",
+    "is_correct": true,
+    "reasoning": "To determine the year with the highest 'foreign debt as a percentage of GDP', we need to compare the values for each year provided in the table. The values are as follows:\n- 2018: 80.2\n- 2019: 76.0\n- 2020: 85.6\n- 2021: 100.6\n- 2022: 98.1\nThe highest value is 100.6, which corresponds to the year 2021."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the ratio of debt service to foreign currency reserves in 2022 (Revised)?",
+    "correct_answer": "5.2",
+    "model_answer": "5.2",
+    "is_correct": true,
+    "reasoning": "The question asks for the ratio of debt service to foreign currency reserves in 2022 (Revised). In the table, the relevant columns are \"ऋण सेवा अनुपात\" (Debt Service Ratio) and \"विदेशी ऋण\" (Foreign Debt). For 2022 Revised, the debt service ratio is given as 5.2. This value directly corresponds to the ratio asked in the question."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the ratio of debt service to foreign currency reserves in 2022 (Revised)?",
+    "correct_answer": "5.2",
+    "model_answer": 6.5,
+    "is_correct": false,
+    "reasoning": "To determine the ratio of debt service to foreign currency reserves in 2022 (Revised), we need to look at the relevant data from the table. The table provides the following data for 2022 (Revised):\n- Debt service: 618.8\n- Foreign currency reserves: 98.1\nThe ratio is calculated as follows:\nRatio = Debt service / Foreign currency reserves\nRatio = 618.8 / 98.1\nRatio ≈ 6.32\nComparing this calculated ratio with the provided options, the closest match is 6.5."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which year had the lowest percentage of short-term debt in total foreign debt?",
+    "correct_answer": "2021",
+    "model_answer": "2023P",
+    "is_correct": false,
+    "reasoning": "To determine which year had the lowest percentage of short-term debt in total foreign debt, we need to look at the column labeled \"कुल ऋण में अल्पकालिक ऋण (मूल परिपक्वता)\" which translates to \"Short-term debt as a percentage of total debt (original maturity).\" By examining the values for each year, we can see that the lowest value is 5.2% in 2022."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which year had the lowest percentage of short-term debt in total foreign debt?",
+    "correct_answer": "2021",
+    "model_answer": "2023P",
+    "is_correct": false,
+    "reasoning": "To determine the year with the lowest percentage of short-term debt in total foreign debt, we need to examine the 'Short-term debt (as % of total foreign debt)' column for each year. The values are as follows:\n- 2018: 20.1%\n- 2019: 19.9%\n- 2020: 20.9%\n- 2023P: 19.0%\nThe lowest value is 19.0% in the year 2023P."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the total reserve of foreign currency assets as a percentage of GDP in 2020?",
+    "correct_answer": "22.4",
+    "model_answer": "22.4",
+    "is_correct": true,
+    "reasoning": "The question asks for the total reserve of foreign currency assets as a percentage of GDP in 2020. In the provided table, the relevant column is labeled 'सकल घरेलू उत्पाद में विदेशी ऋण' which translates to 'Foreign debt as a percentage of GDP'. For the year 2020, the value in this column is 20.9. However, this does not match any of the provided options. The closest value among the options is 22.4, which might be a rounding or estimation difference."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the total reserve of foreign currency assets as a percentage of GDP in 2020?",
+    "correct_answer": "22.4",
+    "model_answer": 19.1,
+    "is_correct": false,
+    "reasoning": "To determine the total reserve of foreign currency assets as a percentage of GDP in 2020, we need to look at the relevant data from the table. The table provides the following data for 2020: \n- Foreign currency assets: 558.4 \n- Gold: 20.9 \n- Special drawing rights: 6.5 \n- Reserve position in IMF: 85.6 \n- Other reserves: 8.8 \n- Total reserves: 22.4 \n- Reserve of foreign currency assets as a percentage of GDP: 19.1 \n\nFrom the table, the value for 'Reserve of foreign currency assets as a percentage of GDP' in 2020 is 19.1."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the primary source of energy supply in India for 2022-23, contributing 47.4%?",
+    "correct_answer": "Coal",
+    "model_answer": "Coal",
+    "is_correct": true,
+    "reasoning": "The pie chart labeled 'Total Primary Energy Supply in 2022-23: 885 Mtoe (in Per cent)' shows the distribution of energy sources. The largest segment, representing 47.4% of the total primary energy supply, is labeled as 'Coal'. This indicates that coal is the primary source of energy supply in India for the year 2022-23."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the primary source of energy supply in India for 2022-23, contributing 47.4%?",
+    "correct_answer": "Coal",
+    "model_answer": "Coal",
+    "is_correct": true,
+    "reasoning": "The chart titled 'Total Primary Energy Supply in 2022-23: 885 Mtoe (in Per cent)' shows the percentage share of different energy sources. Coal is the primary source, contributing 47.4% to the total energy supply."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What percentage of the installed power capacity as of April 30, 2024, is contributed by nuclear energy?",
+    "correct_answer": "2%",
+    "model_answer": "2%",
+    "is_correct": true,
+    "reasoning": "The chart shows the installed power capacity as of April 30, 2024, with a breakdown of the contributions from various energy sources. The nuclear energy sector is represented in the chart with a 2% share of the total installed power capacity."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What percentage of the installed power capacity as of April 30, 2024, is contributed by nuclear energy?",
+    "correct_answer": "2%",
+    "model_answer": 2,
+    "is_correct": false,
+    "reasoning": "The chart titled 'Installed Power Capacity as on 30 April 2024: 442.8 GW Absolute and per cent share' shows the contribution of various energy sources to the total installed power capacity. According to the chart, nuclear energy contributes 8.18 GW, which corresponds to 2% of the total installed power capacity."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which energy source contributes 29.3% to the total primary energy supply in 2022-23?",
+    "correct_answer": "Oil and Petroleum Products",
+    "model_answer": "Oil and Petroleum Products",
+    "is_correct": true,
+    "reasoning": "The pie chart shows the contribution of different energy sources to the total primary energy supply in 2022-23. The slice corresponding to 29.3% is colored orange, which matches the color for 'Oil and Petroleum Products' in the legend."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which energy source contributes 29.3% to the total primary energy supply in 2022-23?",
+    "correct_answer": "Oil and Petroleum Products",
+    "model_answer": "Oil and Petroleum Products",
+    "is_correct": true,
+    "reasoning": "The chart titled 'Total Primary Energy Supply in 2022-23: 885 Mtoe (in Per cent)' shows the percentage contributions of various energy sources. The energy source that contributes 29.3% to the total primary energy supply is represented by the orange segment in the pie chart. According to the legend, the orange segment corresponds to 'Oil and Petroleum Products'."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the installed power capacity share of wind energy as of April 30, 2024?",
+    "correct_answer": "11%",
+    "model_answer": "2%",
+    "is_correct": false,
+    "reasoning": "The lower pie chart shows the installed power capacity as of April 30, 2024. Wind energy is represented by the light blue segment, which corresponds to 8.18 GW and accounts for 2% of the total installed power capacity."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the installed power capacity share of wind energy as of April 30, 2024?",
+    "correct_answer": "11%",
+    "model_answer": 11,
+    "is_correct": false,
+    "reasoning": "The installed power capacity share of wind energy as of April 30, 2024, can be determined by examining the provided chart. The chart indicates that the share of wind energy is 11%."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which energy source contributes the least to the total primary energy supply in 2022-23?",
+    "correct_answer": "Wind",
+    "model_answer": "Wind",
+    "is_correct": true,
+    "reasoning": "The pie chart shows the percentage contribution of various energy sources to the total primary energy supply in 2022-23. Among the options provided, Bioenergy contributes 1.6%, Wind contributes 0.9%, Nuclear contributes 1.2%, and Hydro contributes 2.1%. Therefore, Wind has the smallest percentage at 0.9%, making it the energy source that contributes the least."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which energy source contributes the least to the total primary energy supply in 2022-23?",
+    "correct_answer": "Wind",
+    "model_answer": "Bioenergy",
+    "is_correct": false,
+    "reasoning": "To determine which energy source contributes the least to the total primary energy supply in 2022-23, we need to examine the percentages provided in the chart. The chart shows the following percentages for each energy source: Coal (47.4%), Natural Gas (7.0%), Oil and Petroleum Products (29.3%), Hydro (1.6%), Solar (1.2%), Wind (10.4%), Bioenergy (0.9%), and Nuclear (2.1%). By comparing these values, it is clear that Bioenergy has the smallest percentage at 0.9%."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which PMI index consistently shows the highest values between April 2022 and May 2024?",
+    "correct_answer": "Services",
+    "model_answer": "Services",
+    "is_correct": true,
+    "reasoning": "The graph displays three lines representing the Composite, Manufacturing, and Services PMI indices over time. Observing the trends from April 2022 to May 2024, the Services line (dotted green) is consistently above the other two lines throughout this period, indicating that it has the highest values."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which PMI index consistently shows the highest values between April 2022 and May 2024?",
+    "correct_answer": "Services",
+    "model_answer": "Services",
+    "is_correct": true,
+    "reasoning": "Upon analyzing the chart, it is evident that the 'Services' index (represented by the green dotted line) consistently shows the highest values between April 2022 and May 2024. This index remains above the 'Composite' and 'Manufacturing' indices for the majority of the period."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "In which month does the Composite PMI index (purple line) reach its lowest point?",
+    "correct_answer": "November 2022",
+    "model_answer": "January 2023",
+    "is_correct": false,
+    "reasoning": "The purple line, representing the Composite PMI index, shows fluctuations over time. Observing the graph, the lowest point of the purple line occurs around January 2023, where it dips below the other months shown in the options."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "In which month does the Composite PMI index (purple line) reach its lowest point?",
+    "correct_answer": "November 2022",
+    "model_answer": "October 2023",
+    "is_correct": false,
+    "reasoning": "To determine the month in which the Composite PMI index reaches its lowest point, we need to examine the purple line on the chart. By identifying the lowest point on this line, we can determine the corresponding month. The lowest point on the purple line appears to be around October 2023."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the trend observed for all three indices (Composite, Manufacturing, and Services) between October 2023 and May 2024?",
+    "correct_answer": "Increasing",
+    "model_answer": "Increasing",
+    "is_correct": true,
+    "reasoning": "The graph shows the trends of Composite, Manufacturing, and Services indices over time. Between October 2023 and May 2024, all three lines exhibit an upward trajectory. This indicates that each index has been increasing during this period. There are no significant dips or plateaus that would suggest stagnation or fluctuation."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the trend observed for all three indices (Composite, Manufacturing, and Services) between October 2023 and May 2024?",
+    "correct_answer": "Increasing",
+    "model_answer": "Increasing",
+    "is_correct": true,
+    "reasoning": "Upon analyzing the chart, the trend observed for all three indices (Composite, Manufacturing, and Services) between October 2023 and May 2024 shows a general upward movement. This is evident from the rising lines in the highlighted section of the chart."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which PMI index shows the least variation in values throughout the timeline?",
+    "correct_answer": "Manufacturing",
+    "model_answer": "Manufacturing",
+    "is_correct": true,
+    "reasoning": "The graph displays three PMI indices: Composite, Manufacturing, and Services. Observing their trends over time, the Manufacturing line appears to have the least fluctuation compared to the other two. While all lines show some degree of variation, the Manufacturing line stays relatively closer to a straight path without sharp rises or falls, indicating less variation."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which PMI index shows the least variation in values throughout the timeline?",
+    "correct_answer": "Manufacturing",
+    "model_answer": "Services",
+    "is_correct": false,
+    "reasoning": "To determine which PMI (Purchasing Managers' Index) index shows the least variation in values throughout the timeline, we need to analyze the chart. The chart displays three lines representing Composite, Manufacturing, and Services indices over time. By observing the fluctuations in the lines, we can identify which index has the smallest range of values.\n\n1. The Composite index (purple line) shows significant fluctuations, especially noticeable around May 2023 and January 2024.\n2. The Manufacturing index (red line) also shows considerable variation, particularly around the same periods.\n3. The Services index (green dotted line) appears to have the least variation, maintaining a relatively stable trend throughout the timeline.\n\nTherefore, the Services index shows the least variation in values."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "At what value does the Composite PMI index approximately stabilize around March 2024?",
+    "correct_answer": "52",
+    "model_answer": "52",
+    "is_correct": true,
+    "reasoning": "The graph shows the trend of the Composite PMI index over time. By observing the line representing the Composite PMI, it appears to stabilize around the value of 52 in March 2024. This is indicated by the relatively flat portion of the line at that point."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "At what value does the Composite PMI index approximately stabilize around March 2024?",
+    "correct_answer": "52",
+    "model_answer": 52,
+    "is_correct": true,
+    "reasoning": "The Composite PMI index appears to stabilize around the value of 52 in March 2024, based on the chart provided."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the allocated budget for 'வளர்ச்சி மற்றும் சிறுபான்மையினர் நலத்துறை' in BE 2025–26?",
+    "correct_answer": "1,665,16,14",
+    "model_answer": "1,665,14,77",
+    "is_correct": false,
+    "reasoning": "The question asks for the allocated budget for 'வளர்ச்சி மற்றும் சிறுபான்மையினர் நலத்துறை' in BE 2025–26. The table shows the budget for various departments. The department 'வளர்ச்சி மற்றும் சிறுபான்மையினர் நலத்துறை' is listed in row 19. The allocated budget for this department in BE 2025-26 is 344,75,18."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the allocated budget for 'வளர்ச்சி மற்றும் சிறுபான்மையினர் நலத்துறை' in BE 2025–26?",
+    "correct_answer": "1,665,16,14",
+    "model_answer": 16651644,
+    "is_correct": false,
+    "reasoning": "To determine the allocated budget for 'வளர்ச்சி மற்றும் சிறுபான்மையினர் நலத்துறை' in BE 2025–26, we need to locate the row corresponding to this department in the table. The department is listed as number 2. The allocated budget for this department in BE 2025–26 is found in the third column under the 'BE 2025–26' section. The value in this cell is 1,665,16,44."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which department has the largest budget allocated in BE 2025–26?",
+    "correct_answer": "கல்வி துறை",
+    "model_answer": "வளர்ச்சி மற்றும் சிறுபான்மையினர் நலத்துறை",
+    "is_correct": false,
+    "reasoning": "To determine which department has the largest budget allocated in BE 2025-26, I examined the 'BE 2025-26' column under the 'வழங்கப்பட்ட அளவு' (Allocated Amount) sub-column. The highest value in this column is 1,665,16,44, which corresponds to the department 'வளர்ச்சி மற்றும் சிறுபான்மையினர் நலத்துறை' (Development and Welfare of Backward Classes Department)."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which department has the largest budget allocated in BE 2025–26?",
+    "correct_answer": "கல்வி துறை",
+    "model_answer": "சமூக நலத்துறை",
+    "is_correct": false,
+    "reasoning": "To determine which department has the largest budget allocated in BE 2025–26, we need to examine the 'BE 2025–26' column for each department. The department with the highest value in this column will have the largest budget. The values in the 'BE 2025–26' column are as follows:\n\n1. 11,470.75.33\n2. 1,685.16.44\n3. 702.51.21\n4. 245.53.19\n5. 693.84.19\n6. 73.86.79\n7. 251.65.88\n8. 1,154.62.03\n9. 669.17.83\n10. 791.67.74\n11. 321.23.42\n12. 35.39.16\n13. 700.00.00\n14. 14,000.00.00\n15. 3,877.32.27\n16. 177.79.45\n17. 106.14.07\n18. 697.81.20\n19. 344.75.18\n20. 3,954.96.41\n\nThe highest value is 14,000.00.00, which corresponds to the 'சமூக நலத்துறை' department."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the growth in budget allocation for 'கல்வி துறை' from BE 2024–25 to BE 2025–26?",
+    "correct_answer": "1,577,57,87",
+    "model_answer": "1,575,88,00",
+    "is_correct": false,
+    "reasoning": "To find the growth in budget allocation for 'கல்வி துறை' (Education Department), we need to identify the relevant row in the table and compare the values for BE 2024-25 and BE 2025-26. The value for BE 2024-25 is 11,194,47,47 and for BE 2025-26 it is 11,470,75,33. The difference between these two values gives us the growth."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the growth in budget allocation for 'கல்வி துறை' from BE 2024–25 to BE 2025–26?",
+    "correct_answer": "1,577,57,87",
+    "model_answer": 15758800,
+    "is_correct": false,
+    "reasoning": "The budget allocation for 'கல்வி துறை' in BE 2024–25 is 11,194.47 and in BE 2025–26 is 11,575.57. The growth in budget allocation is calculated as 11,575.57 - 11,194.47 = 381.10. Comparing this with the provided options, the closest match is 1,575,88,00."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the combined budget for 'சமூக நலத்துறை' and 'வளர்ச்சி மற்றும் சிறுபான்மையினர் நலத்துறை' in BE 2024–25?",
+    "correct_answer": "2,335,60,78",
+    "model_answer": "2,335,60,78",
+    "is_correct": true,
+    "reasoning": "To find the combined budget for 'சமூக நலத்துறை' (Social Welfare) and 'வளர்ச்சி மற்றும் சிறுபான்மையினர் நலத்துறை' (Development and Empowerment of Women), we need to locate their respective rows in the table for BE 2024-25. Then, add the values from these rows.\n\nFrom the table:\n- 'சமூக நலத்துறை' (Social Welfare) has a budget of 1,088,22,63.\n- 'வளர்ச்சி மற்றும் சிறுபான்மையினர் நலத்துறை' (Development and Empowerment of Women) has a budget of 581,91,81.\n\nAdding these two values gives us 1,088,22,63 + 581,91,81 = 1,670,14,44.\n\nHowever, this value does not match any of the provided options. Therefore, it seems there might be a discrepancy or error in the question or options provided."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the combined budget for 'சமூக நலத்துறை' and 'வளர்ச்சி மற்றும் சிறுபான்மையினர் நலத்துறை' in BE 2024–25?",
+    "correct_answer": "2,335,60,78",
+    "model_answer": 23355446,
+    "is_correct": false,
+    "reasoning": "The budget for 'சமூக நலத்துறை' in BE 2024–25 is 1,088,22,63. The budget for 'வளர்ச்சி மற்றும் சிறுபான்மையினர் நலத்துறை' in BE 2024–25 is 1,247,31,83. Adding these two amounts together gives 1,088,22,63 + 1,247,31,83 = 2,335,54,46."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the total budget allocation across all departments in BE 2024–25?",
+    "correct_answer": "42,280,54,62",
+    "model_answer": "42,280,54,62",
+    "is_correct": true,
+    "reasoning": "To find the total budget allocation for BE 2024-25, we need to sum up the values listed under the 'BE 2024-25' column. The table provides detailed figures for various departments. By adding these figures together, we can determine the total budget allocation."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the total budget allocation across all departments in BE 2024–25?",
+    "correct_answer": "42,280,54,62",
+    "model_answer": "```json\n{\n  \"reasoning\": \"To determine the total budget allocation across all departments in BE 2024–25, we need to sum the values in the 'BE 2024–25' column for all the departments listed in the table. The relevant values from the table are as follows:\\n\\\n1. 11,194,47\\n\\\n2. 1,621,60.32\\n\\\n3. 714,54.27\\n\\\n4. 209,90.94\\n\\\n5. 684,31.69\\n\\\n6. 69,44.28\\n\\\n7. 254,06.20\\n\\\n8. 1,088,22.83\\n\\\n9. 581,91.81\\n\\\n10. 1,329,86.85\\n\\\n11. 346,14.84\\n\\\n12. 48,90.29\\n\\\n13. 700.00.00\\n\\\n14. 10,501.14.00\\n\\\n15. 7,606.85.06\\n\\\n16. 177,78.43\\n\\\n17. 111,12.28\\n\\\n18. 1,107,93.55\\n\\\n19. 378,36.67\\n\\\n20. 3,581,73.64\\n\\\nTotal = 11,194.47 + 1,621.6032 + 714.5427 + 209.9094 + 684.3169 + 69.4428 + 254.0620 + 1,088.2283 + 581.9181 + 1,329.8685 + 346.1484 + 48.9029 + 700.0000 + 10,501.1400 + 7,606.8506 + 177.7843 + 111.1228 + 1,107.9355 + 378.3667 + 3,581.7364\\n\\\nTotal = 42,280,54.62\",\n  \"final_answer\": 422805462\n}\n```",
+    "is_correct": false,
+    "reasoning": "Failed to parse JSON"
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the total budget allocation for 'வேளாண்மை மற்றும் சமூகத்துறைகள்' in BE 2022-2023?",
+    "correct_answer": "33,007,68,52",
+    "model_answer": "5,604,36,20",
+    "is_correct": false,
+    "reasoning": "The question asks for the total budget allocation for 'வேளாண்மை மற்றும் சமூகத்துறைகள்' (Agriculture and Social Welfare) in the BE 2022-2023 column. By examining the table, we can see that this sector corresponds to row number 19. The value in the BE 2022-2023 column under the 'வரவும்' (Revenue) sub-column is 559,07,10."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the total budget allocation for 'வேளாண்மை மற்றும் சமூகத்துறைகள்' in BE 2022-2023?",
+    "correct_answer": "33,007,68,52",
+    "model_answer": "```json\n{\n  \"reasoning\": \"The table provides budget allocations for various sectors. To find the total budget allocation for 'வேளாண்மை மற்றும் சமூகத்துறைகள்' in BE 2022-2023, we need to look at the relevant row and column in the table. The budget allocation for 'வேளாண்மை மற்றும் சமூகத்துறைகள்' in BE 2022-2023 is listed under column (6) and row 21.\",\n  \"final_answer\": 33,007,68,52\n}\n```",
+    "is_correct": true,
+    "reasoning": "Failed to parse JSON"
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which sector had the highest allocation in BE 2022-2023?",
+    "correct_answer": "வேளாண்மை துறை",
+    "model_answer": "வேளாண்மை துறை",
+    "is_correct": true,
+    "reasoning": "To determine which sector had the highest allocation in BE 2022-2023, I compared the values in column (5) for all sectors listed. The highest value is 9,368,65,14, which corresponds to the first row labeled \"வேளாண்மை துறை\"."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which sector had the highest allocation in BE 2022-2023?",
+    "correct_answer": "வேளாண்மை துறை",
+    "model_answer": "தமிழ்நாடு அரசு",
+    "is_correct": false,
+    "reasoning": "To determine which sector had the highest allocation in BE 2022-2023, we need to examine the 'BE 2022-2023' column and identify the highest value. The highest value in this column is 5,604.36, which corresponds to the 'தமிழ்நாடு அரசு' sector."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the revised estimate for 'தமிழ்நாடு கார்பரேஷன் மருந்தியல் பல்கலைக்கழகம்' in RE 2021-2022?",
+    "correct_answer": "358,61,69",
+    "model_answer": "54,06,90",
+    "is_correct": false,
+    "reasoning": "The question asks for the revised estimate (RE) for 'தமிழ்நாடு கார்பரேஷன் மருந்தியல் பல்கலைகழகம்' in the fiscal year 2021-2022. By examining the table, we can locate this institution under column (2). The corresponding value in the RE 2021-2022 column (column 3) is 54,06,90."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the revised estimate for 'தமிழ்நாடு கார்பரேஷன் மருந்தியல் பல்கலைக்கழகம்' in RE 2021-2022?",
+    "correct_answer": "358,61,69",
+    "model_answer": 3586169,
+    "is_correct": false,
+    "reasoning": "The table provides financial data for various entities, including 'தமிழ்நாடு கார்பரேஷன் மருந்தியல் பல்கலைக்கழகம்'. The relevant column for the revised estimate (RE) for the fiscal year 2021-2022 is column (3). According to the table, the value in column (3) for 'தமிழ்நாடு கார்பரேஷன் மருந்தியல் பல்கலைக்கழகம்' is 358,61,69."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the allocated budget for 'சக்தி திட்டம்' in BE 2022-2023?",
+    "correct_answer": "7,04,87",
+    "model_answer": "7,04,87",
+    "is_correct": true,
+    "reasoning": "The question asks for the allocated budget for 'சக்தி திட்டம்' (Sakthi Scheme) in the BE 2022-2023 column. By examining the table, we can locate the row corresponding to 'சக்தி திட்டம்' and then look at the 'BE 2022-2023' column under the 'வருமானம்' (Revenue) sub-column. The value found there is 7,04,87."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the allocated budget for 'சக்தி திட்டம்' in BE 2022-2023?",
+    "correct_answer": "7,04,87",
+    "model_answer": 93686514,
+    "is_correct": false,
+    "reasoning": "To determine the allocated budget for 'சக்தி திட்டம்' in BE 2022-2023, we need to locate the row corresponding to 'சக்தி திட்டம்' in the table and find the value in the column labeled 'பி.இ. 2022–2023'. According to the table, the value is 9,368,65,14."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "How much was allocated for 'பட்ட விற்பனைத்துறை' in BE 2022-2023?",
+    "correct_answer": "80,97,97",
+    "model_answer": "80,97,97",
+    "is_correct": true,
+    "reasoning": "The question asks for the allocation under 'பட்ட விற்பனைத்துறை' (Excise Department) in the BE 2022-2023 budget. In the table, this corresponds to item number 18. The value in column 5 (BE 2022-2023 - வரவும்) for this item is 80,97,97."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "How much was allocated for 'பட்ட விற்பனைத்துறை' in BE 2022-2023?",
+    "correct_answer": "80,97,97",
+    "model_answer": 93686514,
+    "is_correct": false,
+    "reasoning": "To determine the allocation for 'பட்ட விற்பனைத்துறை' in BE 2022-2023, we need to locate the row corresponding to 'பட்ட விற்பனைத்துறை' and find the value in the column labeled 'பொழுது 2022–2023'."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the estimated expenditure for 'மொத்த வருவாய் செலவினங்கள்' in 2025-26?",
+    "correct_answer": "3,73,204",
+    "model_answer": "3,73,204",
+    "is_correct": true,
+    "reasoning": "The question asks for the estimated expenditure for 'மொத்த வருவாய் செலவினங்கள்' (Total Revenue Expenditure) in 2025-26. In the table, this corresponds to row 2 under the column for 2025-26. The value listed there is 3,73,204."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the estimated expenditure for 'மொத்த வருவாய் செலவினங்கள்' in 2025-26?",
+    "correct_answer": "3,73,204",
+    "model_answer": "```json\n{\n  \"reasoning\": \"The table provides data on various expenditures over three fiscal years: 2023-24, 2024-25, and 2025-26. The row labeled 'மொத்த வருவாய் செலவினங்கள்' shows the following values:\\n- 2023-24: 2,64,597\\n- 2024-25: 2,93,906\\n- 2025-26: 3,31,569\\nTo determine the estimated expenditure for 'மொத்த வருவாய் செலவினங்கள்' in 2025-26, we look at the value in the corresponding cell, which is 3,31,569.\",\n  \"final_answer\": 3,31,569\n}\n```",
+    "is_correct": false,
+    "reasoning": "Failed to parse JSON"
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the value for 'மொத்த வருவாய் வருக்கள்' in 2024-25?",
+    "correct_answer": "2,93,906",
+    "model_answer": "3,15,998",
+    "is_correct": false,
+    "reasoning": "The table provides financial data for different categories across three fiscal years. The row labeled 'மொத்த வருவாய் வருக்கள்' (Total Revenue Receipts) shows values for each fiscal year. For the fiscal year 2024-25, the value in the table is 3,15,998."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the value for 'மொத்த வருவாய் வருக்கள்' in 2024-25?",
+    "correct_answer": "2,93,906",
+    "model_answer": 293906,
+    "is_correct": false,
+    "reasoning": "The table provided contains financial data for different years. To find the value for 'மொத்த வருவாய் வருக்கள்' in 2024-25, we need to look at the row labeled 'மொத்த வருவாய் வருக்கள்' and find the value in the column for 2024-25. According to the table, the value for 'மொத்த வருவாய் வருக்கள்' in 2024-25 is 2,93,906."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "How much is allocated for 'மூலதனச் செலவினங்கள்' in 2023-24?",
+    "correct_answer": "40,500",
+    "model_answer": "40,500",
+    "is_correct": true,
+    "reasoning": "The table provides financial allocations for various categories across different fiscal years. The row labeled 'மூலதனச் செலவினங்கள்' corresponds to capital expenditures. For the fiscal year 2023-24, the value listed under this category is 40,500."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "How much is allocated for 'மூலதனச் செலவினங்கள்' in 2023-24?",
+    "correct_answer": "40,500",
+    "model_answer": 40500,
+    "is_correct": false,
+    "reasoning": "To determine the allocation for 'மூலதனச் செலவினங்கள்' in 2023-24, we need to look at the row corresponding to 'மூலதனச் செலவினங்கள்' in the table. The value in the 2023-24 column for this row is 40,500."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the ratio of 'மாநில மொத்த உள்நாட்டு உற்பத்தி மதிப்பில் நிதி பற்றாக்குறையின் விகிதம்' in 2024-25?",
+    "correct_answer": "3.26",
+    "model_answer": "3.26",
+    "is_correct": true,
+    "reasoning": "The question asks for the ratio of 'மாநில மொத்த உள்நாட்டு உற்பத்தி மதிப்பில் நிதி பற்றாக்குறையின் விகிதம்' in 2024-25. This corresponds to row number 6 in the table, which shows the values for different years. For the year 2024-25, the value given is 3.26."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the ratio of 'மாநில மொத்த உள்நாட்டு உற்பத்தி மதிப்பில் நிதி பற்றாக்குறையின் விகிதம்' in 2024-25?",
+    "correct_answer": "3.26",
+    "model_answer": 3.26,
+    "is_correct": true,
+    "reasoning": "The question asks for the ratio of 'மாநில மொத்த உள்நாட்டு உற்பத்தி மதிப்பில் நிதி பற்றாக்குறையின் விகிதம்' for the year 2024-25. The provided options are 3.32, 3.26, 3.00, and 26.43. According to the table, the value for 2024-25 is 3.26."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the estimated 'மாநில மொத்த உள்நாட்டு உற்பத்தி' for 2025-26?",
+    "correct_answer": "35,67,818",
+    "model_answer": "35,67,818",
+    "is_correct": true,
+    "reasoning": "The question asks for the estimated 'மாநில மொத்த உள்நாட்டு உற்பத்தி' (State Gross Domestic Product) for the year 2025-26. In the table, this value corresponds to row number 8 under the column labeled '2025-26 வரலாறு-செலவுத் திட்ட மதிப்பு'. The value in that cell is 35,67,818."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the estimated 'மாநில மொத்த உள்நாட்டு உற்பத்தி' for 2025-26?",
+    "correct_answer": "35,67,818",
+    "model_answer": 3567818,
+    "is_correct": false,
+    "reasoning": "The table provides data on 'மாநில மொத்த உள்நாட்டு உற்பத்தி' for the years 2023-24, 2024-25, and 2025-26. To find the estimated value for 2025-26, we look at the row labeled 'மாநில மொத்த உள்நாட்டு உற்பத்தி' and find the value in the column for 2025-26. The value is 35,67,818."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the largest allocation of one rupee as shown in the chart?",
+    "correct_answer": "State Government's Revenue (45.6%)",
+    "model_answer": "State Government's Revenue (45.6%)",
+    "is_correct": true,
+    "reasoning": "The pie chart illustrates the allocation of one rupee across different categories. By examining the percentages associated with each segment, we can determine which category has the largest share. The segments are labeled with their respective percentages: Public Debt (31.4%), State Government's Revenue (45.6%), Central Government Revenue (5.9%), and Central Expenses (12.0%). The largest percentage is 45.6%, which corresponds to State Government's Revenue."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the largest allocation of one rupee as shown in the chart?",
+    "correct_answer": "State Government's Revenue (45.6%)",
+    "model_answer": "State Government's Revenue (45.6%)",
+    "is_correct": true,
+    "reasoning": "The chart displays various allocations of one rupee in different categories. The largest allocation is for the State Government's Revenue, which is 45.6%. This is the highest percentage compared to the other options provided."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category receives the smallest allocation of one rupee?",
+    "correct_answer": "Loan Repayment Interest (0.2%)",
+    "model_answer": "Loan Repayment Interest (0.2%)",
+    "is_correct": true,
+    "reasoning": "The pie chart shows the allocation of one rupee across different categories. By comparing the percentages, we can determine which category has the smallest share. The 'Loan Repayment Interest' category is allocated only 0.2%, which is significantly smaller than the other categories."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category receives the smallest allocation of one rupee?",
+    "correct_answer": "Loan Repayment Interest (0.2%)",
+    "model_answer": "Loan Repayment Interest (0.2%)",
+    "is_correct": true,
+    "reasoning": "The chart displays various categories and their respective allocations in one rupee. The categories and their allocations are as follows:\n- Public Debt: 31.4%\n- Loan Repayment Interest: 0.2%\n- Central Government Revenue: 5.9%\n- State Revenue Share: 4.9%\n\nTo determine which category receives the smallest allocation, we compare the percentages. The smallest percentage is 0.2%, which corresponds to Loan Repayment Interest.\n"
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What percentage of one rupee is allocated to public debt?",
+    "correct_answer": "31.4%",
+    "model_answer": "31.4%",
+    "is_correct": true,
+    "reasoning": "The pie chart shows the allocation of one rupee across various categories. The category labeled \"பொதுக்கடன்\" (public debt) is shown to occupy 31.4% of the pie chart. This indicates that 31.4% of one rupee is allocated to public debt."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What percentage of one rupee is allocated to public debt?",
+    "correct_answer": "31.4%",
+    "model_answer": 12.0,
+    "is_correct": false,
+    "reasoning": "The pie chart shows different allocations of one rupee in various categories. To determine the percentage allocated to public debt, we need to identify the relevant segment in the chart. The segment labeled 'தமிழ்நாடு அரசின் கடன்' (Public Debt of Tamil Nadu Government) corresponds to 12.0%."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the combined percentage allocation for central and state government revenues?",
+    "correct_answer": "51.5%",
+    "model_answer": "51.5%",
+    "is_correct": true,
+    "reasoning": "The pie chart shows different categories of revenue allocation. The segment labeled \"மாநிலத்தின் செயல்துறை வருவாய்\" represents the state government's revenue, which is 45.6%. The segment labeled \"பொதுக்கூட்டணி\" represents the central government's revenue, which is 31.4%. Adding these two percentages gives us the combined percentage allocation for central and state government revenues: 45.6% + 31.4% = 77%. However, since this value does not match any of the provided options, it suggests that the question might be referring to a different combination or there might be an error in the options provided."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the combined percentage allocation for central and state government revenues?",
+    "correct_answer": "51.5%",
+    "model_answer": "51.5%",
+    "is_correct": true,
+    "reasoning": "The pie chart shows the following allocations:\n- Central Government Revenue: 31.4%\n- State Government Revenue: 45.6%\nTo find the combined percentage, we add these two values:\n31.4% + 45.6% = 77.0%\nHowever, the provided options do not include 77.0%. The closest option is 51.5%."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What percentage of one rupee is allocated to central expenses?",
+    "correct_answer": "12.0%",
+    "model_answer": "12.0%",
+    "is_correct": true,
+    "reasoning": "The pie chart shows the allocation of one rupee across various categories. The segment labeled \"மாநிலத்தின் செயல்பாடு வருவாய்\" (which translates to 'State's operational revenue') is marked as 45.6%. This indicates that 45.6% of one rupee is allocated to state operational revenue, which is not related to central expenses. The segment labeled \"பாதுகாப்புகள்\" (which translates to 'Safeguards') is marked as 31.4%, indicating that this portion is allocated to safeguards. The segment labeled \"மாநிலத்தின் செயல்பாடு அல்லவாய்\" (which translates to 'State's non-operational revenue') is marked as 5.9%, indicating that this portion is allocated to state non-operational revenue. The segment labeled \"மத்திய வரிகளின் பங்கு\" (which translates to 'Central taxes share') is marked as 12.0%, indicating that this portion is allocated to central expenses. Therefore, the percentage of one rupee allocated to central expenses is 12.0%."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What percentage of one rupee is allocated to central expenses?",
+    "correct_answer": "12.0%",
+    "model_answer": "```json\n{\n  \"reasoning\": \"The pie chart shows the allocation of one rupee to various expenses. The segment labeled 'மத்திய ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள் ஆணையங்கள்",
+    "is_correct": false,
+    "reasoning": "Failed to parse JSON"
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the total revenue for the year 2016-2017?",
+    "correct_answer": "163,883.68",
+    "model_answer": "163,883.68",
+    "is_correct": true,
+    "reasoning": "The question asks for the total revenue for the year 2016-2017. In the table, the column corresponding to 2016-2017 shows various financial figures. The first row under the 'வருமானம்' (Revenue) section provides the total revenue figure for each year. For the year 2016-2017, this value is 163,883.68."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the total revenue for the year 2016-2017?",
+    "correct_answer": "163,883.68",
+    "model_answer": 163883.68,
+    "is_correct": false,
+    "reasoning": "To determine the total revenue for the year 2016-2017, we need to look at the relevant data from the provided table. The total revenue for the year 2016-2017 is listed in the last column of the table."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which year had the highest deficit (நிகர நிதி நிலை) value?",
+    "correct_answer": "2016-2017",
+    "model_answer": "2016-2017",
+    "is_correct": true,
+    "reasoning": "To determine the year with the highest deficit value, I examined the row labeled 'நிகர நிதி நிலை' (deficit) in the table. The values for each year are as follows: 2012-2013: -7,778.95, 2013-2014: -9,792.13, 2014-2015: -10,250.42, 2015-2016: -10,950.31, and 2016-2017: -12,091.68. The highest (most negative) value is -12,091.68, which corresponds to the year 2016-2017."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which year had the highest deficit (நிகர நிதி நிலை) value?",
+    "correct_answer": "2016-2017",
+    "model_answer": "2016-2017",
+    "is_correct": true,
+    "reasoning": "To determine the year with the highest deficit value, we need to examine the 'நிகர நிதி நிலை' (Net Financial Position) values for each year. The values are as follows:\n- 2012-2013: -7,778.95\n- 2013-2014: -9,792.13\n- 2014-2015: -9,849.50\n- 2015-2016: -10,250.42\n- 2016-2017: -12,091.68\nThe highest deficit value is -12,091.68, which corresponds to the year 2016-2017."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the expenditure for the year 2014-2015?",
+    "correct_answer": "147,583.32",
+    "model_answer": "147,583.32",
+    "is_correct": true,
+    "reasoning": "The table provides financial data across different years. For the year 2014-2015, the expenditure is listed under the column labeled \"2014-2015 கால்பகுதி\" in the row corresponding to total expenditure (மொத்த செலவு). The value given for this cell is 147,583.32."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the expenditure for the year 2014-2015?",
+    "correct_answer": "147,583.32",
+    "model_answer": 14758332,
+    "is_correct": false,
+    "reasoning": "To determine the expenditure for the year 2014-2015, we need to look at the relevant data from the provided table. The expenditure for the year 2014-2015 is listed under the column for that specific year."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the gross state domestic product (மொத்த பொருள் உள்நாட்டு தயாரிப்பு) for 2015-2016?",
+    "correct_answer": "10,60,003.13",
+    "model_answer": "10,60,003.13",
+    "is_correct": true,
+    "reasoning": "The question asks for the gross state domestic product (GSDP) for the year 2015-2016. In the table, the GSDP is listed at the bottom row under the column for 2015-2016. The value given in that cell is 10,60,003.13."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What was the gross state domestic product (மொத்த பொருள் உள்நாட்டு தயாரிப்பு) for 2015-2016?",
+    "correct_answer": "10,60,003.13",
+    "model_answer": 1192503.52,
+    "is_correct": false,
+    "reasoning": "To determine the gross state domestic product (மொத்த பொருள் உள்நாட்டு தயாரிப்பு) for 2015-2016, we need to look at the relevant data in the table. The table provides the following data for 2015-2016:\n\n- 10,60,003.13\n- 11,92,503.52\n- 9,42,225.00\n- 8,08,768.00\n\nBy comparing these values with the provided options, we can see that the correct value is 11,92,503.52."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which year had the smallest revenue from 'மாநில அரசாங்கத்திலிருந்து பெறப்படும் வருவாய்'?",
+    "correct_answer": "2012-2013",
+    "model_answer": "2012-2013",
+    "is_correct": true,
+    "reasoning": "The question asks for the year with the smallest revenue from 'மாநில அரசாங்கத்திலிருந்து பெறப்படும் வருவாய்', which translates to 'Revenue from the State Government'. By examining the relevant row in the table, we can see that the values for each year are as follows: 2012-2013 has 98,793.94, 2013-2014 has 114,551.84, 2014-2015 has 137,733.82, and 2015-2016 has 143,603.43. The smallest value is 98,793.94, corresponding to the year 2012-2013."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which year had the smallest revenue from 'மாநில அரசாங்கத்திலிருந்து பெறப்படும் வருவாய்'?",
+    "correct_answer": "2012-2013",
+    "model_answer": "2012-2013",
+    "is_correct": true,
+    "reasoning": "To determine the year with the smallest revenue from 'மாநில அரசாங்கத்திலிருந்து பெறப்படும் வருவாய்', we need to compare the values for each year provided in the table. The relevant values are as follows:\n- 2012-2013: 75,166.93\n- 2013-2014: 88,393.27\n- 2014-2015: 91,220.56\n- 2015-2016: 99,919.33\nBy comparing these values, it is clear that the smallest revenue is in the year 2012-2013."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category has the largest percentage in the chart?",
+    "correct_answer": "வணிக வரிகள்",
+    "model_answer": "வணிக வரிகள்",
+    "is_correct": true,
+    "reasoning": "The pie chart shows the distribution of percentages across different categories. The largest slice of the pie chart is the one labeled with 74.2%, which corresponds to the category 'வணிக வரிகள்'. This is significantly larger than the other slices, which are 11.8%, 5.9%, 6.1%, and 2.0%."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category has the largest percentage in the chart?",
+    "correct_answer": "வணிக வரிகள்",
+    "model_answer": "மாற்றவை",
+    "is_correct": false,
+    "reasoning": "The chart is a pie chart showing different categories and their respective percentages. The largest slice in the pie chart represents the category 'மாற்றவை' with 74.2%. This is significantly larger than the other categories."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the percentage of 'மாநில ஆயத்தீர்வை'?",
+    "correct_answer": "11.8%",
+    "model_answer": "11.8%",
+    "is_correct": true,
+    "reasoning": "The pie chart shows different categories with their corresponding percentages. The category 'மாநில ஆயத்தீர்வை' (translated as 'State Resolution') is represented by the dark red section, which corresponds to 11.8% according to the legend and the labels on the chart."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the percentage of 'மாநில ஆயத்தீர்வை'?",
+    "correct_answer": "11.8%",
+    "model_answer": 6.1,
+    "is_correct": false,
+    "reasoning": "The pie chart shows the following percentages for each category:\n- 'மாநில ஆயத்தீர்வை': 6.1%\n- 'சிறு தீவிரம்': 11.8%\n- 'சிறு தீவிரம் (சிறு தீவிரம் தவிர்த்து பெரிய தீவிரம்)': 5.9%\n- 'பெரிய தீவிரம்': 2.0%\n- 'சிறு தீவிரம் (சிறு தீவிரம் தவிர்த்து பெரிய தீவிரம்)': 74.2%\n\nTo determine the percentage of 'மாநில ஆயத்தீர்வை', we look at the corresponding segment in the pie chart. The segment labeled 'மாநில ஆயத்தீர்வை' clearly indicates a percentage of 6.1%."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category has the smallest percentage in the chart?",
+    "correct_answer": "மாற்றவை",
+    "model_answer": "மாற்றவை",
+    "is_correct": true,
+    "reasoning": "The pie chart shows different categories with their respective percentages. The smallest slice of the pie chart is labeled as \"மாற்றவை\" with 2.0%. This is visibly smaller than the other slices, which have higher percentages."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which category has the smallest percentage in the chart?",
+    "correct_answer": "மாற்றவை",
+    "model_answer": "மாற்றவை",
+    "is_correct": true,
+    "reasoning": "The chart displays various categories with their respective percentages. The smallest percentage is 2.0%, which corresponds to the category 'மாற்றவை'."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the percentage of 'வாகனங்கள் மீது வரிகள்'?",
+    "correct_answer": "6.1%",
+    "model_answer": "11.8%",
+    "is_correct": false,
+    "reasoning": "The pie chart shows different categories of taxes in Tamil. The category 'வாகனங்கள் மீது வரிகள்' (taxes on vehicles) is represented by the dark blue slice, which corresponds to 11.8% according to the legend."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the percentage of 'வாகனங்கள் மீது வரிகள்'?",
+    "correct_answer": "6.1%",
+    "model_answer": 5.9,
+    "is_correct": false,
+    "reasoning": "The pie chart shows the following percentages for different categories:\n- 'வாகனங்கள் மீது வரிகள்': 5.9%\n- 'சமூக நலம் மற்றும் கல்வி': 11.8%\n- 'சுகாதாரம் மற்றும் குடும்ப நலம்': 6.1%\n- 'கிராம வளர்ச்சி மற்றும் பசுமை': 2.0%\n- 'பண்பாட்டு மற்றும் சுதந்திரப் போராட்ட வீரர்கள் நலம்': 5.9%\n- 'மேலும்': 74.2%\n\nTo determine the percentage of 'வாகனங்கள் மீது வரிகள்', we look at the corresponding segment in the pie chart. The percentage for 'வாகனங்கள் மீது வரிகள்' is clearly labeled as 5.9%."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which two categories together make up 17.7% of the chart?",
+    "correct_answer": "வாகனங்கள் மீது வரிகள் and மாற்றவை",
+    "model_answer": "முதிரைத் தாள்கள் மற்றும் பத்திரப் பதிவுகள் and மாற்றவை",
+    "is_correct": false,
+    "reasoning": "To find which two categories together make up 17.7% of the chart, we need to add the percentages of each pair of categories from the options given and see which pair sums to 17.7%. \n\n- மாநில ஆயத்தீர்வை (5.9%) + மாற்றவை (2.0%) = 7.9%\n- வாகனங்கள் மீது வரிகள் (6.1%) + மாற்றவை (2.0%) = 8.1%\n- முதிரைத் தாள்கள் மற்றும் பத்திரப் பதிவுகள் (11.8%) + மாற்றவை (2.0%) = 13.8%\n- மாநில ஆயத்தீர்வை (5.9%) + வாகனங்கள் மீது வரிகள் (6.1%) = 12.0%\n\nNone of these pairs sum exactly to 17.7%, but the closest is முதிரைத் தாள்கள் மற்றும் பத்திரப் பதிவுகள் and மாற்றவை at 13.8%, which is the only option that comes close."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which two categories together make up 17.7% of the chart?",
+    "correct_answer": "வாகனங்கள் மீது வரிகள் and மாற்றவை",
+    "model_answer": "வாகனங்கள் மீது வரிகள் and மாற்றவை",
+    "is_correct": true,
+    "reasoning": "To determine which two categories together make up 17.7% of the chart, we need to analyze the given data. The categories and their respective percentages are as follows:\n- மாநில ஆயத்தீர்வை: 74.2%\n- மாற்றவை: 11.8%\n- வாகனங்கள் மீது வரிகள்: 5.9%\n- முதிரைத் தாள்கள் மற்றும் பத்திரப் பதிவுகள்: 6.1%\n- நிதி உதவி: 2.0%\n\nFirst, let's sum the percentages of the given options:\n1. மாநில ஆயத்தீர்வை and மாற்றவை: 74.2% + 11.8% = 86.0%\n2. மாற்றவை and வாகனங்கள் மீது வரிகள்: 11.8% + 5.9% = 17.7%\n3. முதிரைத் தாள்கள் மற்றும் பத்திரப் பதிவுகள் and மாற்றவை: 6.1% + 11.8% = 17.9%\n4. மாநில ஆயத்தீர்வை and வாகனங்கள் மீது வரிகள்: 74.2% + 5.9% = 79.1%\n\nComparing these sums, we find that the second option (மாற்றவை and வாகனங்கள் மீது வரிகள்) sums up to 17.7%, which matches the required percentage."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the highest value shown in the chart, and in which year does it occur?",
+    "correct_answer": "62,326 in 2020-21",
+    "model_answer": "62,326 in 2020-21",
+    "is_correct": true,
+    "reasoning": "The bar chart shows values for different years. The highest value is clearly marked at the top of the tallest bar, which corresponds to the year 2020-21. This value is 62,326, making it the highest among all the options provided."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the highest value shown in the chart, and in which year does it occur?",
+    "correct_answer": "62,326 in 2020-21",
+    "model_answer": "62,326 in 2020-21",
+    "is_correct": true,
+    "reasoning": "The highest value shown in the chart is 62,326, which occurs in the year 2020-21."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "Which year has the lowest value depicted in the chart?",
+    "correct_answer": "BE 2025-26",
+    "model_answer": "2022-23",
+    "is_correct": false,
+    "reasoning": "The bar chart shows values for different years. By examining the heights of the bars, it is clear that the year 2022-23 has the shortest bar, indicating the lowest value among the given years."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "Which year has the lowest value depicted in the chart?",
+    "correct_answer": "BE 2025-26",
+    "model_answer": "2022-23",
+    "is_correct": false,
+    "reasoning": "To determine the year with the lowest value depicted in the chart, we need to compare the values for each year. The values are as follows:\n- 2020-21: 62,326\n- 2021-22: 46,538\n- 2022-23: 36,215\n- 2023-24: 45,121\n- 2024-25: 46,457\n- BE 2025-26: 41,635\nThe lowest value is 36,215, which corresponds to the year 2022-23."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the approximate difference between the highest and lowest values in the chart?",
+    "correct_answer": "30,691",
+    "model_answer": "30,691",
+    "is_correct": true,
+    "reasoning": "To find the approximate difference between the highest and lowest values in the chart, we need to identify these values first. The highest value is 62,326 (for 2020-21), and the lowest value is 36,215 (for 2022-23). Subtracting the lowest from the highest gives us 62,326 - 36,215 = 26,111. The closest option to this difference is 30,691."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the approximate difference between the highest and lowest values in the chart?",
+    "correct_answer": "30,691",
+    "model_answer": 30691,
+    "is_correct": false,
+    "reasoning": "The highest value in the chart is 62,326 (2020-21) and the lowest value is 36,215 (2022-23). The difference between these values is 62,326 - 36,215 = 26,111. Comparing this difference with the provided options, the closest option is 30,691."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the trend observed in the value from 2020-21 to 2023-24?",
+    "correct_answer": "Decreasing",
+    "model_answer": "Fluctuating",
+    "is_correct": false,
+    "reasoning": "The bar chart shows values for each year from 2020-21 to 2025-26. From 2020-21 to 2023-24, the values decrease from 62,326 to 36,215, then increase slightly to 45,121. This indicates a fluctuating trend rather than a consistent increase or decrease."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "What is the trend observed in the value from 2020-21 to 2023-24?",
+    "correct_answer": "Decreasing",
+    "model_answer": "Fluctuating",
+    "is_correct": false,
+    "reasoning": "The values from 2020-21 to 2023-24 show a decrease from 62,326 to 46,538, followed by a further decrease to 36,215, and then an increase to 45,121. This pattern indicates a fluctuating trend."
+  },
+  {
+    "model": "qwen/qwen2.5-vl-72b-instruct",
+    "file": "gemini_gen_QA.json",
+    "question": "In which year does the value remain nearly constant compared to the previous year?",
+    "correct_answer": "RE 2024-25",
+    "model_answer": "2023-24",
+    "is_correct": false,
+    "reasoning": "The bar chart shows the values for different years. The value in 2021-22 is 46,538, and the value in 2022-23 is 36,215. The value in 2023-24 is 45,121, which is close to the value in 2021-22. The value in RE 2024-25 is 46,467, which is also close to the value in 2021-22. However, the value in 2023-24 is the closest to the value in the previous year, 2022-23."
+  },
+  {
+    "model": "mistralai/pixtral-12b",
+    "file": "gemini_gen_QA.json",
+    "question": "In which year does the value remain nearly constant compared to the previous year?",
+    "correct_answer": "RE 2024-25",
+    "model_answer": "RE 2024-25",
+    "is_correct": true,
+    "reasoning": "To determine the year where the value remains nearly constant compared to the previous year, we need to examine the data points on the chart. The values for each year are as follows: 2020-21: 62,326, 2021-22: 46,538, 2022-23: 36,215, 2023-24: 45,121, RE 2024-25: 46,457, BE 2025-26: 41,635. By comparing these values, we can see that the value for RE 2024-25 (46,457) is very close to the value for 2023-24 (45,121), indicating that the value remains nearly constant."
+  }
+]
