@@ -9,26 +9,18 @@ from PIL import Image
 import io
 
 # ================= CONFIGURATION =================
-OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
-if not OPENROUTER_API_KEY:
-    raise ValueError("OPENROUTER_API_KEY environment variable is not set")
+DEEPINFRA_API_KEY = os.environ.get("DEEPINFRA_API_KEY")
+if not DEEPINFRA_API_KEY:
+    raise ValueError("DEEPINFRA_API_KEY environment variable is not set")
 
 BASE_IMAGE_DIR = os.environ.get("BASE_IMAGE_DIR", "images")
-
-GENERATION_MODEL = os.environ.get("GENERATION_MODEL", "google/gemini-3-pro-preview")
-
-# High-tier vision models for verification
-VERIFICATION_MODELS = [
-    "openai/gpt-5.2",
-    "x-ai/grok-4.1-fast",
-    "anthropic/claude-sonnet-4.5"
-]
-
-FOLDERS_TO_PROCESS = 25
+MODEL = os.environ.get("MODEL", "Qwen/Qwen3-VL-235B-A22B-Instruct")
+FOLDERS_TO_PROCESS = int(os.environ.get("FOLDERS_TO_PROCESS", "25"))
+MAX_IMAGES_PER_FOLDER = int(os.environ.get("MAX_IMAGES_PER_FOLDER", "10"))
 
 client = OpenAI(
-    base_url="https://openrouter.ai/api/v1",
-    api_key=OPENROUTER_API_KEY,
+    base_url="https://api.deepinfra.com/v1/openai",
+    api_key=DEEPINFRA_API_KEY,
 )
 
 
@@ -70,15 +62,15 @@ def extract_json_from_text(text):
 
 
 def check_if_chart_or_table_exists(image_b64):
-    """Checks if the image contains a chart, graph, or table."""
+    """Checks if the image contains a chart, graph, or table. Returns (bool, reason)."""
     prompt = (
         "Analyze this image carefully. Does it contain a data chart, graph, plot, or data table?\n"
-        'Output ONLY a valid JSON object with a single boolean key "is_valid".\n'
-        'Example: {"is_valid": true} or {"is_valid": false}'
+        'Output ONLY a valid JSON object:\n'
+        '{"is_valid": true/false, "reason": "brief explanation"}'
     )
     try:
         response = client.chat.completions.create(
-            model=GENERATION_MODEL,
+            model=MODEL,
             messages=[
                 {"role": "user", "content": [
                     {"type": "text", "text": prompt},
@@ -86,18 +78,18 @@ def check_if_chart_or_table_exists(image_b64):
                 ]}
             ],
             temperature=0.1,
-            max_tokens=2500
+            max_tokens=500
         )
         content = response.choices[0].message.content
         parsed = extract_json_from_text(content)
 
         if parsed and "is_valid" in parsed:
-            return bool(parsed["is_valid"])
+            return bool(parsed["is_valid"]), parsed.get("reason", "")
     except Exception as e:
         print(f"Error during pre-check: {e}")
 
-    # Default to True if the API fails so we don't skip good images
-    return True
+    # Default to valid if the API fails
+    return True, "API check failed, defaulting to valid"
 
 
 def generate_questions_for_image(image_b64, filename, language_context):
@@ -143,7 +135,7 @@ def generate_questions_for_image(image_b64, filename, language_context):
     for attempt in range(max_retries):
         try:
             response = client.chat.completions.create(
-                model=GENERATION_MODEL,
+                model=MODEL,
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": [
@@ -180,40 +172,62 @@ def generate_questions_for_image(image_b64, filename, language_context):
     return []
 
 
-def verify_question_with_models(image_b64, question_data):
-    """Sends the generated question to 3 different models to verify correctness."""
-    question_text = question_data.get("question")
-    options = question_data.get("options")
-    expected_answer = question_data.get("correct_answer", "")
+def verify_questions_bundled(image_b64, questions):
+    """
+    Verifies all questions for an image in a single API call using a strict reviewer agent.
+    Returns a list of verification results, one per question.
+    """
+    questions_block = ""
+    for i, q in enumerate(questions):
+        options_str = json.dumps(q["options"])
+        questions_block += (
+            f"\nQuestion {i+1} (id: {q['id']}):\n"
+            f"  Question: {q['question']}\n"
+            f"  Options: {options_str}\n"
+            f"  Claimed correct answer: {q['correct_answer']}\n"
+            f"  Claimed reasoning: {q['reasoning']}\n"
+        )
 
-    prompt = f"""
-    Look at the chart/table in the provided image and solve the following multiple-choice question.
-    Ignore any surrounding text in the image.
+    system_prompt = (
+        "You are a strict exam reviewer. Your job is to independently verify "
+        "multiple-choice questions about charts and tables.\n\n"
+        "For each question:\n"
+        "1. Look at the image data independently - ignore the claimed answer.\n"
+        "2. Solve the question yourself step-by-step.\n"
+        "3. Check if the claimed correct answer matches your answer.\n"
+        "4. Check if any other option could also be valid (ambiguity).\n"
+        "5. Check if the reasoning provided is sound.\n"
+    )
 
-    Question: {question_text}
-    Options: {options}
+    user_prompt = f"""
+    Review the following {len(questions)} questions about the chart/table in the image.
+    Ignore any surrounding text in the image - focus only on the data.
 
-    Analyze the image carefully, determine the correct option, and provide your reasoning.
-    You must output a valid JSON object matching this schema exactly:
-    {{
-        "selected_option": "The exact string of the option you chose from the list",
-        "reasoning": "Your step-by-step logic to arrive at this answer"
-    }}
-    Output ONLY the JSON object.
+    {questions_block}
+
+    For each question, output your verification. Return a JSON array:
+    [
+        {{
+            "question_id": "the id from above",
+            "your_answer": "The exact option string you believe is correct",
+            "agrees_with_claimed": true/false,
+            "is_ambiguous": true/false,
+            "reasoning": "Your step-by-step reasoning"
+        }}
+    ]
+
+    Output ONLY the JSON array.
     """
 
-    models_correct = []
-    models_wrong = []
-    model_reasonings = {}
-    model_selected_options = {}
-
-    for model_id in VERIFICATION_MODELS:
+    max_retries = 3
+    for attempt in range(max_retries):
         try:
             response = client.chat.completions.create(
-                model=model_id,
+                model=MODEL,
                 messages=[
+                    {"role": "system", "content": system_prompt},
                     {"role": "user", "content": [
-                        {"type": "text", "text": prompt},
+                        {"type": "text", "text": user_prompt},
                         {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{image_b64}"}}
                     ]}
                 ],
@@ -221,42 +235,41 @@ def verify_question_with_models(image_b64, question_data):
             )
 
             content = response.choices[0].message.content
-            result = extract_json_from_text(content)
+            parsed = extract_json_from_text(content)
 
-            if result and "selected_option" in result:
-                chosen = str(result["selected_option"]).strip()
-                model_reasonings[model_id] = result.get("reasoning", "No reasoning provided.")
-
-                full_option = next(
-                    (opt for opt in options if chosen.lower() in opt.lower() or opt.lower() in chosen.lower()),
-                    chosen
-                )
-                model_selected_options[model_id] = full_option
-
-                if expected_answer.lower() in chosen.lower() or chosen.lower() in expected_answer.lower():
-                    models_correct.append(model_id)
-                else:
-                    models_wrong.append(model_id)
+            if parsed and isinstance(parsed, list):
+                return parsed
             else:
-                models_wrong.append(model_id)
-                model_reasonings[model_id] = "Failed to return valid JSON."
-                model_selected_options[model_id] = "No valid option returned."
+                print(f"Invalid verification JSON (Attempt {attempt + 1}). Retrying...")
+                time.sleep(1)
 
         except Exception as e:
-            print(f"Verification failed for {model_id}: {e}")
-            models_wrong.append(model_id)
-            model_reasonings[model_id] = f"API Error: {str(e)}"
-            model_selected_options[model_id] = f"API Error: {str(e)}"
+            if "429" in str(e):
+                wait_time = (attempt + 1) * 10
+                print(f"Rate limit. Waiting {wait_time}s...")
+                time.sleep(wait_time)
+            else:
+                print(f"Verification API Error: {e}")
+                return []
 
-    score_str = f"{len(models_correct)}/{len(VERIFICATION_MODELS)}"
+    return []
 
-    return {
-        "score": score_str,
-        "models_correct": models_correct,
-        "models_wrong": models_wrong,
-        "model_reasonings": model_reasonings,
-        "model_selected_options": model_selected_options
-    }
+
+def attach_verification(questions, verification_results):
+    """Attaches verification results to the corresponding questions."""
+    verification_map = {}
+    for v in verification_results:
+        qid = v.get("question_id", "")
+        verification_map[qid] = v
+
+    for q in questions:
+        v = verification_map.get(q["id"], {})
+        q["verification"] = {
+            "verifier_answer": v.get("your_answer", ""),
+            "agrees_with_claimed": v.get("agrees_with_claimed", None),
+            "is_ambiguous": v.get("is_ambiguous", None),
+            "verifier_reasoning": v.get("reasoning", ""),
+        }
 
 
 # ================= MAIN EXECUTION =================
@@ -266,7 +279,7 @@ def main():
         print(f"Error: Directory '{BASE_IMAGE_DIR}' not found.")
         return
 
-    print("Starting Processing (Up to 10 valid images in the first folder)...")
+    print(f"Starting Processing (model: {MODEL})...")
 
     all_subdirs = [d for d in os.listdir(BASE_IMAGE_DIR) if os.path.isdir(os.path.join(BASE_IMAGE_DIR, d))]
     all_subdirs.sort()
@@ -297,6 +310,7 @@ def main():
 
         print(f"\nProcessing Parent Folder: {folder_name}")
         parent_qa_data = []
+        skipped_images = []
         valid_processed_count = 0
 
         for img_file in common_files:
@@ -310,15 +324,11 @@ def main():
                 continue
 
             print(f"      Checking if {img_file} contains a chart or table...")
-            is_valid_image = check_if_chart_or_table_exists(img_b64_check)
+            is_valid, skip_reason = check_if_chart_or_table_exists(img_b64_check)
 
-            if not is_valid_image:
-                print(f"      No chart/table detected. Deleting {img_file} from both directories.")
-                try:
-                    if os.path.exists(img1_path): os.remove(img1_path)
-                    if os.path.exists(img2_path): os.remove(img2_path)
-                except Exception as e:
-                    print(f"      Failed to delete files: {e}")
+            if not is_valid:
+                print(f"      Skipping {img_file}: {skip_reason}")
+                skipped_images.append({"image": img_file, "reason": skip_reason})
                 continue
 
             for folder_path, sub_folder_name in [(folder1_path, inner_folders[0]), (folder2_path, inner_folders[1])]:
@@ -333,34 +343,41 @@ def main():
                 generated_data = generate_questions_for_image(img_b64, img_file, lang_ctx)
 
                 if generated_data:
-                    print(f"      Verifying {len(generated_data)} questions with consensus models...")
                     for q_item in generated_data:
                         q_item["source_subfolder"] = sub_folder_name
-                        verification_results = verify_question_with_models(img_b64, q_item)
-                        q_item["verification"] = verification_results
+
+                    print(f"      Verifying {len(generated_data)} questions...")
+                    verification_results = verify_questions_bundled(img_b64, generated_data)
+                    attach_verification(generated_data, verification_results)
 
                     parent_qa_data.extend(generated_data)
 
                 time.sleep(2)
 
             valid_processed_count += 1
-            print(f"   Successfully processed {valid_processed_count}/10 valid pairs.")
+            print(f"   Successfully processed {valid_processed_count}/{MAX_IMAGES_PER_FOLDER} valid pairs.")
 
-            if valid_processed_count >= 10:
-                print("   Reached 10 valid image pairs. Stopping search in this folder.")
+            if valid_processed_count >= MAX_IMAGES_PER_FOLDER:
+                print(f"   Reached {MAX_IMAGES_PER_FOLDER} valid image pairs. Moving to next folder.")
                 break
 
         if parent_qa_data:
-            output_path = os.path.join(parent_path, "verified_bloom_QA_10_images.json")
+            output_path = os.path.join(parent_path, "verified_bloom_QA.json")
             try:
                 with open(output_path, "w", encoding="utf-8") as f:
                     json.dump(parent_qa_data, f, indent=2, ensure_ascii=False)
-                print(f"Saved verified questions to: {output_path}")
+                print(f"Saved {len(parent_qa_data)} verified questions to: {output_path}")
             except Exception as e:
                 print(f"Error saving JSON: {e}")
 
-        print("\nStopping process completely after the first folder, as requested.")
-        break
+        if skipped_images:
+            skip_path = os.path.join(parent_path, "skipped_images.json")
+            try:
+                with open(skip_path, "w", encoding="utf-8") as f:
+                    json.dump(skipped_images, f, indent=2, ensure_ascii=False)
+                print(f"Saved {len(skipped_images)} skipped images to: {skip_path}")
+            except Exception as e:
+                print(f"Error saving skipped images log: {e}")
 
     print("\nRun completed!")
 
