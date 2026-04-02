@@ -189,7 +189,7 @@ def verify_questions_bundled(image_b64, questions):
         )
 
     system_prompt = (
-        "You are a strict exam reviewer. Your job is to independently verify "
+        "You are a data analyst. Your job is to independently verify "
         "multiple-choice questions about charts and tables.\n\n"
         "For each question:\n"
         "1. Look at the image data independently - ignore the claimed answer.\n"
