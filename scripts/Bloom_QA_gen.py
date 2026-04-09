@@ -7,6 +7,8 @@ from openai import OpenAI
 from tqdm import tqdm
 from PIL import Image
 import io
+from dotenv import load_dotenv
+load_dotenv() # This loads the variables from the .env file into os.environ
 
 # ================= CONFIGURATION =================
 DEEPINFRA_API_KEY = os.environ.get("DEEPINFRA_API_KEY")
@@ -189,7 +191,7 @@ def verify_questions_bundled(image_b64, questions):
         )
 
     system_prompt = (
-        "You are a data analyst. Your job is to independently verify "
+        "Your job is to independently verify "
         "multiple-choice questions about charts and tables.\n\n"
         "For each question:\n"
         "1. Look at the image data independently - ignore the claimed answer.\n"
@@ -197,6 +199,8 @@ def verify_questions_bundled(image_b64, questions):
         "3. Check if the claimed correct answer matches your answer.\n"
         "4. Check if any other option could also be valid (ambiguity).\n"
         "5. Check if the reasoning provided is sound.\n"
+        "6. If the question does not use any information from the chart or table, flag it.\n"
+        "7. If the question does not fall into the correct taxonomy level category, flag it.\n"
     )
 
     user_prompt = f"""
@@ -212,7 +216,9 @@ def verify_questions_bundled(image_b64, questions):
             "your_answer": "The exact option string you believe is correct",
             "agrees_with_claimed": true/false,
             "is_ambiguous": true/false,
-            "reasoning": "Your step-by-step reasoning"
+            "reasoning": "Your step-by-step reasoning",
+            "using_chart_or_table": true/false,
+            "does_taxonomy_level_match": true/false
         }}
     ]
 
@@ -269,6 +275,8 @@ def attach_verification(questions, verification_results):
             "agrees_with_claimed": v.get("agrees_with_claimed", None),
             "is_ambiguous": v.get("is_ambiguous", None),
             "verifier_reasoning": v.get("reasoning", ""),
+            "using_chart_or_table": v.get("using_chart_or_table", None),
+            "does_taxonomy_level_match": v.get("does_taxonomy_level_match", None),
         }
 
 
@@ -317,7 +325,6 @@ def main():
             print(f"   Found matching image pair: {img_file}")
 
             img1_path = os.path.join(folder1_path, img_file)
-            img2_path = os.path.join(folder2_path, img_file)
 
             img_b64_check = resize_and_encode_image(img1_path)
             if not img_b64_check:
