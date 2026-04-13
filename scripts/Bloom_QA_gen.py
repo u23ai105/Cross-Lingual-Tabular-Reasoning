@@ -8,16 +8,16 @@ from tqdm import tqdm
 from PIL import Image
 import io
 from dotenv import load_dotenv
-load_dotenv() # This loads the variables from the .env file into os.environ
+load_dotenv()
 
 # ================= CONFIGURATION =================
 DEEPINFRA_API_KEY = os.environ.get("DEEPINFRA_API_KEY")
 if not DEEPINFRA_API_KEY:
     raise ValueError("DEEPINFRA_API_KEY environment variable is not set")
 
-BASE_IMAGE_DIR = os.environ.get("BASE_IMAGE_DIR", "images")
-MODEL = os.environ.get("MODEL", "Qwen/Qwen3-VL-235B-A22B-Instruct")
-FOLDERS_TO_PROCESS = int(os.environ.get("FOLDERS_TO_PROCESS", "25"))
+BASE_IMAGE_DIR        = os.environ.get("BASE_IMAGE_DIR", "images")
+MODEL                 = os.environ.get("MODEL", "Qwen/Qwen3-VL-235B-A22B-Instruct")
+FOLDERS_TO_PROCESS    = int(os.environ.get("FOLDERS_TO_PROCESS", "25"))
 MAX_IMAGES_PER_FOLDER = int(os.environ.get("MAX_IMAGES_PER_FOLDER", "10"))
 
 client = OpenAI(
@@ -63,6 +63,48 @@ def extract_json_from_text(text):
     return None
 
 
+def identify_english_folder(folder1_name: str, folder2_name: str) -> tuple[str, str]:
+    """
+    Given two subfolder names, returns (english_folder_name, hindi_folder_name).
+
+    Detection logic (in priority order):
+      1. If a folder name contains 'hin' (case-insensitive) → it is Hindi
+      2. If a folder name contains 'eng' or starts with 'e'  → it is English
+      3. Alphabetical fallback: the first folder alphabetically is treated as English
+         (echapter < hechapter, so echapter = English)
+
+    The main folder is guaranteed to have exactly two subfolders.
+    """
+    hindi_keywords   = ['hin', 'hindi']
+    english_keywords = ['eng', 'english']
+
+    f1_lower = folder1_name.lower()
+    f2_lower = folder2_name.lower()
+
+    # Check folder 1 for Hindi markers
+    if any(kw in f1_lower for kw in hindi_keywords):
+        return folder2_name, folder1_name   # folder2 = English, folder1 = Hindi
+
+    # Check folder 2 for Hindi markers
+    if any(kw in f2_lower for kw in hindi_keywords):
+        return folder1_name, folder2_name   # folder1 = English, folder2 = Hindi
+
+    # Check folder 1 for explicit English markers
+    if any(kw in f1_lower for kw in english_keywords):
+        return folder1_name, folder2_name
+
+    # Check folder 2 for explicit English markers
+    if any(kw in f2_lower for kw in english_keywords):
+        return folder2_name, folder1_name
+
+    # Alphabetical fallback — echapter < hechapter so first = English
+    sorted_folders = sorted([folder1_name, folder2_name])
+    print(f"  [WARN] Could not detect language from folder names "
+          f"'{folder1_name}' / '{folder2_name}'. "
+          f"Defaulting to alphabetical order: '{sorted_folders[0]}' = English.")
+    return sorted_folders[0], sorted_folders[1]
+
+
 def check_if_chart_or_table_exists(image_b64):
     """Checks if the image contains a chart, graph, or table. Returns (bool, reason)."""
     prompt = (
@@ -83,14 +125,13 @@ def check_if_chart_or_table_exists(image_b64):
             max_tokens=500
         )
         content = response.choices[0].message.content
-        parsed = extract_json_from_text(content)
+        parsed  = extract_json_from_text(content)
 
         if parsed and "is_valid" in parsed:
             return bool(parsed["is_valid"]), parsed.get("reason", "")
     except Exception as e:
         print(f"Error during pre-check: {e}")
 
-    # Default to valid if the API fails
     return True, "API check failed, defaulting to valid"
 
 
@@ -148,14 +189,14 @@ def generate_questions_for_image(image_b64, filename, language_context):
                 temperature=0.7,
             )
 
-            content = response.choices[0].message.content
+            content     = response.choices[0].message.content
             parsed_data = extract_json_from_text(content)
 
             if parsed_data and isinstance(parsed_data, list) and len(parsed_data) > 0:
                 for idx, item in enumerate(parsed_data):
                     clean_name = re.sub(r'\W+', '', filename)
-                    item['id'] = f"{clean_name}_q{idx + 1}"
-                    item['image_reference'] = filename
+                    item['id']               = f"{clean_name}_q{idx + 1}"
+                    item['image_reference']  = filename
                     item['original_language'] = language_context
                 return parsed_data
             else:
@@ -176,7 +217,7 @@ def generate_questions_for_image(image_b64, filename, language_context):
 
 def verify_questions_bundled(image_b64, questions):
     """
-    Verifies all questions for an image in a single API call using a strict reviewer agent.
+    Verifies all questions for an image in a single API call.
     Returns a list of verification results, one per question.
     """
     questions_block = ""
@@ -241,7 +282,7 @@ def verify_questions_bundled(image_b64, questions):
             )
 
             content = response.choices[0].message.content
-            parsed = extract_json_from_text(content)
+            parsed  = extract_json_from_text(content)
 
             if parsed and isinstance(parsed, list):
                 return parsed
@@ -263,19 +304,16 @@ def verify_questions_bundled(image_b64, questions):
 
 def attach_verification(questions, verification_results):
     """Attaches verification results to the corresponding questions."""
-    verification_map = {}
-    for v in verification_results:
-        qid = v.get("question_id", "")
-        verification_map[qid] = v
+    verification_map = {v.get("question_id", ""): v for v in verification_results}
 
     for q in questions:
         v = verification_map.get(q["id"], {})
         q["verification"] = {
-            "verifier_answer": v.get("your_answer", ""),
-            "agrees_with_claimed": v.get("agrees_with_claimed", None),
-            "is_ambiguous": v.get("is_ambiguous", None),
-            "verifier_reasoning": v.get("reasoning", ""),
-            "using_chart_or_table": v.get("using_chart_or_table", None),
+            "verifier_answer"          : v.get("your_answer", ""),
+            "agrees_with_claimed"      : v.get("agrees_with_claimed", None),
+            "is_ambiguous"             : v.get("is_ambiguous", None),
+            "verifier_reasoning"       : v.get("reasoning", ""),
+            "using_chart_or_table"     : v.get("using_chart_or_table", None),
             "does_taxonomy_level_match": v.get("does_taxonomy_level_match", None),
         }
 
@@ -289,7 +327,8 @@ def main():
 
     print(f"Starting Processing (model: {MODEL})...")
 
-    all_subdirs = [d for d in os.listdir(BASE_IMAGE_DIR) if os.path.isdir(os.path.join(BASE_IMAGE_DIR, d))]
+    all_subdirs = [d for d in os.listdir(BASE_IMAGE_DIR)
+                   if os.path.isdir(os.path.join(BASE_IMAGE_DIR, d))]
     all_subdirs.sort()
 
     target_folders = all_subdirs[:FOLDERS_TO_PROCESS]
@@ -297,77 +336,98 @@ def main():
     for folder_name in target_folders:
         parent_path = os.path.join(BASE_IMAGE_DIR, folder_name)
 
-        inner_folders = [d for d in os.listdir(parent_path) if os.path.isdir(os.path.join(parent_path, d))]
+        inner_folders = [d for d in os.listdir(parent_path)
+                         if os.path.isdir(os.path.join(parent_path, d))]
         inner_folders.sort()
 
-        if len(inner_folders) < 2:
-            print(f"Skipping '{folder_name}': Needs at least 2 subfolders.")
+        # ── Must have exactly 2 subfolders ────────────────────────────────
+        if len(inner_folders) != 2:
+            print(f"Skipping '{folder_name}': Expected exactly 2 subfolders, "
+                  f"found {len(inner_folders)}.")
             continue
 
-        folder1_path = os.path.join(parent_path, inner_folders[0])
-        folder2_path = os.path.join(parent_path, inner_folders[1])
+        # ── Identify which subfolder is English, which is Hindi ───────────
+        english_folder_name, hindi_folder_name = identify_english_folder(
+            inner_folders[0], inner_folders[1]
+        )
 
-        files1 = set(f for f in os.listdir(folder1_path) if f.lower().endswith(('.png', '.jpg', '.jpeg')))
-        files2 = set(f for f in os.listdir(folder2_path) if f.lower().endswith(('.png', '.jpg', '.jpeg')))
+        english_folder_path = os.path.join(parent_path, english_folder_name)
+        hindi_folder_path   = os.path.join(parent_path, hindi_folder_name)
 
-        common_files = list(files1.intersection(files2))
-        common_files.sort()
+        print(f"\nProcessing Parent Folder : {folder_name}")
+        print(f"  English folder (use)   : {english_folder_name}")
+        print(f"  Hindi folder  (skip)   : {hindi_folder_name}")
+
+        # ── Collect image filenames from both folders ─────────────────────
+        english_files = set(
+            f for f in os.listdir(english_folder_path)
+            if f.lower().endswith(('.png', '.jpg', '.jpeg'))
+        )
+        hindi_files = set(
+            f for f in os.listdir(hindi_folder_path)
+            if f.lower().endswith(('.png', '.jpg', '.jpeg'))
+        )
+
+        # ── Only proceed with images present in BOTH folders ──────────────
+        common_files = sorted(english_files.intersection(hindi_files))
 
         if not common_files:
+            print(f"  No common images found between the two folders. Skipping.")
             continue
 
-        print(f"\nProcessing Parent Folder: {folder_name}")
-        parent_qa_data = []
-        skipped_images = []
+        print(f"  Common images found    : {len(common_files)}")
+
+        parent_qa_data    = []
+        skipped_images    = []
         valid_processed_count = 0
 
         for img_file in common_files:
-            print(f"   Found matching image pair: {img_file}")
+            print(f"\n   Image pair found : {img_file}")
+            print(f"   Using            : {english_folder_name}/{img_file}")
+            print(f"   Ignoring         : {hindi_folder_name}/{img_file}")
 
-            img1_path = os.path.join(folder1_path, img_file)
+            # ── Use only the English image path ───────────────────────────
+            english_img_path = os.path.join(english_folder_path, img_file)
 
-            img_b64_check = resize_and_encode_image(img1_path)
-            if not img_b64_check:
+            img_b64 = resize_and_encode_image(english_img_path)
+            if not img_b64:
+                skipped_images.append({"image": img_file, "reason": "encoding failed"})
                 continue
 
+            # ── Check if image actually contains a chart or table ─────────
             print(f"      Checking if {img_file} contains a chart or table...")
-            is_valid, skip_reason = check_if_chart_or_table_exists(img_b64_check)
+            is_valid, skip_reason = check_if_chart_or_table_exists(img_b64)
 
             if not is_valid:
                 print(f"      Skipping {img_file}: {skip_reason}")
                 skipped_images.append({"image": img_file, "reason": skip_reason})
                 continue
 
-            for folder_path, sub_folder_name in [(folder1_path, inner_folders[0]), (folder2_path, inner_folders[1])]:
-                img_path = os.path.join(folder_path, img_file)
-                lang_ctx = "Hindi" if 'hin' in img_path.lower() else "English"
+            # ── Generate questions using the English image only ───────────
+            print(f"      Generating QA for {english_folder_name}/{img_file}...")
+            generated_data = generate_questions_for_image(img_b64, img_file, "English")
 
-                img_b64 = resize_and_encode_image(img_path)
-                if not img_b64:
-                    continue
+            if generated_data:
+                for q_item in generated_data:
+                    q_item["source_subfolder"] = english_folder_name
 
-                print(f"      Generating QA for {sub_folder_name}/{img_file}...")
-                generated_data = generate_questions_for_image(img_b64, img_file, lang_ctx)
+                # ── Verify all questions in one API call ──────────────────
+                print(f"      Verifying {len(generated_data)} questions...")
+                verification_results = verify_questions_bundled(img_b64, generated_data)
+                attach_verification(generated_data, verification_results)
 
-                if generated_data:
-                    for q_item in generated_data:
-                        q_item["source_subfolder"] = sub_folder_name
+                parent_qa_data.extend(generated_data)
 
-                    print(f"      Verifying {len(generated_data)} questions...")
-                    verification_results = verify_questions_bundled(img_b64, generated_data)
-                    attach_verification(generated_data, verification_results)
-
-                    parent_qa_data.extend(generated_data)
-
-                time.sleep(2)
+            time.sleep(2)
 
             valid_processed_count += 1
-            print(f"   Successfully processed {valid_processed_count}/{MAX_IMAGES_PER_FOLDER} valid pairs.")
+            print(f"   Processed {valid_processed_count}/{MAX_IMAGES_PER_FOLDER} valid images.")
 
             if valid_processed_count >= MAX_IMAGES_PER_FOLDER:
-                print(f"   Reached {MAX_IMAGES_PER_FOLDER} valid image pairs. Moving to next folder.")
+                print(f"   Reached limit of {MAX_IMAGES_PER_FOLDER}. Moving to next folder.")
                 break
 
+        # ── Save results ──────────────────────────────────────────────────
         if parent_qa_data:
             output_path = os.path.join(parent_path, "verified_bloom_QA.json")
             try:
