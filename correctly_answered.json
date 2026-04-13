@@ -1,0 +1,314 @@
+{
+  "model": "Qwen/Qwen3-VL-235B-A22B-Instruct",
+  "total_questions": 25,
+  "total_attempted": 25,
+  "total_correct": 19,
+  "accuracy_percent": 76.0,
+  "skipped": 0,
+  "questions": [
+    {
+      "id": "page_101_chart_0jpg_q1",
+      "image_reference": "page_101_chart_0.jpg",
+      "taxonomy_level": "Remembering",
+      "question": "According to the table, what percentage of the S&P 500 companies reported higher profits in 2023?",
+      "options": [
+        "20%",
+        "24%",
+        "40%",
+        "75%"
+      ],
+      "correct_answer": "24%",
+      "model_selected": "B) 24%",
+      "model_explanation": "The text explicitly states: 'वर्ष 2023 में 24 प्रतिशत की बढ़त करने के पश्चात, एस-पी 500 सूचकांक 2024 में 20 प्रतिशत से अधिक प्रतिलाभ देने की राह पर है।' This indicates that in 2023, 24% of S&P 500 companies reported higher profits.",
+      "verified_reasoning": "The text explicitly states: 'वर्ष 2023 में 24 प्रतिशत की बढ़त करने के पश्चात' which translates to 'After a 24% increase in 2023'. This directly indicates that 24% of S&P 500 companies reported higher profits in 2023."
+    },
+    {
+      "id": "page_101_chart_0jpg_q2",
+      "image_reference": "page_101_chart_0.jpg",
+      "taxonomy_level": "Understanding",
+      "question": "What does the text imply about the performance of the S&P 500 index in 2024?",
+      "options": [
+        "It declined significantly",
+        "It showed modest growth",
+        "It achieved its highest level in four decades",
+        "It remained unchanged"
+      ],
+      "correct_answer": "It achieved its highest level in four decades",
+      "model_selected": "C) It achieved its highest level in four decades",
+      "model_explanation": "The text states that in 2024, the S&P 500 index rose by 20%, which is described as the best performance since 1985 (i.e., over four decades). It also mentions that the index reached its highest level in 40 years, directly supporting option C.",
+      "verified_reasoning": "The text states: 'एस-पी 500 सूचकांक 2024 में 20 प्रतिशत से अधिक प्रतिलाभ देने की राह पर है' and 'यह बेहतर प्रदर्शन आर्थिक लचीलेपन, मजबूत कॉर्पोरेट आय के कारण हुआ है जो रिकॉर्ड-उच्च स्तर (सितंबर 2024 को समाप्त तिमाही तक 4 ट्रिलियन अमेरिकी डॉलर)'. This implies the index reached a record high, which is interpreted as its highest level in four decades."
+    },
+    {
+      "id": "page_101_chart_0jpg_q3",
+      "image_reference": "page_101_chart_0.jpg",
+      "taxonomy_level": "Applying",
+      "question": "If the S&P 500 index had a 20% gain in 2024, and the starting value was 5000, what would be the approximate ending value?",
+      "options": [
+        "5500",
+        "6000",
+        "6500",
+        "7000"
+      ],
+      "correct_answer": "6000",
+      "model_selected": "B) 6000",
+      "model_explanation": "A 20% gain on a starting value of 5000 is calculated as 5000 × 0.20 = 1000. Adding this to the original value gives 5000 + 1000 = 6000. The text in the image mentions the S&P 500 having a 20% gain in 2024, which directly supports this calculation.",
+      "verified_reasoning": "A 20% gain on a starting value of 5000 is calculated as 5000 * 0.20 = 1000. Adding this to the original value: 5000 + 1000 = 6000. Therefore, the ending value would be approximately 6000."
+    },
+    {
+      "id": "page_101_chart_0jpg_q4",
+      "image_reference": "page_101_chart_0.jpg",
+      "taxonomy_level": "Analyzing",
+      "question": "Which factor is NOT mentioned as contributing to the strong performance of the S&P 500 in 2024?",
+      "options": [
+        "Economic flexibility",
+        "Strong corporate income",
+        "Record-high profit margins",
+        "Increased government spending"
+      ],
+      "correct_answer": "Increased government spending",
+      "model_selected": "D) Increased government spending",
+      "model_explanation": "The text mentions 'record-high profit margins', 'strong corporate income', and 'economic flexibility' (implied through 'भूराजनीतिक तनाव बढ़ने के बावजूद' — despite rising geopolitical tensions, markets performed better) as factors behind the S&P 500's performance. However, 'increased government spending' is not mentioned anywhere in the passage.",
+      "verified_reasoning": "The text mentions 'आर्थिक लचीलेपन' (economic flexibility) and 'मजबूत कॉर्पोरेट आय' (strong corporate income) as reasons for the performance. It also refers to 'रिकॉर्ड-उच्च स्तर' (record-high level) of profits. However, there is no mention of 'increased government spending' as a contributing factor."
+    },
+    {
+      "id": "page_101_chart_0jpg_q5",
+      "image_reference": "page_101_chart_0.jpg",
+      "taxonomy_level": "Evaluating",
+      "question": "Based on the data provided, which conclusion is most strongly supported regarding the Indian stock market's future prospects?",
+      "options": [
+        "It will outperform the US market in 2025",
+        "It will face significant regulatory challenges",
+        "It will benefit from global market trends and corporate profitability",
+        "It will experience a major correction in the next quarter"
+      ],
+      "correct_answer": "It will benefit from global market trends and corporate profitability",
+      "model_selected": "C) It will benefit from global market trends and corporate profitability",
+      "model_explanation": "The text mentions that in 2025, the Indian stock market is expected to benefit from strong global market trends, including high US market valuations, record corporate profits, and optimistic investor sentiment. It also references the S&P 500's performance and global investor confidence, implying that India’s market will ride this wave of global positivity and profitability.",
+      "verified_reasoning": "The text discusses the strong performance of the US market (S&P 500) due to economic flexibility and corporate income, and notes that India's market can also benefit from such global trends. It also mentions that the Indian market's performance is linked to global indices and corporate profitability, making this the most supported conclusion."
+    },
+    {
+      "id": "page_102_chart_0jpg_q1",
+      "image_reference": "page_102_chart_0.jpg",
+      "taxonomy_level": "Remembering",
+      "question": "What was the value of the S&P500 (Equal Weight) Index on 24-Dec-2024 according to the chart?",
+      "options": [
+        "1000",
+        "1257.1",
+        "1500",
+        "1600"
+      ],
+      "correct_answer": "1257.1",
+      "model_selected": "B) 1257.1",
+      "model_explanation": "The chart explicitly labels the value of the S&P500 (Equal Weight) Index (purple line) on 24-Dec-2024 as 1257.1, as indicated by the annotation pointing to the purple line at that date.",
+      "verified_reasoning": "The chart explicitly labels the value of the S&P500 (Equal Weight) Index on 24-Dec-2024 as 1257.1, shown with a callout arrow pointing to the purple line at that date."
+    },
+    {
+      "id": "page_102_chart_0jpg_q2",
+      "image_reference": "page_102_chart_0.jpg",
+      "taxonomy_level": "Understanding",
+      "question": "What does the chart indicate about the relationship between the S&P500 Index and the S&P500 (Equal Weight) Index from Jan-2023 to Dec-2024?",
+      "options": [
+        "The Equal Weight Index consistently outperformed the standard S&P500 Index.",
+        "The standard S&P500 Index consistently outperformed the Equal Weight Index.",
+        "The Equal Weight Index was more volatile and generally lower than the standard S&P500 Index.",
+        "The two indices moved in perfect synchronization throughout the period."
+      ],
+      "correct_answer": "The Equal Weight Index was more volatile and generally lower than the standard S&P500 Index.",
+      "model_selected": "C) The Equal Weight Index was more volatile and generally lower than the standard S&P500 Index.",
+      "model_explanation": "The chart shows the S&P500 (Equal Weight) Index (purple line) fluctuating more sharply and staying below the S&P500 Index (yellow line) for most of the period from Jan-2023 to Dec-2024. The yellow line shows a steadier, higher growth trend, indicating the standard index outperformed the equal-weight version, which also exhibited greater volatility.",
+      "verified_reasoning": "Visually, the yellow line (S&P500 Index) is consistently above the purple line (Equal Weight Index) for the entire period, indicating higher performance. The purple line also shows more frequent and larger fluctuations, indicating higher volatility."
+    },
+    {
+      "id": "page_102_chart_0jpg_q3",
+      "image_reference": "page_102_chart_0.jpg",
+      "taxonomy_level": "Applying",
+      "question": "If an investor had invested 1000 units in the S&P500 Index on 3-Jan-2023 and held until 24-Dec-2024, approximately how much would the investment be worth based on the chart?",
+      "options": [
+        "1200",
+        "1400",
+        "1550",
+        "1600"
+      ],
+      "correct_answer": "1550",
+      "model_selected": "C) 1550",
+      "model_explanation": "The chart shows the S&P500 Index (yellow line) starting at 1000 on 3-Jan-2023 (base value). On 24-Dec-2024, the yellow line is near the 1550 mark on the y-axis, indicating the investment would be worth approximately 1550 units.",
+      "verified_reasoning": "The chart’s note indicates both indices are rebased to 1000 as of 3-Jan-2023. On 24-Dec-2024, the S&P500 Index (yellow line) is at approximately 1550. Therefore, an initial investment of 1000 units would grow to about 1550 units."
+    },
+    {
+      "id": "page_102_chart_0jpg_q4",
+      "image_reference": "page_102_chart_0.jpg",
+      "taxonomy_level": "Analyzing",
+      "question": "Which period shows the largest divergence between the S&P500 Index and the S&P500 (Equal Weight) Index based on the vertical gap between the two lines?",
+      "options": [
+        "Jan-2023 to Mar-2023",
+        "Jul-2023 to Sep-2023",
+        "Jan-2024 to Mar-2024",
+        "Oct-2024 to Dec-2024"
+      ],
+      "correct_answer": "Oct-2024 to Dec-2024",
+      "model_selected": "D) Oct-2024 to Dec-2024",
+      "model_explanation": "The vertical gap between the yellow line (S&P500 Index) and the purple line (S&P500 Equal Weight Index) is visibly widest in the period from October 2024 to December 2024, indicating the largest divergence between the two indices during that time.",
+      "verified_reasoning": "By visually comparing the vertical distance between the yellow and purple lines across the specified periods, the gap is widest in the final quarter of 2024 (Oct-Dec 2024), indicating the largest divergence in performance."
+    },
+    {
+      "id": "page_102_chart_0jpg_q5",
+      "image_reference": "page_102_chart_0.jpg",
+      "taxonomy_level": "Evaluating",
+      "question": "Based on the chart’s data, which conclusion is best supported regarding the performance of the S&P500 (Equal Weight) Index relative to the S&P500 Index over the 2-year period?",
+      "options": [
+        "The Equal Weight Index was a superior investment due to higher returns.",
+        "The Equal Weight Index underperformed the S&P500 Index and exhibited greater risk through higher volatility.",
+        "The Equal Weight Index matched the S&P500 Index in performance but with lower volatility.",
+        "The Equal Weight Index showed inconsistent performance but ultimately outperformed in the final quarter."
+      ],
+      "correct_answer": "The Equal Weight Index underperformed the S&P500 Index and exhibited greater risk through higher volatility.",
+      "model_selected": "B) The Equal Weight Index underperformed the S&P500 Index and exhibited greater risk through higher volatility.",
+      "model_explanation": "The chart visually shows that the S&P500 (Equal Weight) Index (purple line) consistently remains below the S&P500 Index (yellow line) over the entire 2-year period, indicating underperformance. Additionally, the purple line shows more frequent and sharper fluctuations, suggesting higher volatility and thus greater risk compared to the smoother yellow line.",
+      "verified_reasoning": "The purple line (Equal Weight) is consistently below the yellow line (S&P500), indicating underperformance. It also shows more pronounced peaks and troughs, indicating higher volatility (risk). This supports the conclusion that it underperformed and was riskier."
+    },
+    {
+      "id": "page_103_chart_0jpg_q2",
+      "image_reference": "page_103_chart_0.jpg",
+      "taxonomy_level": "Understanding",
+      "question": "What does the divergence between the yellow and blue lines from 2020 to 2023 indicate about corporate profits?",
+      "options": [
+        "Non-Tech Corporate Profit grew faster than Total Corporate Profit.",
+        "Total Corporate Profit grew faster than Non-Tech Corporate Profit.",
+        "Both profit types remained nearly constant.",
+        "Non-Tech Corporate Profit declined while Total Corporate Profit rose."
+      ],
+      "correct_answer": "Total Corporate Profit grew faster than Non-Tech Corporate Profit.",
+      "model_selected": "B) Total Corporate Profit grew faster than Non-Tech Corporate Profit.",
+      "model_explanation": "From 2020 to 2023, the yellow line (Total Corporate Profit) rises steeply and ends significantly higher than the blue line (Non-Tech Corporate Profit), which shows a more moderate increase. This divergence indicates that Total Corporate Profit grew at a faster rate than Non-Tech Corporate Profit during this period.",
+      "verified_reasoning": "From 2020 to 2023, the yellow line (Total Corporate Profit) rises steeply, while the blue line (Non-Tech Corporate Profit) rises more gradually, indicating that total profits grew faster than non-tech profits alone."
+    },
+    {
+      "id": "page_103_chart_0jpg_q3",
+      "image_reference": "page_103_chart_0.jpg",
+      "taxonomy_level": "Applying",
+      "question": "If the growth rate of Total Corporate Profit from 2020 to 2021 was approximately 25%, what was its approximate value in 2020?",
+      "options": [
+        "2400",
+        "2500",
+        "2600",
+        "2700"
+      ],
+      "correct_answer": "2400",
+      "model_selected": "A) 2400",
+      "model_explanation": "The chart shows Total Corporate Profit (yellow line) at approximately 3000 USD billion in 2021. If the growth rate from 2020 to 2021 was 25%, then the 2020 value = 3000 / 1.25 = 2400. This matches option A.",
+      "verified_reasoning": "In 2021, Total Corporate Profit is approximately 3000 USD billion. If this represents a 25% increase from 2020, then 2020 value = 3000 / 1.25 = 2400 USD billion."
+    },
+    {
+      "id": "page_103_chart_0jpg_q4",
+      "image_reference": "page_103_chart_0.jpg",
+      "taxonomy_level": "Analyzing",
+      "question": "Which period shows the steepest growth in Non-Tech Corporate Profit?",
+      "options": [
+        "2014–2016",
+        "2017–2019",
+        "2020–2021",
+        "2022–2023"
+      ],
+      "correct_answer": "2020–2021",
+      "model_selected": "C) 2020–2021",
+      "model_explanation": "The blue line representing Non-Tech Corporate Profit shows the steepest upward slope between 2020 and 2021, indicating the fastest growth during this period compared to others.",
+      "verified_reasoning": "Observing the blue line (Non-Tech Corporate Profit), the steepest upward slope occurs between 2020 and 2021, indicating the highest growth rate during that period compared to others."
+    },
+    {
+      "id": "page_103_chart_0jpg_q5",
+      "image_reference": "page_103_chart_0.jpg",
+      "taxonomy_level": "Evaluating",
+      "question": "Based on the chart, which conclusion is best supported by the data regarding corporate profit composition from 2020 to 2023?",
+      "options": [
+        "Non-Tech profits contributed the majority of total corporate profits.",
+        "Tech-related profits likely contributed significantly to the growth in total profits.",
+        "Corporate profits declined overall during this period.",
+        "Non-Tech profits grew at a higher rate than total profits."
+      ],
+      "correct_answer": "Tech-related profits likely contributed significantly to the growth in total profits.",
+      "model_selected": "B) Tech-related profits likely contributed significantly to the growth in total profits.",
+      "model_explanation": "The chart shows that from 2020 to 2023, total corporate profit (yellow line) rose sharply, while non-tech corporate profit (blue line) grew only modestly. Since total profit = tech + non-tech profit, the large gap in growth rates implies that tech-related profits must have driven most of the increase in total profits during this period.",
+      "verified_reasoning": "Total Corporate Profit (yellow line) grew much faster than Non-Tech Corporate Profit (blue line) from 2020 to 2023. Since total profit = tech + non-tech, the gap implies that tech-related profits must have grown substantially to account for the difference."
+    },
+    {
+      "id": "page_120_chart_0jpg_q1",
+      "image_reference": "page_120_chart_0.jpg",
+      "taxonomy_level": "Remembering",
+      "question": "Which country is labeled at the highest point of the curve on the chart?",
+      "options": [
+        "Morocco",
+        "Poland",
+        "Ecuador",
+        "Ireland"
+      ],
+      "correct_answer": "Poland",
+      "model_selected": "B) Poland",
+      "model_explanation": "The chart shows a curve representing the effect on growth rate versus the Financial Development Index. The highest point on the curve, which is the peak of the inverted U-shape, is labeled 'Poland'. Although Morocco is also near the top, Poland is positioned exactly at the apex of the curve, indicating the maximum effect on growth rate.",
+      "verified_reasoning": "By visually inspecting the chart, the peak of the blue curve corresponds to the label 'Poland', which is positioned at the highest point on the y-axis (Effect on growth rate) among all labeled countries."
+    },
+    {
+      "id": "page_120_chart_0jpg_q2",
+      "image_reference": "page_120_chart_0.jpg",
+      "taxonomy_level": "Understanding",
+      "question": "What does the shaded blue region labeled '95% confidence band around the \"turning point\"' indicate about the data?",
+      "options": [
+        "It shows where the Financial Development Index is exactly 0.5.",
+        "It represents the range within which the true turning point is statistically likely to lie.",
+        "It marks the countries with the lowest growth effect.",
+        "It indicates the countries that are not included in the analysis."
+      ],
+      "correct_answer": "It represents the range within which the true turning point is statistically likely to lie.",
+      "model_selected": "B) It represents the range within which the true turning point is statistically likely to lie.",
+      "model_explanation": "The shaded blue region labeled '95% confidence band around the \"turning point\"' is a statistical concept indicating the interval where the true value of the turning point (the peak of the curve) is expected to lie with 95% confidence. It reflects uncertainty in estimating the exact location of the turning point from the data, not a fixed index value or exclusion of countries.",
+      "verified_reasoning": "The label '95% confidence band around the \"turning point\"' explicitly describes a statistical confidence interval — a range that is expected to contain the true value of the turning point with 95% probability, which is a standard interpretation of such bands in data visualization."
+    },
+    {
+      "id": "page_120_chart_0jpg_q3",
+      "image_reference": "page_120_chart_0.jpg",
+      "taxonomy_level": "Applying",
+      "question": "If a country has a Financial Development Index of 0.9, what is the approximate effect on growth rate according to the chart?",
+      "options": [
+        "Approximately 2.5%",
+        "Approximately 3.5%",
+        "Approximately 1.5%",
+        "Approximately 4.5%"
+      ],
+      "correct_answer": "Approximately 2.5%",
+      "model_selected": "A) Approximately 2.5%",
+      "model_explanation": "Looking at the chart, at a Financial Development Index of 0.9, the point labeled 'Japan' lies on the curve. The corresponding 'Effect on growth rate' on the y-axis is slightly above 2%, approximately 2.5%. The curve is descending after the turning point (around 0.5), and Japan's position aligns with roughly 2.5% growth effect.",
+      "verified_reasoning": "Locating 0.9 on the x-axis (Financial Development Index) and tracing vertically to the curve, then horizontally to the y-axis (Effect on growth rate), the value falls between 2% and 3%, closer to 2.5%. Japan is labeled near this point, and its position confirms this approximation."
+    },
+    {
+      "id": "page_120_chart_0jpg_q4",
+      "image_reference": "page_120_chart_0.jpg",
+      "taxonomy_level": "Analyzing",
+      "question": "Which pair of countries shows the most significant difference in effect on growth rate despite having similar Financial Development Index values?",
+      "options": [
+        "Morocco and Poland",
+        "Ecuador and Gambia",
+        "Ireland and U.S.A.",
+        "U.S.A. and Japan"
+      ],
+      "correct_answer": "U.S.A. and Japan",
+      "model_selected": "D) U.S.A. and Japan",
+      "model_explanation": "U.S.A. and Japan have very similar Financial Development Index values (around 0.8 and 0.9 respectively), but their effect on growth rate differs significantly — U.S.A. is around 3.5% while Japan is around 2.5%. This is the largest visible difference among pairs with close index values. Other pairs either have larger index gaps or smaller growth rate differences.",
+      "verified_reasoning": "U.S.A. and Japan have Financial Development Index values of approximately 0.75 and 0.85 respectively — relatively close. However, their effect on growth rates differ significantly: U.S.A. is near 3.5%, while Japan is near 2.5%, showing a 1% difference. Other pairs either have larger index gaps or smaller growth rate differences."
+    },
+    {
+      "id": "page_120_chart_0jpg_q5",
+      "image_reference": "page_120_chart_0.jpg",
+      "taxonomy_level": "Evaluating",
+      "question": "Based on the chart, which conclusion is best supported by the data regarding the relationship between Financial Development Index and growth rate?",
+      "options": [
+        "Higher financial development always leads to higher growth rates.",
+        "There is an inverted U-shaped relationship: growth rate increases then decreases with financial development.",
+        "Financial development has no measurable effect on growth rate.",
+        "Growth rate is highest at the lowest financial development levels."
+      ],
+      "correct_answer": "There is an inverted U-shaped relationship: growth rate increases then decreases with financial development.",
+      "model_selected": "B) There is an inverted U-shaped relationship: growth rate increases then decreases with financial development.",
+      "model_explanation": "The chart shows a curve that rises to a peak (around Financial Development Index of 0.5) and then declines, indicating an inverted U-shaped relationship. Countries like Morocco and Poland are near the peak, while Japan and the U.S. are on the declining side, and Gambia is on the rising side. This pattern supports option B.",
+      "verified_reasoning": "The curve rises from left to right up to Poland (around index 0.5), then declines toward Japan (index 0.9), forming an inverted U-shape. This indicates that growth rate initially increases with financial development but eventually decreases after a turning point, which is consistent with the visual trend and the labeled 'turning point' region."
+    }
+  ]
+}

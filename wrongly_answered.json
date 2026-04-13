@@ -1,0 +1,118 @@
+{
+  "model": "Qwen/Qwen3-VL-235B-A22B-Instruct",
+  "total_questions": 25,
+  "total_attempted": 25,
+  "total_wrong": 6,
+  "accuracy_percent": 76.0,
+  "skipped": 0,
+  "questions": [
+    {
+      "id": "page_103_chart_0jpg_q1",
+      "image_reference": "page_103_chart_0.jpg",
+      "taxonomy_level": "Remembering",
+      "question": "What was the approximate value of Total Corporate Profit in USD billion in 2014 according to the chart?",
+      "options": [
+        "1850",
+        "2050",
+        "2250",
+        "2450"
+      ],
+      "correct_answer": "2050",
+      "model_selected": "A) 1850",
+      "model_explanation": "The yellow line representing 'Total Corporate Profit' starts in 2014 at a point just above the 1850 USD billion mark on the y-axis. Among the given options, 1850 is the closest and most accurate approximation.",
+      "verified_reasoning": "Looking at the yellow line labeled 'Total Corporate Profit' at the 2014 mark on the x-axis, the corresponding y-axis value is approximately 2050 USD billion.",
+      "wrong_option_picked": "A) 1850",
+      "correct_option": "2050"
+    },
+    {
+      "id": "page_104_chart_0jpg_q1",
+      "image_reference": "page_104_chart_0.jpg",
+      "taxonomy_level": "Remembering",
+      "question": "What number is displayed in the image?",
+      "options": [
+        "50",
+        "60",
+        "70",
+        "80"
+      ],
+      "correct_answer": "Option B",
+      "model_selected": "B) 60",
+      "model_explanation": "The image clearly displays the number '60' in black text on a light brown background. None of the other options (50, 70, 80) match the number shown.",
+      "verified_reasoning": "The image clearly displays the number '60' in bold black text at the top center of the pink shape. No other numbers are present. Therefore, the correct answer is Option B.",
+      "wrong_option_picked": "B) 60",
+      "correct_option": "Option B"
+    },
+    {
+      "id": "page_104_chart_0jpg_q2",
+      "image_reference": "page_104_chart_0.jpg",
+      "taxonomy_level": "Understanding",
+      "question": "What does the number 60 most likely represent in this context?",
+      "options": [
+        "A percentage value",
+        "A temperature in Celsius",
+        "A page number",
+        "A score out of 100"
+      ],
+      "correct_answer": "Option A",
+      "model_selected": "A) A percentage value",
+      "model_explanation": "The number 60 is displayed prominently in a rounded, badge-like shape, which is commonly used in UI/UX design to represent progress, completion, or a percentage (e.g., 60% complete). While other options are possible, percentage is the most contextually fitting for this visual style.",
+      "verified_reasoning": "The number 60 is presented in isolation within a simple colored shape, which is common for displaying percentages in infographics or dashboards. While other options are possible, 'A percentage value' is the most contextually plausible interpretation based on common data visualization conventions for single-number displays. The other options lack supporting context (like units or scales).",
+      "wrong_option_picked": "A) A percentage value",
+      "correct_option": "Option A"
+    },
+    {
+      "id": "page_104_chart_0jpg_q3",
+      "image_reference": "page_104_chart_0.jpg",
+      "taxonomy_level": "Applying",
+      "question": "If this number represents a percentage of completion, what fraction of the task remains unfinished?",
+      "options": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct_answer": "Option B",
+      "model_selected": "B) 2/5",
+      "model_explanation": "The image shows the number 60, which represents 60% completion. Therefore, 40% remains unfinished. Converting 40% to a fraction gives 40/100 = 2/5.",
+      "verified_reasoning": "Assuming the number 60 represents 60% completion, the unfinished portion is 100% - 60% = 40%. Converting 40% to a fraction gives 40/100, which simplifies to 2/5. Therefore, the correct answer is Option B.",
+      "wrong_option_picked": "B) 2/5",
+      "correct_option": "Option B"
+    },
+    {
+      "id": "page_104_chart_0jpg_q4",
+      "image_reference": "page_104_chart_0.jpg",
+      "taxonomy_level": "Analyzing",
+      "question": "What can be inferred about the data presentation style based solely on the visual elements?",
+      "options": [
+        "It is part of a complex multi-variable chart",
+        "It is a minimalist single-value display",
+        "It is a time-series graph",
+        "It is a comparative bar chart"
+      ],
+      "correct_answer": "Option B",
+      "model_selected": "B) It is a minimalist single-value display",
+      "model_explanation": "The image shows only one number, '60', with no axes, labels, legends, or other data points. This indicates a minimalist design focused on presenting a single value without additional context or comparison.",
+      "verified_reasoning": "The image contains only one number (60) and no axes, legends, multiple bars, lines, or other data points. This indicates a minimalist design focused on displaying a single value. Therefore, 'It is a minimalist single-value display' is the correct inference.",
+      "wrong_option_picked": "B) It is a minimalist single-value display",
+      "correct_option": "Option B"
+    },
+    {
+      "id": "page_104_chart_0jpg_q5",
+      "image_reference": "page_104_chart_0.jpg",
+      "taxonomy_level": "Evaluating",
+      "question": "Based on the visual data alone, how effective is this display for conveying detailed analytical insights?",
+      "options": [
+        "Highly effective, as it provides comprehensive data",
+        "Moderately effective, as it gives a quick snapshot",
+        "Ineffective, as it lacks context and comparison",
+        "Perfectly effective, as it uses bold typography"
+      ],
+      "correct_answer": "Option C",
+      "model_selected": "C) Ineffective, as it lacks context and comparison",
+      "model_explanation": "The image displays only the number '60' with no labels, units, time frame, or comparative data. Without context, it is impossible to derive any meaningful analytical insight, making it ineffective for detailed analysis.",
+      "verified_reasoning": "The display shows only a single number without any units, labels, time frame, or comparison point. For detailed analytical insights, context and comparative data are essential. Without them, the display is insufficient for analysis. Thus, it is 'Ineffective, as it lacks context and comparison'.",
+      "wrong_option_picked": "C) Ineffective, as it lacks context and comparison",
+      "correct_option": "Option C"
+    }
+  ]
+}
